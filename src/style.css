@@ -298,9 +298,9 @@ ul {
   border-radius: 2px;
   flex-shrink: 0;
 }
-.fi-gb { background-image: url('/flags/gb.svg'); }
-.fi-fr { background-image: url('/flags/fr.svg'); }
-.fi-tn { background-image: url('/flags/tn.svg'); }
+.fi-gb { background-image: url('./assets/flags/gb.svg'); }
+.fi-fr { background-image: url('./assets/flags/fr.svg'); }
+.fi-tn { background-image: url('./assets/flags/tn.svg'); }
 
 /* ─── Background grid (fixed) ──────────────────────────────────── */
 .hero-bg-grid {
