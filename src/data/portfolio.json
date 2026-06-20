@@ -1,0 +1,479 @@
+{
+  "person": {
+    "name": "Mohamed Khalil Zrelly",
+    "givenName": "Mohamed Khalil",
+    "familyName": "Zrelly",
+    "email": "mohamed.khalil.zrelly@gmail.com",
+    "phone": "+33758215856",
+    "linkedin": "https://www.linkedin.com/in/mohamed-khalil-zrelly/",
+    "url": "https://makiz-code.github.io/MKirell",
+    "jobTitle": "Generative AI Engineer Apprentice",
+    "worksFor": "Crédit Agricole",
+    "alumniOf": "Université Sorbonne Paris Nord",
+    "addressLocality": "Le Bourget",
+    "addressRegion": "Île-de-France",
+    "addressCountry": "FR"
+  },
+  "metaLocales": [
+    { "lang": "en", "dir": "ltr", "label": "EN", "flag": "🇬🇧", "flagCode": "gb", "hreflang": "en" },
+    { "lang": "fr", "dir": "ltr", "label": "FR", "flag": "🇫🇷", "flagCode": "fr", "hreflang": "fr" },
+    { "lang": "ar", "dir": "rtl", "label": "AR", "flag": "🇹🇳", "flagCode": "tn", "hreflang": "ar" }
+  ],
+  "locales": {
+    "en": {
+      "nav": {
+        "about": "About",
+        "skills": "Skills",
+        "experience": "Experience",
+        "projects": "Projects",
+        "education": "Education",
+        "contact": "Contact"
+      },
+      "hero": {
+        "badge": "Gen AI Engineer Apprentice · Crédit Agricole",
+        "title": "Mohamed Khalil Zrelly",
+        "subtitles": [
+          "Gen AI Engineer Apprentice",
+          "Machine Learning & Deep Learning",
+          "Multi-Agent Systems Builder",
+          "NLP / LLM Enthusiast"
+        ],
+        "desc": "Passionate about **Generative AI** and **Agentic Systems**, I build intelligent solutions — RAG pipelines, multi-LLM agents, and NLP architectures.",
+        "cta_projects": "View my projects",
+        "cta_contact": "Get in touch"
+      },
+      "about": {
+        "heading": "About Me",
+        "paragraphs": [
+          "Computer Science Engineering student at **Sup Galilée — Université Sorbonne Paris Nord**, currently working as a **Generative AI Engineer Apprentice at Crédit Agricole**. I specialize in intelligent agentic systems, LLM pipelines, and applied deep learning.",
+          "I hold a Bachelor's degree in Computer Science from the University of Tunis El Manar, graduated with **High Distinction**. Hands-on experience at **VERMEG** (NLP/LLM) and **Sofiatech** (ML/RL).",
+          "Runner-up at the **Enactus World Cup**, I blend technical depth with real-world impact, driven by curiosity and a passion for solving complex problems with AI."
+        ],
+        "stats": ["2+ years in ML / AI", "4 major AI projects", "4 cloud & ML certifications", "3 languages spoken"]
+      },
+      "skills": {
+        "heading": "Technical Skills",
+        "categories": [
+          { "icon": "🧠", "title": "Machine Learning & Deep Learning", "accent": false, "tags": ["PyTorch","TensorFlow","Keras","Scikit-Learn","Deep Q-Learning","Reinforcement Learning"] },
+          { "icon": "💬", "title": "NLP & LLMs",                      "accent": false, "tags": ["spaCy","NLTK","Transformers","BERT","GPT-4","Fine-Tuning"] },
+          { "icon": "🤖", "title": "Generative AI & Agentic Systems", "accent": true,  "tags": ["LangChain","LangGraph","Mistral","LLaMA 3","RAG","FAISS","ChromaDB"] },
+          { "icon": "📊", "title": "Data & Big Data",                  "accent": false, "tags": ["Pandas","NumPy","Matplotlib","Seaborn","PySpark"] },
+          { "icon": "🗄️", "title": "Databases",                        "accent": false, "tags": ["Oracle","MySQL","PostgreSQL","MongoDB"] },
+          { "icon": "🌐", "title": "Web Full Stack & REST APIs",       "accent": false, "tags": ["React","Vue.js","Node.js","FastAPI","Flask","Express"] },
+          { "icon": "💻", "title": "Programming Languages",            "accent": false, "tags": ["Python","Java","C/C++","JavaScript","PHP","PL/SQL"] },
+          { "icon": "☁️", "title": "Cloud & Tools",                    "accent": false, "tags": ["Azure","Docker","Git","Streamlit","OpenAI Gym","Tesseract OCR"] }
+        ],
+        "lang_title": "Languages",
+        "languages": [
+          { "flag": "🇬🇧", "flagCode": "gb", "name": "English", "pct": 88,  "level": "Fluent" },
+          { "flag": "🇫🇷", "flagCode": "fr", "name": "French",  "pct": 75,  "level": "B2 · TCF" },
+          { "flag": "🇹🇳", "flagCode": "tn", "name": "Arabic",  "pct": 100, "level": "Native" }
+        ]
+      },
+      "experience": {
+        "heading": "Work Experience",
+        "jobs": [
+          {
+            "current": true,
+            "company": "Crédit Agricole",
+            "period": "09/2024 — 06/2027 · Ongoing · France",
+            "role": "Generative AI Engineer Apprentice",
+            "bullets": ["Working on Generative AI and agentic system initiatives within one of France's largest banking groups, applying LLMs, RAG pipelines, and multi-agent frameworks to real enterprise use cases."],
+            "tags": ["Generative AI","LLMs","RAG","Agentic Systems"]
+          },
+          {
+            "current": false,
+            "company": "VERMEG",
+            "period": "02/2024 — 06/2024 · 5 months · Lac 2, Tunisia",
+            "role": "NLP / LLM Engineering Intern",
+            "bullets": [
+              "Built **VERMail** — an automated email intelligence system classifying emails and extracting key information from attachments using **BERT fine-tuning** and **OCR**.",
+              "Developed a full web application for BERT model fine-tuning, email management, and real-time performance dashboards."
+            ],
+            "tags": ["BERT","PyTorch","Tesseract OCR","React","Flask","MongoDB"]
+          },
+          {
+            "current": false,
+            "company": "Sofiatech",
+            "period": "06/2023 — 08/2023 · 3 months · Ariana, Tunisia",
+            "role": "Machine Learning Intern (AI / ML / DL / RL)",
+            "bullets": ["Built **Slythera** — a 2D Python game featuring an intelligent agent trained via **Deep Q-Learning** to navigate a dynamic, hostile environment."],
+            "tags": ["TensorFlow","Keras","DQN","OpenAI Gym","Pygame","Docker"]
+          }
+        ]
+      },
+      "projects": {
+        "heading": "Featured Projects",
+        "items": [
+          {
+            "period": "02/2025 — 06/2025",
+            "badge": "Multi-Agent",
+            "title": "TwiXel",
+            "desc": "An intelligent **Multi-Agent social listening system** on X, identifying emerging trends in real-time and generating marketing campaign ideas through LLM orchestration.",
+            "tags": ["LangGraph","LLaMA 3","FAISS","Tweepy","Vue.js","FastAPI","MongoDB"]
+          },
+          {
+            "period": "10/2024 — 12/2024",
+            "badge": "RAG",
+            "title": "CVision",
+            "desc": "An intelligent **CV recommendation engine** powered by **RAG**, matching job descriptions to the most relevant candidate profiles with automatic ranking and scoring.",
+            "tags": ["LangChain","Mistral","ChromaDB","PyMuPDF","Streamlit","MongoDB"]
+          },
+          {
+            "period": "Internship · VERMEG · 2024",
+            "badge": "NLP · OCR",
+            "title": "VERMail",
+            "desc": "End-to-end **email intelligence platform** combining fine-tuned BERT for classification and Tesseract OCR for attachment parsing, with a React dashboard.",
+            "tags": ["BERT","PyTorch","Tesseract OCR","React","Flask","MongoDB"]
+          },
+          {
+            "period": "Internship · Sofiatech · 2023",
+            "badge": "Deep RL",
+            "title": "Slythera",
+            "desc": "A **2D Python game** powered by a Deep Q-Learning agent that learns to navigate and survive in a dynamic environment. Deployed via Docker.",
+            "tags": ["TensorFlow","Keras","DQN","OpenAI Gym","Pygame","Docker"]
+          }
+        ]
+      },
+      "education": {
+        "heading": "Education & Certifications",
+        "degrees_title": "Degrees",
+        "degrees": [
+          { "years": "2024 — 2027", "title": "Computer Science Engineering Degree", "school": "Université Sorbonne Paris Nord, Sup Galilée", "location": "Villetaneuse, France", "mention": null },
+          { "years": "2021 — 2024", "title": "Bachelor's in Computer Science",      "school": "Université de Tunis El Manar, ISI Ariana",   "location": "Ariana, Tunisia",        "mention": "High Distinction ✦" }
+        ],
+        "certs_title": "Certifications",
+        "certs": [
+          { "icon": "☁️", "title": "Azure AI Fundamentals (AI-900)",          "issuer": "Microsoft Azure" },
+          { "icon": "📊", "title": "Azure Data Fundamentals (DP-900)",         "issuer": "Microsoft Azure" },
+          { "icon": "💬", "title": "Natural Language Processing with Python",  "issuer": "Udemy" },
+          { "icon": "⚡", "title": "Spark and Python for Big Data with PySpark","issuer": "Udemy" }
+        ],
+        "vol_title": "Volunteering",
+        "vols": [
+          { "org": "Enactus", "role": "Project Lead",  "period": "09/2021 — 08/2024 · 3 years",  "desc": "Led entrepreneurial projects with **social and environmental impact**." },
+          { "org": "AIESEC", "role": "Team Member",    "period": "02/2024 — 07/2024 · 6 months", "desc": "Created international internship opportunities for students worldwide." }
+        ],
+        "awards_title": "Awards",
+        "awards": [
+          { "icon": "🏆", "title": "Runner-up", "event": "Enactus World Cup" },
+          { "icon": "🥈", "title": "Runner-up", "event": "Action With Africa" }
+        ]
+      },
+      "contact": {
+        "heading": "Let's work together",
+        "desc": "Currently working as a **Gen AI Engineer Apprentice at Crédit Agricole**. Feel free to reach out to discuss AI projects, collaborations, or just to connect.",
+        "email_label": "Email",
+        "phone_label": "Phone",
+        "linkedin_label": "LinkedIn",
+        "location_label": "Location",
+        "cta": "Send me a message →"
+      },
+      "footer": { "copy": "© 2025 Mohamed Khalil Zrelly · Built with passion" }
+    },
+
+    "fr": {
+      "nav": {
+        "about": "À propos",
+        "skills": "Compétences",
+        "experience": "Expérience",
+        "projects": "Projets",
+        "education": "Formation",
+        "contact": "Contact"
+      },
+      "hero": {
+        "badge": "Ingénieur IA Générative · Crédit Agricole",
+        "title": "Mohamed Khalil Zrelly",
+        "subtitles": [
+          "Ingénieur IA Générative",
+          "Machine Learning & Deep Learning",
+          "Systèmes Multi-Agents",
+          "NLP / LLM"
+        ],
+        "desc": "Passionné d'**IA Générative** et de **Systèmes Agentiques**, je construis des solutions intelligentes — pipelines RAG, agents LLM multi-modèles et architectures NLP.",
+        "cta_projects": "Voir mes projets",
+        "cta_contact": "Me contacter"
+      },
+      "about": {
+        "heading": "À propos de moi",
+        "paragraphs": [
+          "Étudiant en ingénierie informatique à **Sup Galilée — Université Sorbonne Paris Nord**, actuellement apprenti **Ingénieur IA Générative chez Crédit Agricole**. Je me spécialise dans la construction de systèmes agentiques intelligents, de pipelines LLM et de solutions en deep learning appliqué.",
+          "Titulaire d'une Licence en Informatique de l'Université de Tunis El Manar, obtenue avec **Mention Très Bien**. J'ai acquis une expérience pratique chez **VERMEG** (NLP/LLM) et **Sofiatech** (ML/RL).",
+          "Vice-champion à la **Coupe du Monde Enactus**, j'allie profondeur technique et impact réel, animé par la curiosité et la passion de résoudre des problèmes complexes avec l'IA."
+        ],
+        "stats": ["2+ ans en ML / IA", "4 projets IA majeurs", "4 certifications cloud & ML", "3 langues parlées"]
+      },
+      "skills": {
+        "heading": "Compétences Techniques",
+        "categories": [
+          { "icon": "🧠", "title": "Machine Learning & Deep Learning",    "accent": false, "tags": ["PyTorch","TensorFlow","Keras","Scikit-Learn","Deep Q-Learning","Reinforcement Learning"] },
+          { "icon": "💬", "title": "NLP & LLMs",                          "accent": false, "tags": ["spaCy","NLTK","Transformers","BERT","GPT-4","Fine-Tuning"] },
+          { "icon": "🤖", "title": "IA Générative & Systèmes Agentiques", "accent": true,  "tags": ["LangChain","LangGraph","Mistral","LLaMA 3","RAG","FAISS","ChromaDB"] },
+          { "icon": "📊", "title": "Data & Big Data",                      "accent": false, "tags": ["Pandas","NumPy","Matplotlib","Seaborn","PySpark"] },
+          { "icon": "🗄️", "title": "Bases de données",                     "accent": false, "tags": ["Oracle","MySQL","PostgreSQL","MongoDB"] },
+          { "icon": "🌐", "title": "Web Full Stack & REST API",            "accent": false, "tags": ["React","Vue.js","Node.js","FastAPI","Flask","Express"] },
+          { "icon": "💻", "title": "Langages de programmation",            "accent": false, "tags": ["Python","Java","C/C++","JavaScript","PHP","PL/SQL"] },
+          { "icon": "☁️", "title": "Cloud & Outils",                       "accent": false, "tags": ["Azure","Docker","Git","Streamlit","OpenAI Gym","Tesseract OCR"] }
+        ],
+        "lang_title": "Langues",
+        "languages": [
+          { "flag": "🇬🇧", "flagCode": "gb", "name": "Anglais",  "pct": 88,  "level": "Courant" },
+          { "flag": "🇫🇷", "flagCode": "fr", "name": "Français", "pct": 75,  "level": "B2 · TCF" },
+          { "flag": "🇹🇳", "flagCode": "tn", "name": "Arabe",    "pct": 100, "level": "Natif" }
+        ]
+      },
+      "experience": {
+        "heading": "Expériences Professionnelles",
+        "jobs": [
+          {
+            "current": true,
+            "company": "Crédit Agricole",
+            "period": "09/2024 — 06/2027 · En cours · France",
+            "role": "Apprenti Ingénieur IA Générative",
+            "bullets": ["Travail sur des initiatives d'IA Générative et de systèmes agentiques au sein de l'un des plus grands groupes bancaires français, en appliquant LLMs, pipelines RAG et frameworks multi-agents à des cas d'usage réels."],
+            "tags": ["IA Générative","LLMs","RAG","Systèmes Agentiques"]
+          },
+          {
+            "current": false,
+            "company": "VERMEG",
+            "period": "02/2024 — 06/2024 · 5 mois · Lac 2, Tunisie",
+            "role": "Stagiaire Ingénieur NLP / LLM",
+            "bullets": [
+              "Développement de **VERMail** — système d'intelligence e-mail automatisé classifiant les e-mails entrants et extrayant les informations clés via **fine-tuning BERT** et **OCR**.",
+              "Développement d'une application web pour le fine-tuning BERT, la gestion des e-mails et la visualisation des performances en temps réel."
+            ],
+            "tags": ["BERT","PyTorch","Tesseract OCR","React","Flask","MongoDB"]
+          },
+          {
+            "current": false,
+            "company": "Sofiatech",
+            "period": "06/2023 — 08/2023 · 3 mois · Ariana, Tunisie",
+            "role": "Stagiaire Machine Learning (IA / ML / DL / RL)",
+            "bullets": ["Développement de **Slythera** — jeu 2D en Python avec un agent intelligent entraîné par **Deep Q-Learning** pour naviguer dans un environnement dynamique et hostile."],
+            "tags": ["TensorFlow","Keras","DQN","OpenAI Gym","Pygame","Docker"]
+          }
+        ]
+      },
+      "projects": {
+        "heading": "Projets Phares",
+        "items": [
+          {
+            "period": "02/2025 — 06/2025",
+            "badge": "Multi-Agent",
+            "title": "TwiXel",
+            "desc": "Système d'**écoute sociale multi-agents** sur X, identifiant les tendances émergentes en temps réel et générant des idées de campagnes marketing via orchestration LLM.",
+            "tags": ["LangGraph","LLaMA 3","FAISS","Tweepy","Vue.js","FastAPI","MongoDB"]
+          },
+          {
+            "period": "10/2024 — 12/2024",
+            "badge": "RAG",
+            "title": "CVision",
+            "desc": "Moteur de **recommandation de CV** alimenté par **RAG**, associant les offres d'emploi aux profils candidats les plus pertinents avec classement et notation automatiques.",
+            "tags": ["LangChain","Mistral","ChromaDB","PyMuPDF","Streamlit","MongoDB"]
+          },
+          {
+            "period": "Stage · VERMEG · 2024",
+            "badge": "NLP · OCR",
+            "title": "VERMail",
+            "desc": "Plateforme d'intelligence e-mail combinant un BERT fine-tuné pour la classification et Tesseract OCR pour l'analyse des pièces jointes, avec tableau de bord React.",
+            "tags": ["BERT","PyTorch","Tesseract OCR","React","Flask","MongoDB"]
+          },
+          {
+            "period": "Stage · Sofiatech · 2023",
+            "badge": "Deep RL",
+            "title": "Slythera",
+            "desc": "Jeu 2D Python propulsé par un agent Deep Q-Learning apprenant à naviguer et survivre dans un environnement dynamique. Déployé via Docker.",
+            "tags": ["TensorFlow","Keras","DQN","OpenAI Gym","Pygame","Docker"]
+          }
+        ]
+      },
+      "education": {
+        "heading": "Formation & Certifications",
+        "degrees_title": "Diplômes",
+        "degrees": [
+          { "years": "2024 — 2027", "title": "Diplôme d'Ingénieur Informatique", "school": "Université Sorbonne Paris Nord, Sup Galilée", "location": "Villetaneuse, France", "mention": null },
+          { "years": "2021 — 2024", "title": "Licence en Informatique",           "school": "Université de Tunis El Manar, ISI Ariana",   "location": "Ariana, Tunisie",        "mention": "Mention Très Bien ✦" }
+        ],
+        "certs_title": "Certifications",
+        "certs": [
+          { "icon": "☁️", "title": "Azure AI Fundamentals (AI-900)",  "issuer": "Microsoft Azure" },
+          { "icon": "📊", "title": "Azure Data Fundamentals (DP-900)", "issuer": "Microsoft Azure" },
+          { "icon": "💬", "title": "NLP avec Python",                  "issuer": "Udemy" },
+          { "icon": "⚡", "title": "Spark et Python pour le Big Data", "issuer": "Udemy" }
+        ],
+        "vol_title": "Bénévolat",
+        "vols": [
+          { "org": "Enactus", "role": "Chef de projet", "period": "09/2021 — 08/2024 · 3 ans",  "desc": "Direction de projets entrepreneuriaux à **impact social et environnemental**." },
+          { "org": "AIESEC", "role": "Membre",          "period": "02/2024 — 07/2024 · 6 mois", "desc": "Création d'opportunités de stage internationales pour les étudiants du monde entier." }
+        ],
+        "awards_title": "Récompenses",
+        "awards": [
+          { "icon": "🏆", "title": "Vice-champion", "event": "Coupe du Monde Enactus" },
+          { "icon": "🥈", "title": "Vice-champion", "event": "Action With Africa" }
+        ]
+      },
+      "contact": {
+        "heading": "Travaillons ensemble",
+        "desc": "Actuellement apprenti **Ingénieur IA Générative chez Crédit Agricole**. N'hésitez pas à me contacter pour discuter de projets IA, de collaborations ou simplement pour échanger.",
+        "email_label": "E-mail",
+        "phone_label": "Téléphone",
+        "linkedin_label": "LinkedIn",
+        "location_label": "Localisation",
+        "cta": "M'envoyer un message →"
+      },
+      "footer": { "copy": "© 2025 Mohamed Khalil Zrelly · Construit avec passion" }
+    },
+
+    "ar": {
+      "nav": {
+        "about": "عني",
+        "skills": "المهارات",
+        "experience": "الخبرة",
+        "projects": "المشاريع",
+        "education": "التعليم",
+        "contact": "التواصل"
+      },
+      "hero": {
+        "badge": "مهندس ذكاء اصطناعي توليدي · Crédit Agricole",
+        "title": "محمد خليل زرلي",
+        "subtitles": [
+          "مهندس ذكاء اصطناعي توليدي",
+          "تعلم الآلة والتعلم العميق",
+          "بناء أنظمة متعددة العملاء",
+          "معالجة اللغات الطبيعية"
+        ],
+        "desc": "شغوف بالذكاء الاصطناعي التوليدي والأنظمة الذكية، أبني حلولاً متطورة — خطوط أنابيب RAG، وعملاء LLM متعددين، وبنيات NLP.",
+        "cta_projects": "مشاريعي",
+        "cta_contact": "تواصل معي"
+      },
+      "about": {
+        "heading": "من أنا",
+        "paragraphs": [
+          "طالب هندسة حاسوب في **Sup Galilée — Université Sorbonne Paris Nord**، وأعمل حاليًا كمتدرب مهندس ذكاء اصطناعي توليدي في **Crédit Agricole**. أتخصص في بناء الأنظمة الذكية وخطوط أنابيب LLM والتعلم العميق التطبيقي.",
+          "أحمل ليسانس في علوم الحاسوب من جامعة تونس المنار **بامتياز مع التنويه**. اكتسبت خبرة عملية في **VERMEG** (NLP/LLM) و**Sofiatech** (ML/RL).",
+          "حصلت على المركز الثاني في **كأس العالم Enactus**، أجمع بين العمق التقني والأثر الواقعي، مدفوعًا بالفضول وشغف حل المشكلات المعقدة بالذكاء الاصطناعي."
+        ],
+        "stats": ["أكثر من سنتين في تعلم الآلة", "4 مشاريع ذكاء اصطناعي كبرى", "4 شهادات سحابية", "3 لغات"]
+      },
+      "skills": {
+        "heading": "المهارات التقنية",
+        "categories": [
+          { "icon": "🧠", "title": "تعلم الآلة والتعلم العميق",              "accent": false, "tags": ["PyTorch","TensorFlow","Keras","Scikit-Learn","Deep Q-Learning","Reinforcement Learning"] },
+          { "icon": "💬", "title": "معالجة اللغات الطبيعية والنماذج الكبيرة", "accent": false, "tags": ["spaCy","NLTK","Transformers","BERT","GPT-4","Fine-Tuning"] },
+          { "icon": "🤖", "title": "الذكاء الاصطناعي التوليدي والأنظمة الذكية","accent": true,  "tags": ["LangChain","LangGraph","Mistral","LLaMA 3","RAG","FAISS","ChromaDB"] },
+          { "icon": "📊", "title": "البيانات والبيانات الضخمة",               "accent": false, "tags": ["Pandas","NumPy","Matplotlib","Seaborn","PySpark"] },
+          { "icon": "🗄️", "title": "قواعد البيانات",                          "accent": false, "tags": ["Oracle","MySQL","PostgreSQL","MongoDB"] },
+          { "icon": "🌐", "title": "تطوير الويب وواجهات REST",                "accent": false, "tags": ["React","Vue.js","Node.js","FastAPI","Flask","Express"] },
+          { "icon": "💻", "title": "لغات البرمجة",                            "accent": false, "tags": ["Python","Java","C/C++","JavaScript","PHP","PL/SQL"] },
+          { "icon": "☁️", "title": "السحابة والأدوات",                        "accent": false, "tags": ["Azure","Docker","Git","Streamlit","OpenAI Gym","Tesseract OCR"] }
+        ],
+        "lang_title": "اللغات",
+        "languages": [
+          { "flag": "🇬🇧", "flagCode": "gb", "name": "الإنجليزية", "pct": 88,  "level": "طليق" },
+          { "flag": "🇫🇷", "flagCode": "fr", "name": "الفرنسية",   "pct": 75,  "level": "B2 · TCF" },
+          { "flag": "🇹🇳", "flagCode": "tn", "name": "العربية",    "pct": 100, "level": "لغة أم" }
+        ]
+      },
+      "experience": {
+        "heading": "الخبرة المهنية",
+        "jobs": [
+          {
+            "current": true,
+            "company": "Crédit Agricole",
+            "period": "09/2024 — 06/2027 · جارٍ · فرنسا",
+            "role": "متدرب مهندس ذكاء اصطناعي توليدي",
+            "bullets": ["العمل على مبادرات الذكاء الاصطناعي التوليدي والأنظمة الذكية في أحد أكبر المجموعات المصرفية الفرنسية، بتطبيق نماذج LLM وخطوط RAG وأطر متعددة العملاء على حالات استخدام حقيقية."],
+            "tags": ["ذكاء اصطناعي توليدي","LLMs","RAG","أنظمة ذكية"]
+          },
+          {
+            "current": false,
+            "company": "VERMEG",
+            "period": "02/2024 — 06/2024 · 5 أشهر · لاك 2، تونس",
+            "role": "متدرب هندسة NLP / LLM",
+            "bullets": [
+              "بناء **VERMail** — نظام ذكاء اصطناعي للبريد الإلكتروني يصنف الرسائل الواردة ويستخرج المعلومات الرئيسية عبر **ضبط دقيق لـ BERT** و**OCR**.",
+              "تطوير تطبيق ويب متكامل لضبط نموذج BERT وإدارة البريد ولوحات أداء في الوقت الفعلي."
+            ],
+            "tags": ["BERT","PyTorch","Tesseract OCR","React","Flask","MongoDB"]
+          },
+          {
+            "current": false,
+            "company": "Sofiatech",
+            "period": "06/2023 — 08/2023 · 3 أشهر · أريانة، تونس",
+            "role": "متدرب تعلم الآلة (ذكاء اصطناعي / ML / DL / RL)",
+            "bullets": ["بناء **Slythera** — لعبة بايثون ثنائية الأبعاد تضم عميلاً ذكياً مدرَّباً عبر **Deep Q-Learning** للتنقل في بيئة ديناميكية معادية."],
+            "tags": ["TensorFlow","Keras","DQN","OpenAI Gym","Pygame","Docker"]
+          }
+        ]
+      },
+      "projects": {
+        "heading": "المشاريع المميزة",
+        "items": [
+          {
+            "period": "02/2025 — 06/2025",
+            "badge": "متعدد العملاء",
+            "title": "TwiXel",
+            "desc": "نظام **استماع اجتماعي متعدد العملاء** على X، يرصد الاتجاهات الناشئة في الوقت الفعلي ويولّد أفكار حملات تسويقية عبر تنسيق LLM.",
+            "tags": ["LangGraph","LLaMA 3","FAISS","Tweepy","Vue.js","FastAPI","MongoDB"]
+          },
+          {
+            "period": "10/2024 — 12/2024",
+            "badge": "RAG",
+            "title": "CVision",
+            "desc": "محرك **توصية بالسيرة الذاتية** مدعوم بـ **RAG**، يطابق الوظائف مع أفضل المرشحين مع ترتيب وتقييم تلقائيَّين.",
+            "tags": ["LangChain","Mistral","ChromaDB","PyMuPDF","Streamlit","MongoDB"]
+          },
+          {
+            "period": "تدريب · VERMEG · 2024",
+            "badge": "NLP · OCR",
+            "title": "VERMail",
+            "desc": "منصة ذكاء بريد إلكتروني متكاملة تجمع BERT المضبوط للتصنيف وـ Tesseract OCR لتحليل المرفقات مع لوحة تحكم React.",
+            "tags": ["BERT","PyTorch","Tesseract OCR","React","Flask","MongoDB"]
+          },
+          {
+            "period": "تدريب · Sofiatech · 2023",
+            "badge": "Deep RL",
+            "title": "Slythera",
+            "desc": "لعبة بايثون ثنائية الأبعاد مدعومة بعميل Deep Q-Learning يتعلم التنقل والبقاء في بيئة ديناميكية. منشورة عبر Docker.",
+            "tags": ["TensorFlow","Keras","DQN","OpenAI Gym","Pygame","Docker"]
+          }
+        ]
+      },
+      "education": {
+        "heading": "التعليم والشهادات",
+        "degrees_title": "الشهادات الأكاديمية",
+        "degrees": [
+          { "years": "2024 — 2027", "title": "شهادة مهندس في علوم الحاسوب", "school": "Université Sorbonne Paris Nord, Sup Galilée", "location": "Villetaneuse، فرنسا", "mention": null },
+          { "years": "2021 — 2024", "title": "ليسانس في علوم الحاسوب",        "school": "جامعة تونس المنار، ISI أريانة",              "location": "أريانة، تونس",           "mention": "امتياز مع التنويه ✦" }
+        ],
+        "certs_title": "الشهادات الاحترافية",
+        "certs": [
+          { "icon": "☁️", "title": "Azure AI Fundamentals (AI-900)",    "issuer": "Microsoft Azure" },
+          { "icon": "📊", "title": "Azure Data Fundamentals (DP-900)",   "issuer": "Microsoft Azure" },
+          { "icon": "💬", "title": "معالجة اللغات الطبيعية مع Python", "issuer": "Udemy" },
+          { "icon": "⚡", "title": "Spark وPython للبيانات الضخمة",     "issuer": "Udemy" }
+        ],
+        "vol_title": "التطوع",
+        "vols": [
+          { "org": "Enactus", "role": "قائد مشروع", "period": "09/2021 — 08/2024 · 3 سنوات", "desc": "قيادة مشاريع ريادية ذات **أثر اجتماعي وبيئي**." },
+          { "org": "AIESEC", "role": "عضو",          "period": "02/2024 — 07/2024 · 6 أشهر",  "desc": "إنشاء فرص تدريب دولية للطلاب حول العالم." }
+        ],
+        "awards_title": "الجوائز",
+        "awards": [
+          { "icon": "🏆", "title": "المركز الثاني", "event": "كأس العالم Enactus" },
+          { "icon": "🥈", "title": "المركز الثاني", "event": "Action With Africa" }
+        ]
+      },
+      "contact": {
+        "heading": "لنعمل معاً",
+        "desc": "أعمل حاليًا كمتدرب **مهندس ذكاء اصطناعي توليدي في Crédit Agricole**. تواصل معي لمناقشة مشاريع الذكاء الاصطناعي أو التعاون أو ببساطة للتعارف.",
+        "email_label": "البريد الإلكتروني",
+        "phone_label": "الهاتف",
+        "linkedin_label": "لينكدإن",
+        "location_label": "الموقع",
+        "cta": "أرسل لي رسالة →"
+      },
+      "footer": { "copy": "© 2025 محمد خليل زرلي · مبني بشغف" }
+    }
+  }
+}
