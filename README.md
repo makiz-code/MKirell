@@ -92,18 +92,3 @@ npm run preview
 
 All text content lives in [`src/data/portfolio.json`](src/data/portfolio.json).  
 Each locale (`en`, `fr`, `ar`) mirrors the same structure — edit in one language and replicate the change to the others.
-
----
-
-## Deployment
-
-The site is a static SPA. After `npm run build`, deploy the `dist/` folder to any static host.
-
-For **GitHub Pages** (current setup):
-
-```bash
-npm run build
-# then push dist/ to your gh-pages branch, or use a GitHub Actions workflow
-```
-
-The sitemap and robots.txt reference `https://makiz-code.github.io/MKirell` — update those URLs in `public/sitemap.xml` and `public/robots.txt` if the deployment URL changes.
