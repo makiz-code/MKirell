@@ -1,6 +1,6 @@
 <template>
   <nav id="navbar" :class="['nav', { 'nav--scrolled': scrolled }]" aria-label="Main navigation">
-    <a href="#main-content" class="nav-logo" aria-label="MKirell – go to top">MKirell.</a>
+    <a href="#main-content" class="nav-logo" aria-label="MKirell – go to top">MKirell<span class="logo-dot">.</span></a>
 
     <ul id="navLinks" :class="['nav__links', { open: menuOpen }]" role="list">
       <li v-for="(label, key) in t.nav" :key="key">

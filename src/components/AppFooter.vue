@@ -2,7 +2,7 @@
   <footer class="footer" aria-label="Site footer">
     <div class="container">
       <div class="footer__inner">
-        <span class="footer-logo" aria-label="MKirell">MKirell.</span>
+        <span class="footer-logo" aria-label="MKirell">MKirell<span class="logo-dot">.</span></span>
         <small class="footer__copy">{{ t.footer.copy }}</small>
         <nav class="footer__socials" aria-label="Social links">
           <a :href="person.linkedin" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="LinkedIn profile">LinkedIn</a>
