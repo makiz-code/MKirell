@@ -7,12 +7,7 @@
       </header>
       <h2 id="projects-heading" class="section-h2" v-reveal>{{ t.projects.heading }}</h2>
       <ul class="projects__grid" aria-label="Project list">
-        <li
-          v-for="project in t.projects.items"
-          :key="project.title"
-          class="project-card"
-          v-reveal
-        >
+        <li v-for="project in t.projects.items" :key="project.title" class="project-card" v-reveal>
           <div class="project-card__header">
             <time class="project-card__period">{{ project.period }}</time>
             <span class="project-badge">{{ project.badge }}</span>
@@ -40,6 +35,7 @@ const { t } = useLanguage()
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 20px;
 }
+
 .project-card {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -49,32 +45,42 @@ const { t } = useLanguage()
   position: relative;
   overflow: hidden;
 }
+
 .project-card::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 2px;
   background: linear-gradient(90deg, transparent, var(--accent), transparent);
   opacity: 0;
   transition: opacity var(--transition);
 }
+
 .project-card:hover {
   border-color: var(--accent-line);
   transform: translateY(-4px);
-  box-shadow: 0 20px 44px -16px rgba(0,0,0,0.4);
+  box-shadow: 0 20px 44px -16px rgba(0, 0, 0, 0.4);
 }
-.project-card:hover::before { opacity: 1; }
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
 .project-card__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
 }
+
 .project-card__period {
   font-size: 0.72rem;
   color: var(--ink-soft);
   font-family: 'JetBrains Mono', monospace;
 }
+
 .project-badge {
   background: var(--gold-soft);
   border: 1px solid rgba(184, 137, 59, 0.3);
@@ -84,6 +90,7 @@ const { t } = useLanguage()
   color: var(--gold);
   font-family: 'JetBrains Mono', monospace;
 }
+
 .project-card__title {
   font-family: 'Fraunces', serif;
   font-size: 1.3rem;
@@ -91,6 +98,7 @@ const { t } = useLanguage()
   color: var(--ink);
   margin-bottom: 14px;
 }
+
 .project-card__desc {
   color: var(--ink-soft);
   font-size: 0.92rem;
@@ -99,6 +107,8 @@ const { t } = useLanguage()
 }
 
 @media (max-width: 900px) {
-  .projects__grid { grid-template-columns: 1fr; }
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

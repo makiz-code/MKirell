@@ -4,32 +4,19 @@
 
     <ul id="navLinks" :class="['nav__links', { open: menuOpen }]" role="list">
       <li v-for="(label, key) in t.nav" :key="key">
-        <a
-          :href="`#${key}`"
-          :class="{ active: activeSection === key }"
-          :aria-current="activeSection === key ? 'true' : undefined"
-          @click="menuOpen = false"
-        >{{ label }}</a>
+        <a :href="`#${key}`" :class="{ active: activeSection === key }"
+          :aria-current="activeSection === key ? 'true' : undefined" @click="menuOpen = false">{{ label }}</a>
       </li>
     </ul>
 
     <div class="nav__right">
       <div class="nav__langs">
-        <button
-          v-for="locale in metaLocales"
-          :key="locale.lang"
-          :class="['lang-btn', { active: lang === locale.lang }]"
-          @click="setLang(locale.lang)"
-        ><span :class="['fi', `fi-${locale.flagCode}`]"></span> {{ locale.label }}</button>
+        <button v-for="locale in metaLocales" :key="locale.lang" :class="['lang-btn', { active: lang === locale.lang }]"
+          @click="setLang(locale.lang)"><span :class="['fi', `fi-${locale.flagCode}`]"></span> {{ locale.label
+          }}</button>
       </div>
-      <button
-        id="burger"
-        :class="['nav__burger', { active: menuOpen }]"
-        @click="menuOpen = !menuOpen"
-        :aria-label="menuOpen ? 'Close menu' : 'Open menu'"
-        :aria-expanded="menuOpen"
-        aria-controls="navLinks"
-      >
+      <button id="burger" :class="['nav__burger', { active: menuOpen }]" @click="menuOpen = !menuOpen"
+        :aria-label="menuOpen ? 'Close menu' : 'Open menu'" :aria-expanded="menuOpen" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -83,7 +70,9 @@ onUnmounted(() => {
 <style scoped>
 .nav {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   display: flex;
   align-items: center;
@@ -91,15 +80,17 @@ onUnmounted(() => {
   gap: 24px;
   padding: 24px var(--pad);
   transition: background var(--transition), backdrop-filter var(--transition),
-              padding var(--transition), border-color var(--transition);
+    padding var(--transition), border-color var(--transition);
   border-bottom: 1px solid transparent;
 }
+
 .nav--scrolled {
   background: rgba(20, 22, 27, 0.82);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--line);
   padding: 16px var(--pad);
 }
+
 .nav-logo {
   font-family: 'Fraunces', serif;
   font-size: 1.45rem;
@@ -108,6 +99,7 @@ onUnmounted(() => {
   letter-spacing: -0.01em;
   flex-shrink: 0;
 }
+
 .nav__links {
   display: flex;
   gap: 32px;
@@ -115,7 +107,11 @@ onUnmounted(() => {
   flex: 1;
   justify-content: center;
 }
-.nav__links li { display: contents; }
+
+.nav__links li {
+  display: contents;
+}
+
 .nav__links a {
   font-size: 0.86rem;
   font-weight: 500;
@@ -124,20 +120,29 @@ onUnmounted(() => {
   position: relative;
   white-space: nowrap;
 }
+
 .nav__links a::after {
   content: '';
   position: absolute;
-  bottom: -5px; left: 0; right: 0;
+  bottom: -5px;
+  left: 0;
+  right: 0;
   height: 1px;
   background: var(--accent);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform var(--transition);
 }
+
 .nav__links a:hover,
-.nav__links a.active { color: var(--ink); }
+.nav__links a.active {
+  color: var(--ink);
+}
+
 .nav__links a:hover::after,
-.nav__links a.active::after { transform: scaleX(1); }
+.nav__links a.active::after {
+  transform: scaleX(1);
+}
 
 .nav__right {
   display: flex;
@@ -145,7 +150,12 @@ onUnmounted(() => {
   gap: 12px;
   flex-shrink: 0;
 }
-.nav__langs { display: flex; gap: 6px; }
+
+.nav__langs {
+  display: flex;
+  gap: 6px;
+}
+
 .lang-btn {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -161,21 +171,25 @@ onUnmounted(() => {
   align-items: center;
   gap: 6px;
 }
+
 .lang-btn .fi {
   width: 18px;
   height: 13px;
   border-radius: 2px;
   flex-shrink: 0;
 }
+
 .lang-btn:hover {
   border-color: var(--accent-line);
   color: var(--accent-deep);
 }
+
 .lang-btn.active {
   border-color: var(--accent-line);
   color: var(--accent-deep);
   background: var(--accent-soft);
 }
+
 .nav__burger {
   display: none;
   flex-direction: column;
@@ -185,24 +199,43 @@ onUnmounted(() => {
   cursor: pointer;
   padding: 4px;
 }
+
 .nav__burger span {
   display: block;
-  width: 22px; height: 2px;
+  width: 22px;
+  height: 2px;
   background: var(--ink);
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-.nav__burger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-.nav__burger.active span:nth-child(2) { opacity: 0; }
-.nav__burger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+.nav__burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav__burger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav__burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
 
 @media (max-width: 1200px) {
-  .nav__links { gap: 22px; }
-  .nav__links a { font-size: 0.82rem; }
+  .nav__links {
+    gap: 22px;
+  }
+
+  .nav__links a {
+    font-size: 0.82rem;
+  }
 }
+
 @media (max-width: 860px) {
   .nav__links {
     position: fixed;
-    top: 0; right: 0; bottom: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     width: 260px;
     background: rgba(20, 22, 27, 0.97);
     backdrop-filter: blur(20px);
@@ -216,21 +249,49 @@ onUnmounted(() => {
     z-index: 99;
     flex: none;
   }
-  .nav__links li { display: block; }
+
+  .nav__links li {
+    display: block;
+  }
+
   :global(html[dir="rtl"]) .nav__links {
-    right: auto; left: 0;
+    right: auto;
+    left: 0;
     transform: translateX(-100%);
   }
-  .nav__links.open { transform: translateX(0); }
-  .nav__links a { font-size: 1.1rem; }
-  .nav__burger { display: flex; z-index: 100; }
+
+  .nav__links.open {
+    transform: translateX(0);
+  }
+
+  .nav__links a {
+    font-size: 1.1rem;
+  }
+
+  .nav__burger {
+    display: flex;
+    z-index: 100;
+  }
 }
+
 @media (max-width: 700px) {
-  .nav { padding: 16px 20px; }
-  .nav--scrolled { padding: 12px 20px; }
+  .nav {
+    padding: 16px 20px;
+  }
+
+  .nav--scrolled {
+    padding: 12px 20px;
+  }
 }
+
 @media (max-width: 420px) {
-  .lang-btn { padding: 4px 7px; font-size: 0.66rem; }
-  .nav__langs { gap: 4px; }
+  .lang-btn {
+    padding: 4px 7px;
+    font-size: 0.66rem;
+  }
+
+  .nav__langs {
+    gap: 4px;
+  }
 }
 </style>

@@ -7,12 +7,7 @@
       </header>
       <h2 id="experience-heading" class="section-h2" v-reveal>{{ t.experience.heading }}</h2>
       <ol class="timeline">
-        <li
-          v-for="job in t.experience.jobs"
-          :key="job.company + job.period"
-          class="timeline__item"
-          v-reveal
-        >
+        <li v-for="job in t.experience.jobs" :key="job.company + job.period" class="timeline__item" v-reveal>
           <div class="timeline__dot" aria-hidden="true"></div>
           <article class="timeline__card">
             <header class="timeline__meta">
@@ -24,11 +19,7 @@
               <span v-if="job.current" class="timeline__current">Ongoing</span>
             </p>
             <ul class="timeline__bullets">
-              <li
-                v-for="(bullet, i) in job.bullets"
-                :key="i"
-                v-html="boldify(bullet)"
-              ></li>
+              <li v-for="(bullet, i) in job.bullets" :key="i" v-html="boldify(bullet)"></li>
             </ul>
             <ul class="tags tags-sm" aria-label="Technologies used">
               <li v-for="tag in job.tags" :key="tag" class="tag">{{ tag }}</li>
@@ -47,25 +38,38 @@ const { t } = useLanguage()
 </script>
 
 <style scoped>
-.timeline { position: relative; }
+.timeline {
+  position: relative;
+}
+
 .timeline::before {
   content: '';
   position: absolute;
   inset-inline-start: 19px;
-  top: 8px; bottom: 8px;
+  top: 8px;
+  bottom: 8px;
   width: 1px;
   background: var(--line-strong);
 }
-.timeline__item { display: flex; gap: 32px; margin-bottom: 48px; position: relative; }
+
+.timeline__item {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 48px;
+  position: relative;
+}
+
 .timeline__dot {
   flex-shrink: 0;
-  width: 40px; height: 40px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: var(--surface);
   border: 2px solid var(--accent);
   box-shadow: 0 0 0 6px var(--bg);
   z-index: 1;
 }
+
 .timeline__card {
   flex: 1;
   background: var(--surface);
@@ -74,14 +78,20 @@ const { t } = useLanguage()
   padding: 30px 34px;
   transition: border-color var(--transition);
 }
-.timeline__card:hover { border-color: var(--accent-line); }
+
+.timeline__card:hover {
+  border-color: var(--accent-line);
+}
+
 .timeline__meta {
-  display: flex; flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
   margin-bottom: 10px;
 }
+
 .timeline__company {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.78rem;
@@ -90,7 +100,12 @@ const { t } = useLanguage()
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.timeline__period { color: var(--ink-soft); font-size: 0.75rem; }
+
+.timeline__period {
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+}
+
 .timeline__role {
   font-family: 'Fraunces', serif;
   font-size: 1.2rem;
@@ -102,6 +117,7 @@ const { t } = useLanguage()
   gap: 10px;
   flex-wrap: wrap;
 }
+
 .timeline__current {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.64rem;
@@ -114,6 +130,7 @@ const { t } = useLanguage()
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+
 .timeline__bullets {
   padding-inline-start: 0;
   margin-bottom: 18px;
@@ -121,6 +138,7 @@ const { t } = useLanguage()
   flex-direction: column;
   gap: 10px;
 }
+
 .timeline__bullets li {
   color: var(--ink-soft);
   font-size: 0.95rem;
@@ -128,6 +146,7 @@ const { t } = useLanguage()
   padding-inline-start: 18px;
   position: relative;
 }
+
 .timeline__bullets li::before {
   content: '—';
   position: absolute;
@@ -136,9 +155,20 @@ const { t } = useLanguage()
 }
 
 @media (max-width: 700px) {
-  .timeline::before { display: none; }
-  .timeline__item { gap: 16px; }
-  .timeline__dot { display: none; }
-  .timeline__card { padding: 22px; }
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline__item {
+    gap: 16px;
+  }
+
+  .timeline__dot {
+    display: none;
+  }
+
+  .timeline__card {
+    padding: 22px;
+  }
 }
 </style>

@@ -74,8 +74,18 @@ const { t } = useLanguage()
 </script>
 
 <style scoped>
-.edu-list { display: flex; flex-direction: column; }
-.edu__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-bottom: 64px; }
+.edu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.edu__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 64px;
+}
+
 .edu__sub {
   font-family: 'JetBrains Mono', monospace;
   font-weight: 500;
@@ -85,8 +95,18 @@ const { t } = useLanguage()
   text-transform: uppercase;
   font-size: 0.78rem;
 }
-.edu-card { display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line); }
-.edu-card:last-child { border-bottom: none; }
+
+.edu-card {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.edu-card:last-child {
+  border-bottom: none;
+}
+
 .edu-card__year {
   flex-shrink: 0;
   font-family: 'JetBrains Mono', monospace;
@@ -95,6 +115,7 @@ const { t } = useLanguage()
   width: 90px;
   padding-top: 3px;
 }
+
 .edu-card__body h3 {
   font-family: 'Fraunces', serif;
   font-size: 1.05rem;
@@ -102,8 +123,20 @@ const { t } = useLanguage()
   color: var(--ink);
   margin-bottom: 5px;
 }
-.edu-card__school { display: block; font-size: 0.85rem; color: var(--ink); font-weight: 500; }
-.edu-card__location { display: block; font-size: 0.85rem; color: var(--ink-soft); }
+
+.edu-card__school {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.edu-card__location {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
 .edu-card__mention {
   display: inline-block;
   margin-top: 9px;
@@ -115,60 +148,154 @@ const { t } = useLanguage()
   color: var(--gold);
   font-family: 'JetBrains Mono', monospace;
 }
-.cert-list { display: flex; flex-direction: column; gap: 14px; }
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
 .cert-item {
-  display: flex; align-items: flex-start; gap: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 17px 19px;
   transition: border-color var(--transition);
 }
-.cert-item:hover { border-color: var(--accent-line); }
+
+.cert-item:hover {
+  border-color: var(--accent-line);
+}
+
 .cert-item__icon {
-  flex-shrink: 0; width: 34px; height: 34px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.05rem; border-radius: 9px;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  border-radius: 9px;
   background: var(--accent-soft);
 }
-.cert-item__title { font-size: 0.92rem; color: var(--ink); font-weight: 500; margin-bottom: 3px; }
-.cert-item__issuer { color: var(--ink-soft); font-size: 0.72rem; font-family: 'JetBrains Mono', monospace; }
 
-.extras__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.cert-item__title {
+  font-size: 0.92rem;
+  color: var(--ink);
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.cert-item__issuer {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.extras__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
 .extra-block h3 {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.78rem; font-weight: 500;
+  font-size: 0.78rem;
+  font-weight: 500;
   color: var(--accent-deep);
-  letter-spacing: 0.1em; text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   margin-bottom: 22px;
 }
-.extra-card { border-inline-start: 2px solid var(--line-strong); padding-inline-start: 20px; margin-bottom: 24px; }
-.extra-card__org { font-family: 'Fraunces', serif; font-size: 1.05rem; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
-.extra-card__role { color: var(--accent-deep); font-size: 0.87rem; font-weight: 500; margin-bottom: 2px; }
-.extra-card__period { display: block; color: var(--ink-soft); font-size: 0.72rem; margin-bottom: 8px; font-family: 'JetBrains Mono', monospace; }
-.extra-card p { color: var(--ink-soft); font-size: 0.9rem; }
+
+.extra-card {
+  border-inline-start: 2px solid var(--line-strong);
+  padding-inline-start: 20px;
+  margin-bottom: 24px;
+}
+
+.extra-card__org {
+  font-family: 'Fraunces', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.extra-card__role {
+  color: var(--accent-deep);
+  font-size: 0.87rem;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.extra-card__period {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  margin-bottom: 8px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.extra-card p {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
 
 .award-card {
-  display: flex; align-items: center; gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 18px 20px; margin-bottom: 14px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
   transition: border-color var(--transition), transform var(--transition);
 }
-.award-card:hover { border-color: rgba(184, 137, 59, 0.4); transform: translateX(4px); }
-:global(html[dir="rtl"]) .award-card:hover { transform: translateX(-4px); }
+
+.award-card:hover {
+  border-color: rgba(184, 137, 59, 0.4);
+  transform: translateX(4px);
+}
+
+:global(html[dir="rtl"]) .award-card:hover {
+  transform: translateX(-4px);
+}
+
 .award-card__icon {
-  width: 40px; height: 40px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.3rem; border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  border-radius: 10px;
   background: var(--gold-soft);
 }
-.award-card__title { font-family: 'Fraunces', serif; font-size: 0.98rem; font-weight: 600; color: var(--ink); }
-.award-card__event { font-size: 0.82rem; color: var(--ink-soft); }
+
+.award-card__title {
+  font-family: 'Fraunces', serif;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.award-card__event {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
 
 @media (max-width: 900px) {
-  .edu__grid { grid-template-columns: 1fr; }
-  .extras__grid { grid-template-columns: 1fr; }
+  .edu__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .extras__grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
