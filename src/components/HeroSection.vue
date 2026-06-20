@@ -32,20 +32,20 @@
         </div>
         <div class="terminal__body">
           <div class="terminal__line">
-            <span class="cmd">jobTitle</span>
-            <span class="out">{{ person.jobTitle }}</span>
+            <span class="cmd">{{ t.hero.card.jobTitle }}</span>
+            <span class="out">{{ t.experience.jobs[0].role }}</span>
           </div>
           <div class="terminal__line">
-            <span class="cmd">worksFor</span>
+            <span class="cmd">{{ t.hero.card.worksFor }}</span>
             <span class="out">{{ person.worksFor }}</span>
           </div>
           <div class="terminal__line">
-            <span class="cmd">location</span>
+            <span class="cmd">{{ t.hero.card.location }}</span>
             <span class="out">{{ person.addressLocality }}, {{ person.addressRegion }}</span>
           </div>
           <div class="terminal__line">
-            <span class="cmd">languages</span>
-            <span class="out">EN / FR / AR</span>
+            <span class="cmd">{{ t.hero.card.languages }}</span>
+            <span class="out">{{t.skills.languages.map(l => l.name).join(' · ')}}</span>
           </div>
           <div class="terminal__line blink__line">
             <span class="cmd" style="color:var(--sage)">$</span>
@@ -82,7 +82,8 @@
 import { computed } from 'vue'
 import { useLanguage } from '@/composables/useLanguage.js'
 import { useTypewriter } from '@/composables/useTypewriter.js'
-import { person } from '@/data/portfolio.js'
+import portfolioData from '@/data/portfolio.json'
+const { person } = portfolioData
 import { boldify } from '@/utils/text.js'
 
 const { t } = useLanguage()

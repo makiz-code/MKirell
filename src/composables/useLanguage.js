@@ -1,5 +1,6 @@
 import { ref, computed, watch } from "vue";
-import { locales, metaLocales } from "@/data/portfolio.js";
+import portfolioData from "@/data/portfolio.json";
+const { locales, metaLocales } = portfolioData;
 
 const SUPPORTED = ["en", "fr", "ar"];
 const SESSION_KEY = "portfolio_lang";

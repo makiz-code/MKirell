@@ -49,7 +49,8 @@
 
 <script setup>
 import { useLanguage } from '@/composables/useLanguage.js'
-import { person } from '@/data/portfolio.js'
+import portfolioData from '@/data/portfolio.json'
+const { person } = portfolioData
 import { boldify } from '@/utils/text.js'
 const { t } = useLanguage()
 </script>

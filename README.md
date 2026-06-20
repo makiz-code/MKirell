@@ -54,7 +54,7 @@ npm run preview
 ## Project structure
 
 ```text
-├── index.html                  # Entry point (JSON-LD, Open Graph, hreflang)
+├── index.html                  # Entry point (Open Graph, hreflang)
 ├── vite.config.js
 ├── tailwind.config.js
 ├── postcss.config.js
@@ -65,10 +65,14 @@ npm run preview
     ├── main.js                 # App entry, registers v-reveal directive
     ├── style.css               # CSS variables, Tailwind directives, global styles
     ├── App.vue                 # Root component
+    ├── assets/
+    │   └── flags/              # Flag SVGs (gb, fr, tn)
     ├── data/
-    │   └── portfolio.js        # All content in EN / FR / AR
+    │   ├── portfolio.json      # Display content — person, metaLocales, locales (en/fr/ar)
+    │   └── jsonld.json         # Schema.org JSON-LD @graph per locale (en/fr/ar)
     ├── composables/
     │   ├── useLanguage.js      # Reactive language state (singleton)
+    │   ├── useJsonLd.js        # Injects/updates <script type="application/ld+json"> on lang change
     │   └── useTypewriter.js    # Typewriter effect composable
     ├── directives/
     │   └── reveal.js           # v-reveal scroll-reveal directive
@@ -90,5 +94,22 @@ npm run preview
 
 ## Editing content
 
-All text content lives in [`src/data/portfolio.json`](src/data/portfolio.json).  
-Each locale (`en`, `fr`, `ar`) mirrors the same structure — edit in one language and replicate the change to the others.
+### Display content
+
+All UI text lives in [`src/data/portfolio.json`](src/data/portfolio.json), structured as:
+
+```text
+{
+  "person"       — static contact/social fields (email, phone, linkedin, location…)
+  "metaLocales"  — per-locale metadata (lang code, direction, hreflang label)
+  "locales": {
+    "en" / "fr" / "ar" — nav, hero, about, skills, experience, projects, education, contact, footer
+  }
+}
+```
+
+Edit in one locale and mirror the change to the others.
+
+### Structured data (SEO)
+
+Schema.org JSON-LD lives in [`src/data/jsonld.json`](src/data/jsonld.json) as three fully-formed `@graph` documents (one per locale). The `useJsonLd` composable injects the correct graph into `<head>` on mount and whenever the language changes — no build step required.

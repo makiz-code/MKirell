@@ -61,7 +61,13 @@
         ],
         "desc": "Passionate about **Generative AI** and **Agentic Systems**, I build intelligent solutions — RAG pipelines, multi-LLM agents, and NLP architectures.",
         "cta_projects": "View my projects",
-        "cta_contact": "Get in touch"
+        "cta_contact": "Get in touch",
+        "card": {
+          "jobTitle": "jobTitle",
+          "worksFor": "worksFor",
+          "location": "location",
+          "languages": "languages"
+        }
       },
       "about": {
         "heading": "About Me",
@@ -406,7 +412,13 @@
         ],
         "desc": "Passionné d'**IA Générative** et de **Systèmes Agentiques**, je construis des solutions intelligentes — pipelines RAG, agents LLM multi-modèles et architectures NLP.",
         "cta_projects": "Voir mes projets",
-        "cta_contact": "Me contacter"
+        "cta_contact": "Me contacter",
+        "card": {
+          "jobTitle": "poste",
+          "worksFor": "employeur",
+          "location": "localisation",
+          "languages": "langues"
+        }
       },
       "about": {
         "heading": "À propos de moi",
@@ -751,7 +763,13 @@
         ],
         "desc": "شغوف بالذكاء الاصطناعي التوليدي والأنظمة الذكية، أبني حلولاً متطورة — خطوط أنابيب RAG، وعملاء LLM متعددين، وبنيات NLP.",
         "cta_projects": "مشاريعي",
-        "cta_contact": "تواصل معي"
+        "cta_contact": "تواصل معي",
+        "card": {
+          "jobTitle": "المسمى",
+          "worksFor": "جهة العمل",
+          "location": "الموقع",
+          "languages": "اللغات"
+        }
       },
       "about": {
         "heading": "من أنا",

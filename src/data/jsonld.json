@@ -83,17 +83,20 @@
           {
             "@type": "Language",
             "name": "English",
-            "alternateName": "en"
+            "alternateName": "en",
+            "description": "Fluent"
           },
           {
             "@type": "Language",
             "name": "French",
-            "alternateName": "fr"
+            "alternateName": "fr",
+            "description": "B2 · TCF"
           },
           {
             "@type": "Language",
             "name": "Arabic",
-            "alternateName": "ar"
+            "alternateName": "ar",
+            "description": "Native"
           }
         ],
         "worksFor": [
@@ -240,7 +243,8 @@
         "description": "An intelligent Multi-Agent social listening system on X, identifying emerging trends in real-time and generating marketing campaign ideas through LLM orchestration.",
         "applicationCategory": "Artificial Intelligence",
         "keywords": "LangGraph, LLaMA 3, FAISS, Tweepy, Vue.js, FastAPI, MongoDB",
-        "dateCreated": "2025-02"
+        "dateCreated": "2025-02",
+        "applicationSubCategory": "Multi-Agent"
       },
       {
         "@type": "SoftwareApplication",
@@ -252,7 +256,8 @@
         "description": "An intelligent CV recommendation engine powered by RAG, matching job descriptions to the most relevant candidate profiles with automatic ranking and scoring.",
         "applicationCategory": "Artificial Intelligence",
         "keywords": "LangChain, Mistral, ChromaDB, PyMuPDF, Streamlit, MongoDB",
-        "dateCreated": "2024-10"
+        "dateCreated": "2024-10",
+        "applicationSubCategory": "RAG"
       },
       {
         "@type": "SoftwareApplication",
@@ -264,7 +269,8 @@
         "description": "End-to-end email intelligence platform combining fine-tuned BERT for classification and Tesseract OCR for attachment parsing, with a React dashboard.",
         "applicationCategory": "Artificial Intelligence",
         "keywords": "BERT, PyTorch, Tesseract OCR, React, Flask, MongoDB",
-        "dateCreated": "2024-02"
+        "dateCreated": "2024-02",
+        "applicationSubCategory": "NLP · OCR"
       },
       {
         "@type": "SoftwareApplication",
@@ -276,7 +282,8 @@
         "description": "A 2D Python game powered by a Deep Q-Learning agent that learns to navigate and survive in a dynamic environment. Deployed via Docker.",
         "applicationCategory": "Artificial Intelligence",
         "keywords": "TensorFlow, Keras, DQN, OpenAI Gym, Pygame, Docker",
-        "dateCreated": "2023-06"
+        "dateCreated": "2023-06",
+        "applicationSubCategory": "Deep RL"
       },
       {
         "@type": "Organization",
@@ -409,17 +416,20 @@
           {
             "@type": "Language",
             "name": "Anglais",
-            "alternateName": "en"
+            "alternateName": "en",
+            "description": "Courant"
           },
           {
             "@type": "Language",
             "name": "Français",
-            "alternateName": "fr"
+            "alternateName": "fr",
+            "description": "B2 · TCF"
           },
           {
             "@type": "Language",
             "name": "Arabe",
-            "alternateName": "ar"
+            "alternateName": "ar",
+            "description": "Natif"
           }
         ],
         "worksFor": [
@@ -566,7 +576,8 @@
         "description": "Système d'écoute sociale multi-agents sur X, identifiant les tendances émergentes en temps réel et générant des idées de campagnes marketing via orchestration LLM.",
         "applicationCategory": "Artificial Intelligence",
         "keywords": "LangGraph, LLaMA 3, FAISS, Tweepy, Vue.js, FastAPI, MongoDB",
-        "dateCreated": "2025-02"
+        "dateCreated": "2025-02",
+        "applicationSubCategory": "Multi-Agent"
       },
       {
         "@type": "SoftwareApplication",
@@ -578,7 +589,8 @@
         "description": "Moteur de recommandation de CV alimenté par RAG, associant les offres d'emploi aux profils candidats les plus pertinents avec classement et notation automatiques.",
         "applicationCategory": "Artificial Intelligence",
         "keywords": "LangChain, Mistral, ChromaDB, PyMuPDF, Streamlit, MongoDB",
-        "dateCreated": "2024-10"
+        "dateCreated": "2024-10",
+        "applicationSubCategory": "RAG"
       },
       {
         "@type": "SoftwareApplication",
@@ -590,7 +602,8 @@
         "description": "Plateforme d'intelligence e-mail combinant un BERT fine-tuné pour la classification et Tesseract OCR pour l'analyse des pièces jointes, avec tableau de bord React.",
         "applicationCategory": "Artificial Intelligence",
         "keywords": "BERT, PyTorch, Tesseract OCR, React, Flask, MongoDB",
-        "dateCreated": "2024-02"
+        "dateCreated": "2024-02",
+        "applicationSubCategory": "NLP · OCR"
       },
       {
         "@type": "SoftwareApplication",
@@ -602,7 +615,8 @@
         "description": "Jeu 2D Python propulsé par un agent Deep Q-Learning apprenant à naviguer et survivre dans un environnement dynamique. Déployé via Docker.",
         "applicationCategory": "Artificial Intelligence",
         "keywords": "TensorFlow, Keras, DQN, OpenAI Gym, Pygame, Docker",
-        "dateCreated": "2023-06"
+        "dateCreated": "2023-06",
+        "applicationSubCategory": "Deep RL"
       },
       {
         "@type": "Organization",
@@ -735,17 +749,20 @@
           {
             "@type": "Language",
             "name": "الإنجليزية",
-            "alternateName": "en"
+            "alternateName": "en",
+            "description": "طليق"
           },
           {
             "@type": "Language",
             "name": "الفرنسية",
-            "alternateName": "fr"
+            "alternateName": "fr",
+            "description": "B2 · TCF"
           },
           {
             "@type": "Language",
             "name": "العربية",
-            "alternateName": "ar"
+            "alternateName": "ar",
+            "description": "لغة أم"
           }
         ],
         "worksFor": [
@@ -892,7 +909,8 @@
         "description": "نظام استماع اجتماعي متعدد العملاء على X، يرصد الاتجاهات الناشئة في الوقت الفعلي ويولّد أفكار حملات تسويقية عبر تنسيق LLM.",
         "applicationCategory": "Artificial Intelligence",
         "keywords": "LangGraph, LLaMA 3, FAISS, Tweepy, Vue.js, FastAPI, MongoDB",
-        "dateCreated": "2025-02"
+        "dateCreated": "2025-02",
+        "applicationSubCategory": "متعدد العملاء"
       },
       {
         "@type": "SoftwareApplication",
@@ -904,7 +922,8 @@
         "description": "محرك توصية بالسيرة الذاتية مدعوم بـ RAG، يطابق الوظائف مع أفضل المرشحين مع ترتيب وتقييم تلقائيَّين.",
         "applicationCategory": "Artificial Intelligence",
         "keywords": "LangChain, Mistral, ChromaDB, PyMuPDF, Streamlit, MongoDB",
-        "dateCreated": "2024-10"
+        "dateCreated": "2024-10",
+        "applicationSubCategory": "RAG"
       },
       {
         "@type": "SoftwareApplication",
@@ -916,7 +935,8 @@
         "description": "منصة ذكاء بريد إلكتروني متكاملة تجمع BERT المضبوط للتصنيف وـ Tesseract OCR لتحليل المرفقات مع لوحة تحكم React.",
         "applicationCategory": "Artificial Intelligence",
         "keywords": "BERT, PyTorch, Tesseract OCR, React, Flask, MongoDB",
-        "dateCreated": "2024-02"
+        "dateCreated": "2024-02",
+        "applicationSubCategory": "NLP · OCR"
       },
       {
         "@type": "SoftwareApplication",
@@ -928,7 +948,8 @@
         "description": "لعبة بايثون ثنائية الأبعاد مدعومة بعميل Deep Q-Learning يتعلم التنقل والبقاء في بيئة ديناميكية. منشورة عبر Docker.",
         "applicationCategory": "Artificial Intelligence",
         "keywords": "TensorFlow, Keras, DQN, OpenAI Gym, Pygame, Docker",
-        "dateCreated": "2023-06"
+        "dateCreated": "2023-06",
+        "applicationSubCategory": "Deep RL"
       },
       {
         "@type": "Organization",

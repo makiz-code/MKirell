@@ -16,7 +16,8 @@
 
 <script setup>
 import { useLanguage } from '@/composables/useLanguage.js'
-import { person } from '@/data/portfolio.js'
+import portfolioData from '@/data/portfolio.json'
+const { person } = portfolioData
 const { t } = useLanguage()
 </script>
 
