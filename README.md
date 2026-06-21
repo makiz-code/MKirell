@@ -1,79 +1,70 @@
-# MKirell — Portfolio
+# MKirell  
 
-Personal portfolio built with **Vue 3** + **Vite** + **Tailwind CSS**.  
-Supports English, French, and Arabic (RTL).
+> Personal portfolio of **Mohamed Khalil Zrelly** — Generative AI Engineer Apprentice at Crédit Agricole.
 
----
-
-## Requirements
-
-- [Node.js](https://nodejs.org/) v18 or later
-- npm v9 or later (bundled with Node)
+[![Live](https://img.shields.io/badge/Live-makiz--code.github.io/MKirell-7c3aed?style=flat-square)](https://makiz-code.github.io/MKirell)
+[![Vue 3](https://img.shields.io/badge/Vue-3-42b883?style=flat-square&logo=vue.js)](https://vuejs.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38bdf8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com)
 
 ---
 
-## Setup
+## Features
+
+- Multilingual — English, French, Arabic (RTL)
+- Schema.org JSON-LD structured data (SPARQL-queryable)
+- Scroll-reveal animations via custom `v-reveal` directive
+- Typewriter effect on hero section
+- Fully static — deployed on GitHub Pages
+
+---
+
+## Tech Stack
+
+| Layer | Tool |
+| --- | --- |
+| Framework | Vue 3 (Composition API) |
+| Styling | Tailwind CSS 3 |
+| Hosting | GitHub Pages |
+
+---
+
+## Getting Started
+
+**Requirements:** Node.js v18+, npm v9+
 
 ```bash
 npm install
-```
-
----
-
-## Development
-
-```bash
 npm run dev
 ```
 
-Opens at `http://localhost:5173` with hot-module replacement.
+Opens at `http://localhost:5173`. Switch language with `?lang=fr` or `?lang=ar`.
 
-To switch language, append `?lang=fr` or `?lang=ar` to the URL:
-
-```text
-http://localhost:5173/?lang=fr
-http://localhost:5173/?lang=ar
+```bash
+npm run build    # production build → dist/
+npm run preview  # preview locally
 ```
 
 ---
 
-## Production build
-
-```bash
-npm run build
-```
-
-Output goes to `dist/`. To preview the production build locally:
-
-```bash
-npm run preview
-```
-
----
-
-## Project structure
+## Project Structure
 
 ```text
-├── index.html                  # Entry point (Open Graph, hreflang)
-├── vite.config.js
-├── tailwind.config.js
-├── postcss.config.js
+├── index.html                  # Entry point — hreflang, JSON-LD link, fonts
 ├── public/
+│   ├── jsonld.json             # Schema.org JSON-LD structured data
 │   ├── robots.txt
 │   └── sitemap.xml
 └── src/
-    ├── main.js                 # App entry, registers v-reveal directive
-    ├── style.css               # CSS variables, Tailwind directives, global styles
-    ├── App.vue                 # Root component
-    ├── assets/
-    │   └── flags/              # Flag SVGs (gb, fr, tn)
+    ├── main.js
+    ├── style.css
+    ├── App.vue
+    ├── assets/flags/           # SVG flag icons (gb, fr, tn)
     ├── data/
-    │   ├── portfolio.json      # Display content — person, metaLocales, locales (en/fr/ar)
-    │   └── jsonld.json         # Schema.org JSON-LD @graph per locale (en/fr/ar)
+    │   └── portfolio.json      # All UI content — person info + sections (en/fr/ar)
     ├── composables/
-    │   ├── useLanguage.js      # Reactive language state (singleton)
-    │   ├── useJsonLd.js        # Injects/updates <script type="application/ld+json"> on lang change
-    │   └── useTypewriter.js    # Typewriter effect composable
+    │   ├── useLanguage.js      # Reactive language state
+    │   ├── useJsonLd.js        # Fetches jsonld.json, injects <script type="application/ld+json">
+    │   └── useTypewriter.js
     ├── directives/
     │   └── reveal.js           # v-reveal scroll-reveal directive
     ├── utils/
@@ -92,24 +83,85 @@ npm run preview
 
 ---
 
-## Editing content
+## Data Sources
 
-### Display content
+| File | Purpose |
+| --- | --- |
+| [`src/data/portfolio.json`](src/data/portfolio.json) | All UI text — nav, hero, about, skills, experience, projects, education, contact (en/fr/ar) |
+| [`public/jsonld.json`](public/jsonld.json) | Schema.org structured data — fetched at runtime and injected into `<head>` |
 
-All UI text lives in [`src/data/portfolio.json`](src/data/portfolio.json), structured as:
+---
 
-```text
-{
-  "person"       — static contact/social fields (email, phone, linkedin, location…)
-  "metaLocales"  — per-locale metadata (lang code, direction, hreflang label)
-  "locales": {
-    "en" / "fr" / "ar" — nav, hero, about, skills, experience, projects, education, contact, footer
-  }
+## Semantic Web
+
+### JSON-LD Visualization
+
+Paste [`public/jsonld.json`](public/jsonld.json) into **[json-ld.org/playground](https://json-ld.org/playground/)** to visualize and inspect the entity graph.  
+
+### SPARQL
+
+Paste [`public/jsonld.json`](public/jsonld.json) into **[atomgraph.github.io/SPARQL-Playground](https://atomgraph.github.io/SPARQL-Playground/)** to query the structured data.  
+
+#### Projects
+
+```sparql
+PREFIX schema: <https://schema.org/>
+SELECT ?name ?desc ?date WHERE {
+  ?p a schema:SoftwareApplication ;
+     schema:name ?name ;
+     schema:description ?desc ;
+     schema:dateCreated ?date .
+} ORDER BY DESC(?date)
+```
+
+#### Skills
+
+```sparql
+PREFIX schema: <https://schema.org/>
+SELECT ?skill WHERE {
+  ?p a schema:Person ;
+     schema:knowsAbout ?skill .
 }
 ```
 
-Edit in one locale and mirror the change to the others.
+#### Work Experience
 
-### Structured data (SEO)
+```sparql
+PREFIX schema: <https://schema.org/>
+SELECT ?role ?org ?start ?end WHERE {
+  ?r a schema:EmployeeRole ;
+     schema:roleName ?role ;
+     schema:startDate ?start ;
+     schema:worksFor ?o .
+  ?o schema:name ?org .
+  OPTIONAL { ?r schema:endDate ?end . }
+} ORDER BY DESC(?start)
+```
 
-Schema.org JSON-LD lives in [`src/data/jsonld.json`](src/data/jsonld.json) as three fully-formed `@graph` documents (one per locale). The `useJsonLd` composable injects the correct graph into `<head>` on mount and whenever the language changes — no build step required.
+#### Education
+
+```sparql
+PREFIX schema: <https://schema.org/>
+SELECT ?degree ?school WHERE {
+  ?c a schema:EducationalOccupationalCredential ;
+     schema:name ?degree ;
+     schema:recognizedBy ?i .
+  ?i schema:name ?school .
+}
+```
+
+#### Awards
+
+```sparql
+PREFIX schema: <https://schema.org/>
+SELECT ?award WHERE {
+  ?p a schema:Person ;
+     schema:award ?award .
+}
+```
+
+---
+
+## Author
+
+**Mohamed Khalil Zrelly** — [LinkedIn](https://www.linkedin.com/in/mohamed-khalil-zrelly/) · [makiz-code.github.io/MKirell](https://makiz-code.github.io/MKirell)
