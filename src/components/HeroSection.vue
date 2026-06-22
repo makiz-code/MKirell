@@ -299,8 +299,19 @@ const { display } = useTypewriter(phrases)
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
-    padding: calc(var(--pad) + 88px) var(--pad) 80px;
+    padding: calc(var(--pad) + 88px) var(--pad) 60px;
     min-height: auto;
+  }
+
+  .hero__scroll {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / -1;
+    margin-top: 48px;
   }
 }
 </style>
