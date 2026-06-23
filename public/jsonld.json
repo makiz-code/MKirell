@@ -5,7 +5,7 @@
       "@type": "ProfilePage",
       "@id": "https://makiz-code.github.io/MKirell/#webpage",
       "url": "https://makiz-code.github.io/MKirell",
-      "name": "Mohamed Khalil Zrelly — Generative AI Engineer Apprentice",
+      "name": "MKirell — Portfolio",
       "description": "Computer Science Engineering student at Sup Galilée — Université Sorbonne Paris Nord, currently working as a Generative AI Engineer Apprentice at Crédit Agricole. I specialize in intelligent agentic systems, LLM pipelines, and applied deep learning.",
       "inLanguage": ["en", "fr", "ar"],
       "mainEntity": {
@@ -239,6 +239,7 @@
       "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
       "description": "An intelligent Multi-Agent social listening system on X, identifying emerging trends in real-time and generating marketing campaign ideas through LLM orchestration.",
       "applicationCategory": "Artificial Intelligence",
+      "operatingSystem": "Linux",
       "keywords": "LangGraph, LLaMA 3, FAISS, Tweepy, Vue.js, FastAPI, MongoDB",
       "dateCreated": "2025-02",
       "applicationSubCategory": "Multi-Agent"
@@ -250,6 +251,7 @@
       "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
       "description": "An intelligent CV recommendation engine powered by RAG, matching job descriptions to the most relevant candidate profiles with automatic ranking and scoring.",
       "applicationCategory": "Artificial Intelligence",
+      "operatingSystem": "Linux",
       "keywords": "LangChain, Mistral, ChromaDB, PyMuPDF, Streamlit, MongoDB",
       "dateCreated": "2024-10",
       "applicationSubCategory": "RAG"
@@ -261,6 +263,7 @@
       "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
       "description": "End-to-end email intelligence platform combining fine-tuned BERT for classification and Tesseract OCR for attachment parsing, with a React dashboard.",
       "applicationCategory": "Artificial Intelligence",
+      "operatingSystem": "Linux",
       "keywords": "BERT, PyTorch, Tesseract OCR, React, Flask, MongoDB",
       "dateCreated": "2024-02",
       "applicationSubCategory": "NLP · OCR"
@@ -272,6 +275,7 @@
       "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
       "description": "A 2D Python game powered by a Deep Q-Learning agent that learns to navigate and survive in a dynamic environment. Deployed via Docker.",
       "applicationCategory": "Artificial Intelligence",
+      "operatingSystem": "Linux",
       "keywords": "TensorFlow, Keras, DQN, OpenAI Gym, Pygame, Docker",
       "dateCreated": "2023-06",
       "applicationSubCategory": "Deep RL"
