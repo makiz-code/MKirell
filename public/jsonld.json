@@ -6,7 +6,7 @@
       "@id": "https://makiz-code.github.io/MKirell/#webpage",
       "url": "https://makiz-code.github.io/MKirell",
       "name": "MKirell — Portfolio",
-      "description": "Computer Science Engineering student at Sup Galilée — Université Sorbonne Paris Nord, currently working as a Generative AI Engineer Apprentice at Crédit Agricole. I specialize in intelligent agentic systems, LLM pipelines, and applied deep learning.",
+      "description": "Portfolio website of Mohamed Khalil Zrelly presenting his academic background, professional experience, technical projects, and engineering capabilities, with a focus on Generative AI, machine learning, and modern software development practices across applied research and industry contexts.",
       "inLanguage": ["en", "fr", "ar"],
       "mainEntity": {
         "@id": "https://makiz-code.github.io/MKirell/#person"
