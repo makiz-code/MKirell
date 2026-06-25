@@ -9,6 +9,7 @@
     "url": "https://makiz-code.github.io/MKirell",
     "jobTitle": "Generative AI Engineer Apprentice",
     "worksFor": "Crédit Agricole",
+    "description": "Passionate about Generative AI and Agentic AI, with a strong foundation in algorithms and programming. My goal is to strengthen my skills and contribute to innovative AI projects while continuing my academic studies.",
     "alumniOf": "Université Sorbonne Paris Nord",
     "addressLocality": "Le Bourget",
     "addressRegion": "Île-de-France",
@@ -87,88 +88,60 @@
         "heading": "Technical Skills",
         "categories": [
           {
+            "icon": "💻",
+            "title": "Programming Languages (PL)",
+            "accent": false,
+            "accentTags": ["Python", "JavaScript/TS"],
+            "tags": ["Python", "JavaScript/TS", "PHP", "Java", "C/C++", "PL/SQL"]
+          },
+          {
             "icon": "🧠",
             "title": "Machine Learning & Deep Learning",
             "accent": false,
-            "tags": [
-              "PyTorch",
-              "TensorFlow",
-              "Keras",
-              "Scikit-Learn",
-              "Deep Q-Learning",
-              "Reinforcement Learning"
-            ]
+            "accentTags": ["PyTorch", "TensorFlow", "Scikit-Learn"],
+            "tags": ["PyTorch", "TensorFlow", "Keras", "Gymnasium", "Scikit-Learn"]
           },
           {
             "icon": "💬",
-            "title": "NLP & LLMs",
+            "title": "Natural Language Processing & LLMs",
             "accent": false,
-            "tags": [
-              "spaCy",
-              "NLTK",
-              "Transformers",
-              "BERT",
-              "GPT-4",
-              "Fine-Tuning"
-            ]
+            "accentTags": ["Hugging Face Transformers", "Sentence-Transformers"],
+            "tags": ["Hugging Face Transformers", "Sentence-Transformers", "spaCy"]
           },
           {
             "icon": "🤖",
-            "title": "Generative AI & Agentic Systems",
-            "accent": true,
-            "tags": [
-              "LangChain",
-              "LangGraph",
-              "Mistral",
-              "LLaMA 3",
-              "RAG",
-              "FAISS",
-              "ChromaDB"
-            ]
+            "title": "Generative AI & Multi-Agent Systems",
+            "accent": false,
+            "accentTags": ["LangGraph", "AWS SageMaker", "AWS Bedrock"],
+            "tags": ["LangChain", "LangGraph", "AWS SageMaker", "AWS Bedrock"]
           },
           {
             "icon": "📊",
-            "title": "Data & Big Data",
+            "title": "Data Analysis & Big Data",
             "accent": false,
-            "tags": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "PySpark"]
+            "accentTags": ["Pandas", "NumPy", "PySpark"],
+            "tags": ["Pandas", "NumPy", "Matplotlib", "Apache Airflow", "PySpark"]
           },
           {
             "icon": "🗄️",
-            "title": "Databases",
+            "title": "SQL & NoSQL Databases",
             "accent": false,
-            "tags": ["Oracle", "MySQL", "PostgreSQL", "MongoDB"]
+            "accentTags": ["PostgreSQL", "MongoDB", "Amazon DynamoDB"],
+            "tags": ["MySQL", "PostgreSQL", "MongoDB", "Amazon DynamoDB", "Oracle"]
           },
           {
             "icon": "🌐",
-            "title": "Web Full Stack & REST APIs",
+            "title": "Web Full Stack Frameworks & REST APIs",
             "accent": false,
-            "tags": [
-              "React",
-              "Vue.js",
-              "Node.js",
-              "FastAPI",
-              "Flask",
-              "Express"
-            ]
-          },
-          {
-            "icon": "💻",
-            "title": "Programming Languages",
-            "accent": false,
-            "tags": ["Python", "Java", "C/C++", "JavaScript", "PHP", "PL/SQL"]
+            "accentTags": ["React", "Vue.js", "FastAPI"],
+            "tags": ["React", "Express.js", "Flask", "Vue.js", "FastAPI", "Laravel"]
           },
           {
             "icon": "☁️",
-            "title": "Cloud & Tools",
+            "title": "DevOps & Cloud (AWS)",
             "accent": false,
-            "tags": [
-              "Azure",
-              "Docker",
-              "Git",
-              "Streamlit",
-              "OpenAI Gym",
-              "Tesseract OCR"
-            ]
+            "accentTags": ["Docker"],
+            "tags": ["Docker", "Kubernetes (EKS)", "Terraform", "GitHub Actions"]
           }
         ],
         "lang_title": "Languages",
@@ -177,14 +150,14 @@
             "flag": "🇬🇧",
             "flagCode": "gb",
             "name": "English",
-            "pct": 85,
+            "pct": 80,
             "level": "B2 · TOEIC"
           },
           {
             "flag": "🇫🇷",
             "flagCode": "fr",
             "name": "French",
-            "pct": 70,
+            "pct": 75,
             "level": "B2 · TCF"
           },
           {
@@ -201,22 +174,23 @@
         "jobs": [
           {
             "current": true,
-            "company": "Crédit Agricole",
-            "period": "09/2024 — 06/2027 · Ongoing · France",
+            "company": "Crédit Agricole Personal Finance & Mobility",
+            "period": "09/2025 — Present · 10 months · France",
             "role": "Generative AI Engineer Apprentice",
             "bullets": [
-              "Working on Generative AI and agentic system initiatives within one of France's largest banking groups, applying LLMs, RAG pipelines, and multi-agent frameworks to real enterprise use cases."
+              "Migrated AI Workflow Orchestration and Execution modules from a modular n-tier monolith to a hexagonal microservice, improving scalability and maintainability.",
+              "Built an automated Red Teaming system for chatbots to test security layers, including guardrails and LLM-as-a-judge rules, improving behavior analysis and model resilience."
             ],
             "tags": ["Generative AI", "LLMs", "RAG", "Agentic Systems"]
           },
           {
             "current": false,
-            "company": "VERMEG",
-            "period": "02/2024 — 06/2024 · 5 months · Lac 2, Tunisia",
-            "role": "NLP / LLM Engineering Intern",
+            "company": "VERMEG for Banking & Insurance Software",
+            "period": "02/2024 — 06/2024 · 5 months · Tunisia",
+            "role": "Natural Language Processing Intern",
             "bullets": [
-              "Built **VERMail** — an automated email intelligence system classifying emails and extracting key information from attachments using **BERT fine-tuning** and **OCR**.",
-              "Developed a full web application for BERT model fine-tuning, email management, and real-time performance dashboards."
+              "Implemented a system that automates email classification and information extraction from attachments, using **BERT** and **OCR** to optimize efficiency and processing time.",
+              "Developed a web application for **BERT Fine-Tuning**, email management, and real-time data analysis and visualization, to enhance user interaction and performance monitoring."
             ],
             "tags": [
               "BERT",
@@ -230,10 +204,10 @@
           {
             "current": false,
             "company": "Sofiatech",
-            "period": "06/2023 — 08/2023 · 3 months · Ariana, Tunisia",
-            "role": "Machine Learning Intern (AI / ML / DL / RL)",
+            "period": "06/2023 — 08/2023 · 3 months · Tunisia",
+            "role": "Machine Learning Intern",
             "bullets": [
-              "Built **Slythera** — a 2D Python game featuring an intelligent agent trained via **Deep Q-Learning** to navigate a dynamic, hostile environment."
+              "Created a 2D game with **Pygame** featuring an AI Agent using **reinforcement learning**, based on the **Deep Q-Learning** approach, to optimize decision-making in a dynamic environment."
             ],
             "tags": [
               "TensorFlow",
@@ -250,10 +224,10 @@
         "heading": "Featured Projects",
         "items": [
           {
-            "period": "02/2025 — 06/2025",
+            "period": "02/2026 — 04/2026",
             "badge": "Multi-Agent",
             "title": "TwiXel",
-            "desc": "An intelligent **Multi-Agent social listening system** on X, identifying emerging trends in real-time and generating marketing campaign ideas through LLM orchestration.",
+            "desc": "Developed an intelligent **multi-agent system** for automated social listening on Twitter (now X), designed to identify emerging trends in real time and generate actionable marketing campaign ideas at scale.",
             "tags": [
               "LangGraph",
               "LLaMA 3",
@@ -265,10 +239,10 @@
             ]
           },
           {
-            "period": "10/2024 — 12/2024",
+            "period": "06/2025 — 08/2025",
             "badge": "RAG",
             "title": "CVision",
-            "desc": "An intelligent **CV recommendation engine** powered by **RAG**, matching job descriptions to the most relevant candidate profiles with automatic ranking and scoring.",
+            "desc": "Created an intelligent **CV recommendation system** based on job description using **Retrieval-Augmented Generation (RAG)**, to optimize the selection and automatic ranking of the most relevant profiles.",
             "tags": [
               "LangChain",
               "Mistral",
@@ -314,14 +288,14 @@
         "degrees": [
           {
             "years": "2024 — 2027",
-            "title": "Computer Science Engineering Degree",
+            "title": "Engineering Degree in Computer Science",
             "school": "Université Sorbonne Paris Nord, Sup Galilée",
             "location": "Villetaneuse, France",
             "mention": null
           },
           {
             "years": "2021 — 2024",
-            "title": "Bachelor's in Computer Science",
+            "title": "Bachelor's Degree in Computer Science",
             "school": "Université de Tunis El Manar, ISI Ariana",
             "location": "Ariana, Tunisia",
             "mention": "High Distinction ✦"
@@ -332,50 +306,64 @@
           {
             "icon": "☁️",
             "title": "Azure AI Fundamentals (AI-900)",
-            "issuer": "Microsoft Azure"
+            "issuer": "Microsoft Azure",
+            "date": "Jan 2024"
           },
           {
             "icon": "📊",
             "title": "Azure Data Fundamentals (DP-900)",
-            "issuer": "Microsoft Azure"
+            "issuer": "Microsoft Azure",
+            "date": "Jan 2024"
           },
           {
             "icon": "💬",
             "title": "Natural Language Processing with Python",
-            "issuer": "Udemy"
+            "issuer": "Udemy",
+            "date": "Feb 2024"
           },
           {
             "icon": "⚡",
             "title": "Spark and Python for Big Data with PySpark",
-            "issuer": "Udemy"
+            "issuer": "Udemy",
+            "date": "Mar 2024"
           }
         ],
         "vol_title": "Volunteering",
         "vols": [
           {
             "org": "Enactus",
-            "role": "Project Lead",
+            "role": "Project Manager",
             "period": "09/2021 — 08/2024 · 3 years",
-            "desc": "Led entrepreneurial projects with **social and environmental impact**."
+            "desc": "As Project Manager in Enactus's R&D unit, led my team to the finals of the Ichmilni Race competition by presenting **AGRIVEST** — an innovative platform promoting digital inclusion in rural Tunisia through peer-to-peer lending for smallholder farmers."
           },
           {
             "org": "AIESEC",
             "role": "Team Member",
             "period": "02/2024 — 07/2024 · 6 months",
-            "desc": "Created international internship opportunities for students worldwide."
+            "desc": "As Team Member in AIESEC's Incoming Global Talent/Teaching unit, negotiated partnerships with companies and educational institutions in Tunisia to secure professional internship opportunities for international exchange participants."
           }
         ],
         "awards_title": "Awards",
         "awards": [
           {
             "icon": "🏆",
-            "title": "Runner-up",
-            "event": "Enactus World Cup"
+            "title": "Enactus World Cup Vice Champions",
+            "date": "Oct 2022"
           },
           {
             "icon": "🥈",
-            "title": "Runner-up",
-            "event": "Action With Africa"
+            "title": "Action With Africa Vice Champions",
+            "date": "Oct 2023"
+          },
+          {
+            "icon": "🏅",
+            "title": "Ichmilni Race Tunisia Finalist",
+            "date": "May 2023"
+          },
+          {
+            "icon": "🥈",
+            "title": "Hult Prize ISI Ariana Runner-up",
+            "date": "Feb 2024"
           }
         ]
       },
@@ -438,88 +426,60 @@
         "heading": "Compétences Techniques",
         "categories": [
           {
-            "icon": "🧠",
-            "title": "Machine Learning & Deep Learning",
+            "icon": "💻",
+            "title": "Langages de Programmation (PL)",
             "accent": false,
-            "tags": [
-              "PyTorch",
-              "TensorFlow",
-              "Keras",
-              "Scikit-Learn",
-              "Deep Q-Learning",
-              "Reinforcement Learning"
-            ]
+            "accentTags": ["Python", "JavaScript/TS"],
+            "tags": ["Python", "JavaScript/TS", "PHP", "Java", "C/C++", "PL/SQL"]
+          },
+          {
+            "icon": "🧠",
+            "title": "Machine Learning et Deep Learning",
+            "accent": false,
+            "accentTags": ["PyTorch", "TensorFlow", "Scikit-Learn"],
+            "tags": ["PyTorch", "TensorFlow", "Keras", "Gymnasium", "Scikit-Learn"]
           },
           {
             "icon": "💬",
-            "title": "NLP & LLMs",
+            "title": "Natural Language Processing et LLMs",
             "accent": false,
-            "tags": [
-              "spaCy",
-              "NLTK",
-              "Transformers",
-              "BERT",
-              "GPT-4",
-              "Fine-Tuning"
-            ]
+            "accentTags": ["Hugging Face Transformers", "Sentence-Transformers"],
+            "tags": ["Hugging Face Transformers", "Sentence-Transformers", "spaCy"]
           },
           {
             "icon": "🤖",
-            "title": "IA Générative & Systèmes Agentiques",
-            "accent": true,
-            "tags": [
-              "LangChain",
-              "LangGraph",
-              "Mistral",
-              "LLaMA 3",
-              "RAG",
-              "FAISS",
-              "ChromaDB"
-            ]
+            "title": "IA Générative et Systèmes Multi-Agents",
+            "accent": false,
+            "accentTags": ["LangGraph", "AWS SageMaker", "AWS Bedrock"],
+            "tags": ["LangChain", "LangGraph", "AWS SageMaker", "AWS Bedrock"]
           },
           {
             "icon": "📊",
-            "title": "Data & Big Data",
+            "title": "Analyse de Données et Big Data",
             "accent": false,
-            "tags": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "PySpark"]
+            "accentTags": ["Pandas", "NumPy", "PySpark"],
+            "tags": ["Pandas", "NumPy", "Matplotlib", "Apache Airflow", "PySpark"]
           },
           {
             "icon": "🗄️",
-            "title": "Bases de données",
+            "title": "Bases de données SQL et NoSQL",
             "accent": false,
-            "tags": ["Oracle", "MySQL", "PostgreSQL", "MongoDB"]
+            "accentTags": ["PostgreSQL", "MongoDB", "Amazon DynamoDB"],
+            "tags": ["MySQL", "PostgreSQL", "MongoDB", "Amazon DynamoDB", "Oracle"]
           },
           {
             "icon": "🌐",
-            "title": "Web Full Stack & REST API",
+            "title": "Frameworks Web Full Stack et API REST",
             "accent": false,
-            "tags": [
-              "React",
-              "Vue.js",
-              "Node.js",
-              "FastAPI",
-              "Flask",
-              "Express"
-            ]
-          },
-          {
-            "icon": "💻",
-            "title": "Langages de programmation",
-            "accent": false,
-            "tags": ["Python", "Java", "C/C++", "JavaScript", "PHP", "PL/SQL"]
+            "accentTags": ["React", "Vue.js", "FastAPI"],
+            "tags": ["React", "Express.js", "Flask", "Vue.js", "FastAPI", "Laravel"]
           },
           {
             "icon": "☁️",
-            "title": "Cloud & Outils",
+            "title": "DevOps & Cloud (AWS)",
             "accent": false,
-            "tags": [
-              "Azure",
-              "Docker",
-              "Git",
-              "Streamlit",
-              "OpenAI Gym",
-              "Tesseract OCR"
-            ]
+            "accentTags": ["Docker"],
+            "tags": ["Docker", "Kubernetes (EKS)", "Terraform", "GitHub Actions"]
           }
         ],
         "lang_title": "Langues",
@@ -528,14 +488,14 @@
             "flag": "🇬🇧",
             "flagCode": "gb",
             "name": "Anglais",
-            "pct": 85,
+            "pct": 80,
             "level": "B2 · TOEIC"
           },
           {
             "flag": "🇫🇷",
             "flagCode": "fr",
             "name": "Français",
-            "pct": 70,
+            "pct": 75,
             "level": "B2 · TCF"
           },
           {
@@ -552,22 +512,23 @@
         "jobs": [
           {
             "current": true,
-            "company": "Crédit Agricole",
-            "period": "09/2024 — 06/2027 · En cours · France",
+            "company": "Crédit Agricole Personal Finance & Mobility",
+            "period": "09/2025 — En cours · 10 mois · France",
             "role": "Apprenti Ingénieur IA Générative",
             "bullets": [
-              "Travail sur des initiatives d'IA Générative et de systèmes agentiques au sein de l'un des plus grands groupes bancaires français, en appliquant LLMs, pipelines RAG et frameworks multi-agents à des cas d'usage réels."
+              "Migration des modules d'orchestration et d'exécution de workflows IA d'un monolithe n-tiers modulaire vers un microservice hexagonal, améliorant la scalabilité et la maintenabilité.",
+              "Développement d'un système automatisé de Red Teaming pour les chatbots afin de tester les couches de sécurité, incluant les guardrails et les règles LLM-as-a-judge, améliorant l'analyse comportementale et la résilience des modèles."
             ],
             "tags": ["IA Générative", "LLMs", "RAG", "Systèmes Agentiques"]
           },
           {
             "current": false,
-            "company": "VERMEG",
-            "period": "02/2024 — 06/2024 · 5 mois · Lac 2, Tunisie",
-            "role": "Stagiaire Ingénieur NLP / LLM",
+            "company": "VERMEG for Banking & Insurance Software",
+            "period": "02/2024 — 06/2024 · 5 mois · Tunisie",
+            "role": "Stagiaire en Traitement du Langage Naturel",
             "bullets": [
-              "Développement de **VERMail** — système d'intelligence e-mail automatisé classifiant les e-mails entrants et extrayant les informations clés via **fine-tuning BERT** et **OCR**.",
-              "Développement d'une application web pour le fine-tuning BERT, la gestion des e-mails et la visualisation des performances en temps réel."
+              "Implémentation d'un système automatisant la classification des e-mails et l'extraction d'informations des pièces jointes, avec **BERT** et **OCR** pour optimiser l'efficacité et le temps de traitement.",
+              "Développement d'une application web pour le **Fine-Tuning BERT**, la gestion des e-mails, l'analyse et la visualisation des données en temps réel, pour améliorer l'interaction utilisateur et le suivi des performances."
             ],
             "tags": [
               "BERT",
@@ -581,10 +542,10 @@
           {
             "current": false,
             "company": "Sofiatech",
-            "period": "06/2023 — 08/2023 · 3 mois · Ariana, Tunisie",
-            "role": "Stagiaire Machine Learning (IA / ML / DL / RL)",
+            "period": "06/2023 — 08/2023 · 3 mois · Tunisie",
+            "role": "Stagiaire en Machine Learning",
             "bullets": [
-              "Développement de **Slythera** — jeu 2D en Python avec un agent intelligent entraîné par **Deep Q-Learning** pour naviguer dans un environnement dynamique et hostile."
+              "Création d'un jeu 2D avec **Pygame** intégrant un agent IA utilisant l'**apprentissage par renforcement**, basé sur l'approche **Deep Q-Learning**, pour optimiser la prise de décision dans un environnement dynamique."
             ],
             "tags": [
               "TensorFlow",
@@ -601,10 +562,10 @@
         "heading": "Projets Phares",
         "items": [
           {
-            "period": "02/2025 — 06/2025",
+            "period": "02/2026 — 04/2026",
             "badge": "Multi-Agent",
             "title": "TwiXel",
-            "desc": "Système d'**écoute sociale multi-agents** sur X, identifiant les tendances émergentes en temps réel et générant des idées de campagnes marketing via orchestration LLM.",
+            "desc": "Développement d'un **système multi-agents** intelligent pour l'écoute sociale automatisée sur Twitter (maintenant X), conçu pour identifier les tendances émergentes en temps réel et générer des idées de campagnes marketing à grande échelle.",
             "tags": [
               "LangGraph",
               "LLaMA 3",
@@ -616,10 +577,10 @@
             ]
           },
           {
-            "period": "10/2024 — 12/2024",
+            "period": "06/2025 — 08/2025",
             "badge": "RAG",
             "title": "CVision",
-            "desc": "Moteur de **recommandation de CV** alimenté par **RAG**, associant les offres d'emploi aux profils candidats les plus pertinents avec classement et notation automatiques.",
+            "desc": "Création d'un **système de recommandation de CV** intelligent basé sur les descriptions de postes en utilisant la **Génération Augmentée par Récupération (RAG)**, pour optimiser la sélection et le classement automatique des profils les plus pertinents.",
             "tags": [
               "LangChain",
               "Mistral",
@@ -665,7 +626,7 @@
         "degrees": [
           {
             "years": "2024 — 2027",
-            "title": "Diplôme d'Ingénieur Informatique",
+            "title": "Diplôme d'Ingénieur en Informatique",
             "school": "Université Sorbonne Paris Nord, Sup Galilée",
             "location": "Villetaneuse, France",
             "mention": null
@@ -683,50 +644,64 @@
           {
             "icon": "☁️",
             "title": "Azure AI Fundamentals (AI-900)",
-            "issuer": "Microsoft Azure"
+            "issuer": "Microsoft Azure",
+            "date": "Jan 2024"
           },
           {
             "icon": "📊",
             "title": "Azure Data Fundamentals (DP-900)",
-            "issuer": "Microsoft Azure"
+            "issuer": "Microsoft Azure",
+            "date": "Jan 2024"
           },
           {
             "icon": "💬",
             "title": "NLP avec Python",
-            "issuer": "Udemy"
+            "issuer": "Udemy",
+            "date": "Fév 2024"
           },
           {
             "icon": "⚡",
             "title": "Spark et Python pour le Big Data",
-            "issuer": "Udemy"
+            "issuer": "Udemy",
+            "date": "Mar 2024"
           }
         ],
         "vol_title": "Bénévolat",
         "vols": [
           {
             "org": "Enactus",
-            "role": "Chef de projet",
+            "role": "Chef de Projet",
             "period": "09/2021 — 08/2024 · 3 ans",
-            "desc": "Direction de projets entrepreneuriaux à **impact social et environnemental**."
+            "desc": "En tant que Chef de Projet au sein de l'unité R&D d'Enactus, j'ai mené mon équipe jusqu'en finale de la compétition Ichmilni Race en présentant **AGRIVEST** — une plateforme innovante promouvant l'inclusion numérique en Tunisie rurale via le prêt entre pairs pour les petits agriculteurs."
           },
           {
             "org": "AIESEC",
             "role": "Membre",
             "period": "02/2024 — 07/2024 · 6 mois",
-            "desc": "Création d'opportunités de stage internationales pour les étudiants du monde entier."
+            "desc": "En tant que Membre de l'unité Incoming Global Talent/Teaching d'AIESEC, j'ai négocié des partenariats avec des entreprises et des institutions éducatives en Tunisie pour sécuriser des opportunités de stage professionnel pour les participants aux échanges internationaux."
           }
         ],
         "awards_title": "Récompenses",
         "awards": [
           {
             "icon": "🏆",
-            "title": "Vice-champion",
-            "event": "Coupe du Monde Enactus"
+            "title": "Enactus World Cup Vice-champions",
+            "date": "Oct 2022"
           },
           {
             "icon": "🥈",
-            "title": "Vice-champion",
-            "event": "Action With Africa"
+            "title": "Action With Africa Vice-champions",
+            "date": "Oct 2023"
+          },
+          {
+            "icon": "🏅",
+            "title": "Ichmilni Race Finaliste Tunisie",
+            "date": "Mai 2023"
+          },
+          {
+            "icon": "🥈",
+            "title": "Hult Prize ISI Ariana Vice-champion",
+            "date": "Fév 2024"
           }
         ]
       },
@@ -789,88 +764,60 @@
         "heading": "المهارات التقنية",
         "categories": [
           {
+            "icon": "💻",
+            "title": "لغات البرمجة (PL)",
+            "accent": false,
+            "accentTags": ["Python", "JavaScript/TS"],
+            "tags": ["Python", "JavaScript/TS", "PHP", "Java", "C/C++", "PL/SQL"]
+          },
+          {
             "icon": "🧠",
             "title": "تعلم الآلة والتعلم العميق",
             "accent": false,
-            "tags": [
-              "PyTorch",
-              "TensorFlow",
-              "Keras",
-              "Scikit-Learn",
-              "Deep Q-Learning",
-              "Reinforcement Learning"
-            ]
+            "accentTags": ["PyTorch", "TensorFlow", "Scikit-Learn"],
+            "tags": ["PyTorch", "TensorFlow", "Keras", "Gymnasium", "Scikit-Learn"]
           },
           {
             "icon": "💬",
             "title": "معالجة اللغات الطبيعية والنماذج الكبيرة",
             "accent": false,
-            "tags": [
-              "spaCy",
-              "NLTK",
-              "Transformers",
-              "BERT",
-              "GPT-4",
-              "Fine-Tuning"
-            ]
+            "accentTags": ["Hugging Face Transformers", "Sentence-Transformers"],
+            "tags": ["Hugging Face Transformers", "Sentence-Transformers", "spaCy"]
           },
           {
             "icon": "🤖",
-            "title": "الذكاء الاصطناعي التوليدي والأنظمة الذكية",
-            "accent": true,
-            "tags": [
-              "LangChain",
-              "LangGraph",
-              "Mistral",
-              "LLaMA 3",
-              "RAG",
-              "FAISS",
-              "ChromaDB"
-            ]
+            "title": "الذكاء الاصطناعي التوليدي والأنظمة متعددة العملاء",
+            "accent": false,
+            "accentTags": ["LangGraph", "AWS SageMaker", "AWS Bedrock"],
+            "tags": ["LangChain", "LangGraph", "AWS SageMaker", "AWS Bedrock"]
           },
           {
             "icon": "📊",
-            "title": "البيانات والبيانات الضخمة",
+            "title": "تحليل البيانات والبيانات الضخمة",
             "accent": false,
-            "tags": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "PySpark"]
+            "accentTags": ["Pandas", "NumPy", "PySpark"],
+            "tags": ["Pandas", "NumPy", "Matplotlib", "Apache Airflow", "PySpark"]
           },
           {
             "icon": "🗄️",
-            "title": "قواعد البيانات",
+            "title": "قواعد البيانات SQL وNoSQL",
             "accent": false,
-            "tags": ["Oracle", "MySQL", "PostgreSQL", "MongoDB"]
+            "accentTags": ["PostgreSQL", "MongoDB", "Amazon DynamoDB"],
+            "tags": ["MySQL", "PostgreSQL", "MongoDB", "Amazon DynamoDB", "Oracle"]
           },
           {
             "icon": "🌐",
-            "title": "تطوير الويب وواجهات REST",
+            "title": "أطر الويب الكاملة وواجهات REST",
             "accent": false,
-            "tags": [
-              "React",
-              "Vue.js",
-              "Node.js",
-              "FastAPI",
-              "Flask",
-              "Express"
-            ]
-          },
-          {
-            "icon": "💻",
-            "title": "لغات البرمجة",
-            "accent": false,
-            "tags": ["Python", "Java", "C/C++", "JavaScript", "PHP", "PL/SQL"]
+            "accentTags": ["React", "Vue.js", "FastAPI"],
+            "tags": ["React", "Express.js", "Flask", "Vue.js", "FastAPI", "Laravel"]
           },
           {
             "icon": "☁️",
-            "title": "السحابة والأدوات",
+            "title": "DevOps & Cloud (AWS)",
             "accent": false,
-            "tags": [
-              "Azure",
-              "Docker",
-              "Git",
-              "Streamlit",
-              "OpenAI Gym",
-              "Tesseract OCR"
-            ]
+            "accentTags": ["Docker"],
+            "tags": ["Docker", "Kubernetes (EKS)", "Terraform", "GitHub Actions"]
           }
         ],
         "lang_title": "اللغات",
@@ -879,14 +826,14 @@
             "flag": "🇬🇧",
             "flagCode": "gb",
             "name": "الإنجليزية",
-            "pct": 85,
+            "pct": 80,
             "level": "B2 · TOEIC"
           },
           {
             "flag": "🇫🇷",
             "flagCode": "fr",
             "name": "الفرنسية",
-            "pct": 70,
+            "pct": 75,
             "level": "B2 · TCF"
           },
           {
@@ -903,22 +850,23 @@
         "jobs": [
           {
             "current": true,
-            "company": "Crédit Agricole",
-            "period": "09/2024 — 06/2027 · جارٍ · فرنسا",
+            "company": "Crédit Agricole Personal Finance & Mobility",
+            "period": "09/2025 — الآن · 10 أشهر · فرنسا",
             "role": "متدرب مهندس ذكاء اصطناعي توليدي",
             "bullets": [
-              "العمل على مبادرات الذكاء الاصطناعي التوليدي والأنظمة الذكية في أحد أكبر المجموعات المصرفية الفرنسية، بتطبيق نماذج LLM وخطوط RAG وأطر متعددة العملاء على حالات استخدام حقيقية."
+              "ترحيل وحدات تنسيق وتنفيذ سير عمل الذكاء الاصطناعي من معمارية n-tier أحادية متعددة الطبقات إلى خدمة مصغرة سداسية، مما حسّن قابلية التوسع والصيانة.",
+              "بناء نظام Red Teaming آلي للروبوتات المحادثة لاختبار طبقات الأمان، بما يشمل guardrails وقواعد LLM-as-a-judge، مما حسّن تحليل السلوك ومرونة النماذج."
             ],
             "tags": ["ذكاء اصطناعي توليدي", "LLMs", "RAG", "أنظمة ذكية"]
           },
           {
             "current": false,
-            "company": "VERMEG",
-            "period": "02/2024 — 06/2024 · 5 أشهر · لاك 2، تونس",
-            "role": "متدرب هندسة NLP / LLM",
+            "company": "VERMEG for Banking & Insurance Software",
+            "period": "02/2024 — 06/2024 · 5 أشهر · تونس",
+            "role": "متدرب معالجة اللغات الطبيعية",
             "bullets": [
-              "بناء **VERMail** — نظام ذكاء اصطناعي للبريد الإلكتروني يصنف الرسائل الواردة ويستخرج المعلومات الرئيسية عبر **ضبط دقيق لـ BERT** و**OCR**.",
-              "تطوير تطبيق ويب متكامل لضبط نموذج BERT وإدارة البريد ولوحات أداء في الوقت الفعلي."
+              "تنفيذ نظام يؤتمت تصنيف البريد الإلكتروني واستخراج المعلومات من المرفقات، باستخدام **BERT** و**OCR** لتحسين الكفاءة ووقت المعالجة.",
+              "تطوير تطبيق ويب للضبط الدقيق لـ **BERT**، وإدارة البريد الإلكتروني، وتحليل البيانات والتصور في الوقت الفعلي، لتعزيز تفاعل المستخدم ومراقبة الأداء."
             ],
             "tags": [
               "BERT",
@@ -932,10 +880,10 @@
           {
             "current": false,
             "company": "Sofiatech",
-            "period": "06/2023 — 08/2023 · 3 أشهر · أريانة، تونس",
-            "role": "متدرب تعلم الآلة (ذكاء اصطناعي / ML / DL / RL)",
+            "period": "06/2023 — 08/2023 · 3 أشهر · تونس",
+            "role": "متدرب تعلم الآلة",
             "bullets": [
-              "بناء **Slythera** — لعبة بايثون ثنائية الأبعاد تضم عميلاً ذكياً مدرَّباً عبر **Deep Q-Learning** للتنقل في بيئة ديناميكية معادية."
+              "إنشاء لعبة ثنائية الأبعاد مع **Pygame** تضم عميل ذكاء اصطناعي يستخدم **التعلم المعزز**، استناداً إلى نهج **Deep Q-Learning**، لتحسين اتخاذ القرار في بيئة ديناميكية."
             ],
             "tags": [
               "TensorFlow",
@@ -952,10 +900,10 @@
         "heading": "المشاريع المميزة",
         "items": [
           {
-            "period": "02/2025 — 06/2025",
+            "period": "02/2026 — 04/2026",
             "badge": "متعدد العملاء",
             "title": "TwiXel",
-            "desc": "نظام **استماع اجتماعي متعدد العملاء** على X، يرصد الاتجاهات الناشئة في الوقت الفعلي ويولّد أفكار حملات تسويقية عبر تنسيق LLM.",
+            "desc": "تطوير **نظام متعدد العملاء** ذكي للاستماع الاجتماعي الآلي على تويتر (X الآن)، مصمم لتحديد الاتجاهات الناشئة في الوقت الفعلي وتوليد أفكار حملات تسويقية قابلة للتنفيذ على نطاق واسع.",
             "tags": [
               "LangGraph",
               "LLaMA 3",
@@ -967,10 +915,10 @@
             ]
           },
           {
-            "period": "10/2024 — 12/2024",
+            "period": "06/2025 — 08/2025",
             "badge": "RAG",
             "title": "CVision",
-            "desc": "محرك **توصية بالسيرة الذاتية** مدعوم بـ **RAG**، يطابق الوظائف مع أفضل المرشحين مع ترتيب وتقييم تلقائيَّين.",
+            "desc": "إنشاء **نظام توصية ذكي بالسيرة الذاتية** بناءً على وصف الوظيفة باستخدام **الجيل المعزز بالاسترجاع (RAG)**، لتحسين انتقاء وترتيب المرشحين الأكثر ملاءمة تلقائيًا.",
             "tags": [
               "LangChain",
               "Mistral",
@@ -1023,7 +971,7 @@
           },
           {
             "years": "2021 — 2024",
-            "title": "ليسانس في علوم الحاسوب",
+            "title": "بكالوريوس في علوم الحاسوب",
             "school": "جامعة تونس المنار، ISI أريانة",
             "location": "أريانة، تونس",
             "mention": "امتياز مع التنويه ✦"
@@ -1034,50 +982,64 @@
           {
             "icon": "☁️",
             "title": "Azure AI Fundamentals (AI-900)",
-            "issuer": "Microsoft Azure"
+            "issuer": "Microsoft Azure",
+            "date": "يناير 2024"
           },
           {
             "icon": "📊",
             "title": "Azure Data Fundamentals (DP-900)",
-            "issuer": "Microsoft Azure"
+            "issuer": "Microsoft Azure",
+            "date": "Jan 2024"
           },
           {
             "icon": "💬",
             "title": "معالجة اللغات الطبيعية مع Python",
-            "issuer": "Udemy"
+            "issuer": "Udemy",
+            "date": "فبراير 2024"
           },
           {
             "icon": "⚡",
             "title": "Spark وPython للبيانات الضخمة",
-            "issuer": "Udemy"
+            "issuer": "Udemy",
+            "date": "مارس 2024"
           }
         ],
         "vol_title": "التطوع",
         "vols": [
           {
             "org": "Enactus",
-            "role": "قائد مشروع",
+            "role": "مدير مشروع",
             "period": "09/2021 — 08/2024 · 3 سنوات",
-            "desc": "قيادة مشاريع ريادية ذات **أثر اجتماعي وبيئي**."
+            "desc": "بصفتي مدير مشروع في وحدة البحث والتطوير في Enactus، قدت فريقي إلى نهائي مسابقة Ichmilni Race بتقديم **AGRIVEST** — منصة مبتكرة تعزز الإدماج الرقمي في تونس الريفية من خلال الإقراض بين الأفراد لصغار المزارعين."
           },
           {
             "org": "AIESEC",
             "role": "عضو",
             "period": "02/2024 — 07/2024 · 6 أشهر",
-            "desc": "إنشاء فرص تدريب دولية للطلاب حول العالم."
+            "desc": "بصفتي عضوًا في وحدة Incoming Global Talent/Teaching في AIESEC، تفاوضت على شراكات مع شركات ومؤسسات تعليمية في تونس لتأمين فرص تدريب مهني لمشاركي التبادل الدولي."
           }
         ],
         "awards_title": "الجوائز",
         "awards": [
           {
             "icon": "🏆",
-            "title": "المركز الثاني",
-            "event": "كأس العالم Enactus"
+            "title": "Enactus World Cup المركز الثاني",
+            "date": "أكتوبر 2022"
           },
           {
             "icon": "🥈",
-            "title": "المركز الثاني",
-            "event": "Action With Africa"
+            "title": "Action With Africa المركز الثاني",
+            "date": "أكتوبر 2023"
+          },
+          {
+            "icon": "🏅",
+            "title": "Ichmilni Race متأهل تونس للنهائي",
+            "date": "مايو 2023"
+          },
+          {
+            "icon": "🥈",
+            "title": "Hult Prize ISI Ariana المركز الثاني",
+            "date": "فبراير 2024"
           }
         ]
       },

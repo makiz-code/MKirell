@@ -28,10 +28,11 @@
           <ul class="cert-list">
             <li class="cert-item" v-for="cert in t.education.certs" :key="cert.title">
               <div class="cert-item__icon" aria-hidden="true">{{ cert.icon }}</div>
-              <div>
+              <div class="cert-item__body">
                 <p class="cert-item__title">{{ cert.title }}</p>
                 <p class="cert-item__issuer">{{ cert.issuer }}</p>
               </div>
+              <time v-if="cert.date" class="cert-item__date">{{ cert.date }}</time>
             </li>
           </ul>
         </div>
@@ -46,18 +47,18 @@
               <p class="extra-card__org">{{ vol.org }}</p>
               <p class="extra-card__role">{{ vol.role }}</p>
               <time class="extra-card__period">{{ vol.period }}</time>
-              <p v-html="boldify(vol.desc)"></p>
+              <p class="extra-card__desc" v-html="boldify(vol.desc)"></p>
             </li>
           </ul>
         </div>
         <div class="extra-block">
           <h3>{{ t.education.awards_title }}</h3>
           <ul>
-            <li class="award-card" v-for="award in t.education.awards" :key="award.event">
+            <li class="award-card" v-for="award in t.education.awards" :key="award.title">
               <div class="award-card__icon" aria-hidden="true">{{ award.icon }}</div>
               <div>
                 <p class="award-card__title">{{ award.title }}</p>
-                <p class="award-card__event">{{ award.event }}</p>
+                <time v-if="award.date" class="award-card__date">{{ award.date }}</time>
               </div>
             </li>
           </ul>
@@ -157,13 +158,17 @@ const { t } = useLanguage()
 
 .cert-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 16px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 17px 19px;
   transition: border-color var(--transition);
+}
+
+.cert-item__body {
+  flex: 1;
 }
 
 .cert-item:hover {
@@ -195,6 +200,15 @@ const { t } = useLanguage()
   font-family: 'JetBrains Mono', monospace;
 }
 
+.cert-item__date {
+  flex-shrink: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
 .extras__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -212,37 +226,43 @@ const { t } = useLanguage()
 }
 
 .extra-card {
-  border-inline-start: 2px solid var(--line-strong);
+  border-inline-start: 2px solid var(--accent);
   padding-inline-start: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
+}
+
+.extra-card:last-child {
+  margin-bottom: 0;
 }
 
 .extra-card__org {
   font-family: 'Fraunces', serif;
   font-size: 1.05rem;
   font-weight: 600;
-  color: var(--ink);
-  margin-bottom: 2px;
+  color: var(--accent);
+  margin-bottom: 4px;
 }
 
 .extra-card__role {
-  color: var(--accent-deep);
-  font-size: 0.87rem;
+  font-size: 0.82rem;
+  color: var(--ink);
   font-weight: 500;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
 }
 
 .extra-card__period {
   display: block;
-  color: var(--ink-soft);
-  font-size: 0.72rem;
-  margin-bottom: 8px;
   font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+  opacity: 0.75;
+  margin-bottom: 10px;
 }
 
-.extra-card p {
+.extra-card__desc {
+  font-size: 0.85rem;
   color: var(--ink-soft);
-  font-size: 0.9rem;
+  line-height: 1.65;
 }
 
 .award-card {
@@ -267,6 +287,7 @@ const { t } = useLanguage()
 }
 
 .award-card__icon {
+  flex-shrink: 0;
   width: 40px;
   height: 40px;
   display: flex;
@@ -282,10 +303,13 @@ const { t } = useLanguage()
   font-size: 0.98rem;
   font-weight: 600;
   color: var(--ink);
+  margin-bottom: 2px;
 }
 
-.award-card__event {
-  font-size: 0.82rem;
+.award-card__date {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
   color: var(--ink-soft);
 }
 

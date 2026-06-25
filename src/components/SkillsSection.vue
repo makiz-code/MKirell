@@ -12,7 +12,7 @@
           <div class="skill-category__icon" aria-hidden="true">{{ cat.icon }}</div>
           <h3>{{ cat.title }}</h3>
           <ul class="tags" aria-label="Technologies">
-            <li v-for="tag in cat.tags" :key="tag" :class="['tag', { 'tag--accent': cat.accent }]">{{ tag }}</li>
+            <li v-for="tag in cat.tags" :key="tag" :class="['tag', { 'tag--accent': cat.accent || (cat.accentTags && cat.accentTags.includes(tag)) }]">{{ tag }}</li>
           </ul>
         </li>
       </ul>
