@@ -177,14 +177,14 @@
             "flag": "🇬🇧",
             "flagCode": "gb",
             "name": "English",
-            "pct": 88,
-            "level": "Fluent"
+            "pct": 85,
+            "level": "B2 · TOEIC"
           },
           {
             "flag": "🇫🇷",
             "flagCode": "fr",
             "name": "French",
-            "pct": 75,
+            "pct": 70,
             "level": "B2 · TCF"
           },
           {
@@ -528,14 +528,14 @@
             "flag": "🇬🇧",
             "flagCode": "gb",
             "name": "Anglais",
-            "pct": 88,
-            "level": "Courant"
+            "pct": 85,
+            "level": "B2 · TOEIC"
           },
           {
             "flag": "🇫🇷",
             "flagCode": "fr",
             "name": "Français",
-            "pct": 75,
+            "pct": 70,
             "level": "B2 · TCF"
           },
           {
@@ -879,14 +879,14 @@
             "flag": "🇬🇧",
             "flagCode": "gb",
             "name": "الإنجليزية",
-            "pct": 88,
-            "level": "طليق"
+            "pct": 85,
+            "level": "B2 · TOEIC"
           },
           {
             "flag": "🇫🇷",
             "flagCode": "fr",
             "name": "الفرنسية",
-            "pct": 75,
+            "pct": 70,
             "level": "B2 · TCF"
           },
           {
