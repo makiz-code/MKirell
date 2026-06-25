@@ -29,54 +29,46 @@
         "addressRegion": "Île-de-France",
         "addressCountry": "FR"
       },
-      "description": "Computer Science Engineering student at Sup Galilée — Université Sorbonne Paris Nord, currently working as a Generative AI Engineer Apprentice at Crédit Agricole. I specialize in intelligent agentic systems, LLM pipelines, and applied deep learning. I hold a Bachelor's degree in Computer Science from the University of Tunis El Manar, graduated with High Distinction. Hands-on experience at VERMEG (NLP/LLM) and Sofiatech (ML/RL). Runner-up at the Enactus World Cup, I blend technical depth with real-world impact, driven by curiosity and a passion for solving complex problems with AI.",
+      "description": "Passionate about Generative AI and Agentic AI, with a strong foundation in algorithms and programming. My goal is to strengthen my skills and contribute to innovative AI projects while continuing my academic studies.",
       "knowsAbout": [
+        "Python",
+        "Java",
+        "C/C++",
+        "JavaScript/TS",
+        "PHP",
+        "PL/SQL",
         "PyTorch",
         "TensorFlow",
         "Keras",
         "Scikit-Learn",
-        "Deep Q-Learning",
-        "Reinforcement Learning",
+        "Gymnasium",
+        "Hugging Face Transformers",
         "spaCy",
-        "NLTK",
-        "Transformers",
-        "BERT",
-        "GPT-4",
-        "Fine-Tuning",
+        "Sentence-Transformers",
         "LangChain",
         "LangGraph",
-        "Mistral",
-        "LLaMA 3",
-        "RAG",
-        "FAISS",
-        "ChromaDB",
+        "AWS SageMaker",
+        "AWS Bedrock",
         "Pandas",
         "NumPy",
         "Matplotlib",
-        "Seaborn",
+        "Apache Airflow",
         "PySpark",
-        "Oracle",
         "MySQL",
         "PostgreSQL",
         "MongoDB",
+        "Amazon DynamoDB",
+        "Oracle",
         "React",
-        "Vue.js",
-        "Node.js",
-        "FastAPI",
+        "Express.js",
         "Flask",
-        "Express",
-        "Python",
-        "Java",
-        "C/C++",
-        "JavaScript",
-        "PHP",
-        "PL/SQL",
-        "Azure",
+        "Vue.js",
+        "FastAPI",
+        "Laravel",
         "Docker",
-        "Git",
-        "Streamlit",
-        "OpenAI Gym",
-        "Tesseract OCR"
+        "Kubernetes (EKS)",
+        "Fargate (ECS)",
+        "Terraform"
       ],
       "knowsLanguage": [
         {
@@ -102,17 +94,17 @@
         {
           "@type": "EmployeeRole",
           "roleName": "Generative AI Engineer Apprentice",
-          "description": "Working on Generative AI and agentic system initiatives within one of France's largest banking groups, applying LLMs, RAG pipelines, and multi-agent frameworks to real enterprise use cases.",
+          "description": "Migrated AI Workflow Orchestration and Execution modules from a modular n-tier monolith to a hexagonal microservice, improving scalability and maintainability. Built an automated Red Teaming system for chatbots to test security layers, including guardrails and LLM-as-a-judge rules, improving behavior analysis and model resilience.",
           "worksFor": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-ca"
           },
-          "startDate": "2024-09"
+          "startDate": "2025-09"
         },
         {
           "@type": "EmployeeRole",
-          "roleName": "NLP / LLM Engineering Intern",
-          "description": "Built VERMail — an automated email intelligence system classifying emails and extracting key information from attachments using BERT fine-tuning and OCR. Developed a full web application for BERT model fine-tuning, email management, and real-time performance dashboards.",
+          "roleName": "Natural Language Processing Intern",
+          "description": "Implemented a system that automates email classification and information extraction from attachments, using BERT and OCR to optimize efficiency and processing time. Developed a web application for BERT Fine-Tuning, email management, and real-time data analysis and visualization, to enhance user interaction and performance monitoring.",
           "worksFor": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-vermeg"
@@ -122,8 +114,8 @@
         },
         {
           "@type": "EmployeeRole",
-          "roleName": "Machine Learning Intern (AI / ML / DL / RL)",
-          "description": "Built Slythera — a 2D Python game featuring an intelligent agent trained via Deep Q-Learning to navigate a dynamic, hostile environment.",
+          "roleName": "Machine Learning Intern",
+          "description": "Created a 2D game with Pygame featuring an AI Agent using reinforcement learning, based on the Deep Q-Learning approach, to optimize decision-making in a dynamic environment.",
           "worksFor": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-sofiatech"
@@ -146,7 +138,7 @@
         {
           "@type": "EducationalOccupationalCredential",
           "credentialCategory": "degree",
-          "name": "Computer Science Engineering Degree",
+          "name": "Engineering Degree in Computer Science",
           "recognizedBy": {
             "@type": "CollegeOrUniversity",
             "@id": "https://makiz-code.github.io/MKirell/#org-supgalilee"
@@ -157,7 +149,7 @@
         {
           "@type": "EducationalOccupationalCredential",
           "credentialCategory": "degree",
-          "name": "Bachelor's in Computer Science",
+          "name": "Bachelor's Degree in Computer Science",
           "description": "High Distinction",
           "recognizedBy": {
             "@type": "CollegeOrUniversity",
@@ -204,14 +196,16 @@
         }
       ],
       "award": [
-        "Runner-up — Enactus World Cup",
-        "Runner-up — Action With Africa"
+        "Enactus World Cup Vice Champions",
+        "Action With Africa Vice Champions",
+        "Ichmilni Race Tunisia Finalist",
+        "Hult Prize ISI Ariana Runner-up"
       ],
       "memberOf": [
         {
           "@type": "OrganizationRole",
-          "roleName": "Project Lead",
-          "description": "Led entrepreneurial projects with social and environmental impact.",
+          "roleName": "Project Manager",
+          "description": "As Project Manager in Enactus's R&D unit, led my team to the finals of the Ichmilni Race competition by presenting AGRIVEST — an innovative platform promoting digital inclusion in rural Tunisia through peer-to-peer lending for smallholder farmers.",
           "memberOf": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-enactus"
@@ -222,7 +216,7 @@
         {
           "@type": "OrganizationRole",
           "roleName": "Team Member",
-          "description": "Created international internship opportunities for students worldwide.",
+          "description": "As Team Member in AIESEC's Incoming Global Talent/Teaching unit, negotiated partnerships with companies and educational institutions in Tunisia to secure professional internship opportunities for international exchange participants.",
           "memberOf": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-aiesec"
@@ -237,11 +231,11 @@
       "@id": "https://makiz-code.github.io/MKirell/#project-twixel",
       "name": "TwiXel",
       "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
-      "description": "An intelligent Multi-Agent social listening system on X, identifying emerging trends in real-time and generating marketing campaign ideas through LLM orchestration.",
+      "description": "Developed an intelligent multi-agent system for automated social listening on Twitter (now X), designed to identify emerging trends in real time and generate actionable marketing campaign ideas at scale.",
       "applicationCategory": "Artificial Intelligence",
       "operatingSystem": "Linux",
       "keywords": "LangGraph, LLaMA 3, FAISS, Tweepy, Vue.js, FastAPI, MongoDB",
-      "dateCreated": "2025-02",
+      "dateCreated": "2026-02",
       "applicationSubCategory": "Multi-Agent"
     },
     {
@@ -249,11 +243,11 @@
       "@id": "https://makiz-code.github.io/MKirell/#project-cvision",
       "name": "CVision",
       "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
-      "description": "An intelligent CV recommendation engine powered by RAG, matching job descriptions to the most relevant candidate profiles with automatic ranking and scoring.",
+      "description": "Created an intelligent CV recommendation system based on job description using Retrieval-Augmented Generation (RAG), to optimize the selection and automatic ranking of the most relevant profiles.",
       "applicationCategory": "Artificial Intelligence",
       "operatingSystem": "Linux",
       "keywords": "LangChain, Mistral, ChromaDB, PyMuPDF, Streamlit, MongoDB",
-      "dateCreated": "2024-10",
+      "dateCreated": "2025-06",
       "applicationSubCategory": "RAG"
     },
     {
@@ -293,12 +287,12 @@
     {
       "@type": "Organization",
       "@id": "https://makiz-code.github.io/MKirell/#org-ca",
-      "name": "Crédit Agricole"
+      "name": "Crédit Agricole Personal Finance & Mobility"
     },
     {
       "@type": "Organization",
       "@id": "https://makiz-code.github.io/MKirell/#org-vermeg",
-      "name": "VERMEG"
+      "name": "VERMEG for Banking & Insurance Software"
     },
     {
       "@type": "Organization",
