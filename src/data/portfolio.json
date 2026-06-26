@@ -99,7 +99,7 @@
             "title": "Machine Learning & Deep Learning",
             "accent": false,
             "accentTags": ["PyTorch", "TensorFlow", "Scikit-Learn"],
-            "tags": ["PyTorch", "TensorFlow", "Keras", "Gymnasium", "Scikit-Learn"]
+            "tags": ["PyTorch", "TensorFlow", "Keras", "Scikit-Learn", "Gymnasium"]
           },
           {
             "icon": "💬",
@@ -138,10 +138,10 @@
           },
           {
             "icon": "☁️",
-            "title": "DevOps & Cloud (AWS)",
+            "title": "DevOps & Cloud",
             "accent": false,
-            "accentTags": ["Docker"],
-            "tags": ["Docker", "Kubernetes (EKS)", "Terraform", "GitHub Actions"]
+            "accentTags": ["AWS", "Docker"],
+            "tags": ["AWS", "Docker", "Kubernetes", "Terraform", "GitHub Actions"]
           }
         ],
         "lang_title": "Languages",
@@ -157,7 +157,7 @@
             "flag": "🇫🇷",
             "flagCode": "fr",
             "name": "French",
-            "pct": 75,
+            "pct": 80,
             "level": "B2 · TCF"
           },
           {
@@ -207,13 +207,14 @@
             "period": "06/2023 — 08/2023 · 3 months · Tunisia",
             "role": "Machine Learning Intern",
             "bullets": [
+              "Evaluated multiple **deep reinforcement learning** algorithms from **Stable Baselines 3** across various **Gymnasium** environments to assess agent performance and training efficiency.",
               "Created a 2D game with **Pygame** featuring an AI Agent using **reinforcement learning**, based on the **Deep Q-Learning** approach, to optimize decision-making in a dynamic environment."
             ],
             "tags": [
               "TensorFlow",
               "Keras",
               "DQN",
-              "OpenAI Gym",
+              "Gymnasium",
               "Pygame",
               "Docker"
             ]
@@ -275,7 +276,7 @@
               "TensorFlow",
               "Keras",
               "DQN",
-              "OpenAI Gym",
+              "Gymnasium",
               "Pygame",
               "Docker"
             ]
@@ -437,7 +438,7 @@
             "title": "Machine Learning et Deep Learning",
             "accent": false,
             "accentTags": ["PyTorch", "TensorFlow", "Scikit-Learn"],
-            "tags": ["PyTorch", "TensorFlow", "Keras", "Gymnasium", "Scikit-Learn"]
+            "tags": ["PyTorch", "TensorFlow", "Keras", "Scikit-Learn", "Gymnasium"]
           },
           {
             "icon": "💬",
@@ -476,10 +477,10 @@
           },
           {
             "icon": "☁️",
-            "title": "DevOps & Cloud (AWS)",
+            "title": "DevOps & Cloud",
             "accent": false,
-            "accentTags": ["Docker"],
-            "tags": ["Docker", "Kubernetes (EKS)", "Terraform", "GitHub Actions"]
+            "accentTags": ["AWS", "Docker"],
+            "tags": ["AWS", "Docker", "Kubernetes", "Terraform", "GitHub Actions"]
           }
         ],
         "lang_title": "Langues",
@@ -495,7 +496,7 @@
             "flag": "🇫🇷",
             "flagCode": "fr",
             "name": "Français",
-            "pct": 75,
+            "pct": 80,
             "level": "B2 · TCF"
           },
           {
@@ -545,13 +546,14 @@
             "period": "06/2023 — 08/2023 · 3 mois · Tunisie",
             "role": "Stagiaire en Machine Learning",
             "bullets": [
+              "Évaluation de plusieurs algorithmes d'**apprentissage profond par renforcement** issus de **Stable Baselines 3** dans différents environnements **Gymnasium** afin d'évaluer les performances des agents et l'efficacité de l'entraînement.",
               "Création d'un jeu 2D avec **Pygame** intégrant un agent IA utilisant l'**apprentissage par renforcement**, basé sur l'approche **Deep Q-Learning**, pour optimiser la prise de décision dans un environnement dynamique."
             ],
             "tags": [
               "TensorFlow",
               "Keras",
               "DQN",
-              "OpenAI Gym",
+              "Gymnasium",
               "Pygame",
               "Docker"
             ]
@@ -613,7 +615,7 @@
               "TensorFlow",
               "Keras",
               "DQN",
-              "OpenAI Gym",
+              "Gymnasium",
               "Pygame",
               "Docker"
             ]
@@ -775,7 +777,7 @@
             "title": "تعلم الآلة والتعلم العميق",
             "accent": false,
             "accentTags": ["PyTorch", "TensorFlow", "Scikit-Learn"],
-            "tags": ["PyTorch", "TensorFlow", "Keras", "Gymnasium", "Scikit-Learn"]
+            "tags": ["PyTorch", "TensorFlow", "Keras", "Scikit-Learn", "Gymnasium"]
           },
           {
             "icon": "💬",
@@ -814,10 +816,10 @@
           },
           {
             "icon": "☁️",
-            "title": "DevOps & Cloud (AWS)",
+            "title": "DevOps & Cloud",
             "accent": false,
-            "accentTags": ["Docker"],
-            "tags": ["Docker", "Kubernetes (EKS)", "Terraform", "GitHub Actions"]
+            "accentTags": ["AWS", "Docker"],
+            "tags": ["AWS", "Docker", "Kubernetes", "Terraform", "GitHub Actions"]
           }
         ],
         "lang_title": "اللغات",
@@ -833,7 +835,7 @@
             "flag": "🇫🇷",
             "flagCode": "fr",
             "name": "الفرنسية",
-            "pct": 75,
+            "pct": 80,
             "level": "B2 · TCF"
           },
           {
@@ -883,13 +885,14 @@
             "period": "06/2023 — 08/2023 · 3 أشهر · تونس",
             "role": "متدرب تعلم الآلة",
             "bullets": [
+              "تقييم خوارزميات **التعلم العميق المعزز** المتعددة من **Stable Baselines 3** عبر بيئات **Gymnasium** مختلفة لقياس أداء العملاء وكفاءة التدريب.",
               "إنشاء لعبة ثنائية الأبعاد مع **Pygame** تضم عميل ذكاء اصطناعي يستخدم **التعلم المعزز**، استناداً إلى نهج **Deep Q-Learning**، لتحسين اتخاذ القرار في بيئة ديناميكية."
             ],
             "tags": [
               "TensorFlow",
               "Keras",
               "DQN",
-              "OpenAI Gym",
+              "Gymnasium",
               "Pygame",
               "Docker"
             ]
@@ -951,7 +954,7 @@
               "TensorFlow",
               "Keras",
               "DQN",
-              "OpenAI Gym",
+              "Gymnasium",
               "Pygame",
               "Docker"
             ]
