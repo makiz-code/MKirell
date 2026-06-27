@@ -12,11 +12,24 @@
         <div>
           <p class="edu__sub">{{ t.education.degrees_title }}</p>
           <ul class="edu-list">
-            <li class="edu-card" v-for="deg in t.education.degrees" :key="deg.title">
+            <li class="edu-card" v-for="(deg, i) in t.education.degrees" :key="deg.title">
               <time class="edu-card__year">{{ deg.years }}</time>
               <div class="edu-card__body">
-                <h3>{{ deg.title }}</h3>
-                <span v-if="deg.school" class="edu-card__school">{{ deg.school }}</span>
+                <div class="edu-card__title-row">
+                  <h3>{{ deg.title }}</h3>
+                  <a v-if="degDocs[i]" :href="docUrl(degDocs[i])" target="_blank" rel="noopener noreferrer"
+                    class="doc-link" title="View diploma">📎</a>
+                </div>
+                <span v-if="deg.school" class="edu-card__school-row">
+                  <span class="edu-card__school">{{ deg.school }}</span>
+                  <a v-if="deg.link" :href="deg.link" target="_blank" rel="noopener noreferrer" class="school-link"
+                    title="View on LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" width="13" height="13" aria-hidden="true">
+                      <path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </span>
                 <span v-if="deg.location" class="edu-card__location">{{ deg.location }}</span>
                 <span v-if="deg.mention" class="edu-card__mention">{{ deg.mention }}</span>
               </div>
@@ -26,13 +39,15 @@
         <div>
           <p class="edu__sub">{{ t.education.certs_title }}</p>
           <ul class="cert-list">
-            <li class="cert-item" v-for="cert in t.education.certs" :key="cert.title">
+            <li class="cert-item" v-for="(cert, i) in t.education.certs" :key="cert.title">
               <div class="cert-item__icon" aria-hidden="true">{{ cert.icon }}</div>
               <div class="cert-item__body">
                 <p class="cert-item__title">{{ cert.title }}</p>
                 <p class="cert-item__issuer">{{ cert.issuer }}</p>
               </div>
               <time v-if="cert.date" class="cert-item__date">{{ cert.date }}</time>
+              <a v-if="certDocs[i]" :href="docUrl(certDocs[i])" target="_blank" rel="noopener noreferrer"
+                class="doc-link" title="View certificate">📎</a>
             </li>
           </ul>
         </div>
@@ -43,8 +58,21 @@
         <div class="extra-block">
           <h3>{{ t.education.vol_title }}</h3>
           <ul>
-            <li class="extra-card" v-for="vol in t.education.vols" :key="vol.org">
-              <p class="extra-card__org">{{ vol.org }}</p>
+            <li class="extra-card" v-for="(vol, i) in t.education.vols" :key="vol.org">
+              <div class="extra-card__header">
+                <span class="extra-card__org-row">
+                  <p class="extra-card__org">{{ vol.org }}</p>
+                  <a v-if="volLinks && volLinks[i]" :href="volLinks[i]" target="_blank" rel="noopener noreferrer"
+                    class="vol-link" title="View on LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" width="13" height="13" aria-hidden="true">
+                      <path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </span>
+                <a v-if="volDocs[i]" :href="docUrl(volDocs[i])" target="_blank" rel="noopener noreferrer"
+                  class="doc-link" title="View attestation">📎</a>
+              </div>
               <p class="extra-card__role">{{ vol.role }}</p>
               <time class="extra-card__period">{{ vol.period }}</time>
               <p class="extra-card__desc" v-html="boldify(vol.desc)"></p>
@@ -54,15 +82,27 @@
         <div class="extra-block">
           <h3>{{ t.education.awards_title }}</h3>
           <ul>
-            <li class="award-card" v-for="award in t.education.awards" :key="award.title">
+            <li class="award-card" v-for="(award, i) in t.education.awards" :key="award.title">
               <div class="award-card__icon" aria-hidden="true">{{ award.icon }}</div>
               <div class="award-card__body">
-                <p class="award-card__title">{{ award.title }}</p>
+                <div class="award-card__title-row">
+                  <p class="award-card__title">{{ award.title }}</p>
+                  <a v-if="award.link" :href="award.link" target="_blank" rel="noopener noreferrer" class="award-link"
+                    title="Watch video">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" width="14" height="14" aria-hidden="true">
+                      <path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </div>
                 <span v-if="award.place" class="award-card__place">
                   {{ award.place }}
-                  <span v-if="award.flagCode" :class="['fi', `fi-${award.flagCode}`]" class="award-flag" aria-hidden="true"></span>
+                  <span v-if="award.flagCode" :class="['fi', `fi-${award.flagCode}`]" class="award-flag"
+                    aria-hidden="true"></span>
                 </span>
               </div>
+              <a v-if="awardDocs[i]" :href="docUrl(awardDocs[i])" target="_blank" rel="noopener noreferrer"
+                class="doc-link" title="View document">📎</a>
             </li>
           </ul>
         </div>
@@ -74,10 +114,69 @@
 <script setup>
 import { useLanguage } from '@/composables/useLanguage.js'
 import { boldify } from '@/utils/text.js'
+import { docUrl } from '@/utils/docs.js'
+import portfolioData from '@/data/portfolio.json'
+
 const { t } = useLanguage()
+const { degrees: degDocs, certs: certDocs, vols: volDocs, awards: awardDocs, volLinks } = portfolioData.docs
 </script>
 
 <style scoped>
+.doc-link {
+  font-size: 1rem;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity var(--transition);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.doc-link:hover {
+  opacity: 1;
+}
+
+.award-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  opacity: 0.7;
+  flex-shrink: 0;
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+
+.award-link:hover {
+  opacity: 1;
+}
+
+.edu-card__title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0;
+}
+
+.edu-card__title-row h3 {
+  margin-bottom: 0;
+}
+
+.edu-card__title-row .doc-link {
+  margin-top: -5px;
+}
+
+.extra-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.extra-card__header .extra-card__org {
+  margin-bottom: 0;
+}
+
 .edu-list {
   display: flex;
   flex-direction: column;
@@ -133,6 +232,27 @@ const { t } = useLanguage()
   font-size: 0.85rem;
   color: var(--ink);
   font-weight: 500;
+}
+
+.edu-card__school-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.school-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+  opacity: 0.7;
+  flex-shrink: 0;
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+
+.school-link:hover {
+  opacity: 1;
 }
 
 .edu-card__location {
@@ -238,16 +358,37 @@ const { t } = useLanguage()
   margin-bottom: 0;
 }
 
+.extra-card__org-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
 .extra-card__org {
   font-family: 'Fraunces', serif;
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--accent);
-  margin-bottom: 4px;
+  margin-bottom: 0;
+}
+
+.vol-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent);
+  opacity: 0.6;
+  text-decoration: none;
+  transition: opacity var(--transition);
+  flex-shrink: 0;
+}
+
+.vol-link:hover {
+  opacity: 1;
 }
 
 .extra-card__role {
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   color: var(--ink);
   font-weight: 500;
   margin-bottom: 5px;
@@ -256,14 +397,14 @@ const { t } = useLanguage()
 .extra-card__period {
   display: block;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   color: var(--ink-soft);
   opacity: 0.75;
   margin-bottom: 10px;
 }
 
 .extra-card__desc {
-  font-size: 0.85rem;
+  font-size: 0.92rem;
   color: var(--ink-soft);
   line-height: 1.65;
 }
@@ -285,7 +426,7 @@ const { t } = useLanguage()
   transform: translateX(4px);
 }
 
-:global(html[dir="rtl"]) .award-card:hover {
+:global(html[dir="rtl"] .award-card:hover) {
   transform: translateX(-4px);
 }
 
@@ -307,6 +448,12 @@ const { t } = useLanguage()
   justify-content: space-between;
   flex: 1;
   gap: 12px;
+}
+
+.award-card__title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .award-card__title {

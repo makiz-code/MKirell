@@ -29,13 +29,13 @@
         "addressRegion": "Île-de-France",
         "addressCountry": "FR"
       },
-      "description": "Passionate about Generative AI and Agentic AI, with a strong foundation in algorithms and programming. My goal is to strengthen my skills and contribute to innovative AI projects while continuing my academic studies.",
+      "description": "Passionate about Generative AI and Agentic Systems, with a strong foundation in algorithms and problem solving — driven to build innovative AI solutions and grow through every project.",
       "knowsAbout": [
         "Python",
-        "Java",
-        "C/C++",
         "JavaScript/TS",
         "PHP",
+        "Java",
+        "C/C++",
         "PL/SQL",
         "PyTorch",
         "TensorFlow",
@@ -43,8 +43,8 @@
         "Scikit-Learn",
         "Gymnasium",
         "Hugging Face Transformers",
-        "spaCy",
         "Sentence-Transformers",
+        "spaCy",
         "LangChain",
         "LangGraph",
         "AWS SageMaker",
@@ -65,10 +65,11 @@
         "Vue.js",
         "FastAPI",
         "Laravel",
+        "AWS",
         "Docker",
-        "Kubernetes (EKS)",
-        "Fargate (ECS)",
-        "Terraform"
+        "Kubernetes",
+        "Terraform",
+        "GitHub Actions"
       ],
       "knowsLanguage": [
         {
@@ -94,7 +95,7 @@
         {
           "@type": "EmployeeRole",
           "roleName": "Generative AI Engineer Apprentice",
-          "description": "Migrated AI Workflow Orchestration and Execution modules from a modular n-tier monolith to a hexagonal microservice, improving scalability and maintainability. Built an automated Red Teaming system for chatbots to test security layers, including guardrails and LLM-as-a-judge rules, improving behavior analysis and model resilience.",
+          "description": "Developed a declarative, config-driven graph workflow orchestration microservice, enabling dynamic workflow composition across a scalable and maintainable AI ecosystem. Built an automated Red Teaming framework for AI workflows, probing LLM behaviour across guardrails and targeted adversarial scenarios to strengthen model resilience.",
           "worksFor": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-ca"
@@ -104,7 +105,7 @@
         {
           "@type": "EmployeeRole",
           "roleName": "Natural Language Processing Intern",
-          "description": "Implemented a system that automates email classification and information extraction from attachments, using BERT and OCR to optimize efficiency and processing time. Developed a web application for BERT Fine-Tuning, email management, and real-time data analysis and visualization, to enhance user interaction and performance monitoring.",
+          "description": "Implemented a system that automates email classification and information extraction from attachments, using BERT and OCR to optimise efficiency and processing time. Developed a web application for BERT Fine-Tuning, email management, and real-time data analysis and visualisation, to enhance user interaction and performance monitoring.",
           "worksFor": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-vermeg"
@@ -115,7 +116,7 @@
         {
           "@type": "EmployeeRole",
           "roleName": "Machine Learning Intern",
-          "description": "Created a 2D game with Pygame featuring an AI Agent using reinforcement learning, based on the Deep Q-Learning approach, to optimize decision-making in a dynamic environment.",
+          "description": "Evaluated multiple deep reinforcement learning algorithms from Stable Baselines 3 across various Gymnasium environments to assess agent performance and training efficiency. Built a 2D grid game in Pygame where a Deep Q-Learning agent learns to navigate a dynamic environment, applying the best-performing algorithm from the benchmarking phase.",
           "worksFor": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-sofiatech"
@@ -149,7 +150,7 @@
         {
           "@type": "EducationalOccupationalCredential",
           "credentialCategory": "degree",
-          "name": "Bachelor's Degree in Computer Science",
+          "name": "Bachelor of Science in Computer Science",
           "description": "High Distinction",
           "recognizedBy": {
             "@type": "CollegeOrUniversity",
@@ -157,6 +158,17 @@
           },
           "startDate": "2021",
           "endDate": "2024"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "Tunisian Baccalaureate in Mathematics",
+          "recognizedBy": {
+            "@type": "Organization",
+            "@id": "https://makiz-code.github.io/MKirell/#org-ibnrachik"
+          },
+          "startDate": "2021",
+          "endDate": "2021"
         },
         {
           "@type": "EducationalOccupationalCredential",
@@ -198,14 +210,14 @@
       "award": [
         "Enactus World Cup Vice Champions",
         "Action With Africa Vice Champions",
-        "Ichmilni Race Tunisia Finalist",
+        "Ichmilni Race Tunisia Finalists",
         "Hult Prize ISI Ariana Runner-up"
       ],
       "memberOf": [
         {
           "@type": "OrganizationRole",
           "roleName": "Project Manager",
-          "description": "As Project Manager in Enactus's R&D unit, led my team to the finals of the Ichmilni Race competition by presenting AGRIVEST — an innovative platform promoting digital inclusion in rural Tunisia through peer-to-peer lending for smallholder farmers.",
+          "description": "Led my team to the Ichmilni Race finals as PM in Enactus R&D, pitching AGRIVEST — a peer-to-peer lending platform for smallholder farmers in rural Tunisia.",
           "memberOf": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-enactus"
@@ -216,7 +228,7 @@
         {
           "@type": "OrganizationRole",
           "roleName": "Team Member",
-          "description": "As Team Member in AIESEC's Incoming Global Talent/Teaching unit, negotiated partnerships with companies and educational institutions in Tunisia to secure professional internship opportunities for international exchange participants.",
+          "description": "Negotiated partnerships with educational institutions in Tunisia to secure internships for international exchange participants via AIESEC's Incoming Global Teaching unit.",
           "memberOf": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-aiesec"
@@ -228,25 +240,13 @@
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://makiz-code.github.io/MKirell/#project-twixel",
-      "name": "TwiXel",
-      "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
-      "description": "Developed an intelligent multi-agent system for automated social listening on Twitter (now X), designed to identify emerging trends in real time and generate actionable marketing campaign ideas at scale.",
-      "applicationCategory": "Artificial Intelligence",
-      "operatingSystem": "Linux",
-      "keywords": "LangGraph, LLaMA 3, FAISS, Tweepy, Vue.js, FastAPI, MongoDB",
-      "dateCreated": "2026-02",
-      "applicationSubCategory": "Multi-Agent"
-    },
-    {
-      "@type": "SoftwareApplication",
       "@id": "https://makiz-code.github.io/MKirell/#project-cvision",
       "name": "CVision",
       "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
-      "description": "Created an intelligent CV recommendation system based on job description using Retrieval-Augmented Generation (RAG), to optimize the selection and automatic ranking of the most relevant profiles.",
+      "description": "Created an intelligent CV recommendation system based on job description using Retrieval-Augmented Generation (RAG), to optimise the selection and automatic ranking of the most relevant profiles.",
       "applicationCategory": "Artificial Intelligence",
       "operatingSystem": "Linux",
-      "keywords": "LangChain, Mistral, ChromaDB, PyMuPDF, Streamlit, MongoDB",
+      "keywords": "Advanced RAG, Re-Ranking, LangChain, Qwen3-VL, Weaviate, Python/Streamlit",
       "dateCreated": "2025-06",
       "applicationSubCategory": "RAG"
     },
@@ -255,10 +255,10 @@
       "@id": "https://makiz-code.github.io/MKirell/#project-vermail",
       "name": "VERMail",
       "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
-      "description": "End-to-end email intelligence platform combining fine-tuned BERT for classification and Tesseract OCR for attachment parsing, with a React dashboard.",
+      "description": "Developed an end-to-end email intelligence platform combining fine-tuned BERT for multi-class classification and Tesseract OCR for attachment parsing, with a React dashboard for real-time monitoring and model management.",
       "applicationCategory": "Artificial Intelligence",
       "operatingSystem": "Linux",
-      "keywords": "BERT, PyTorch, Tesseract OCR, React, Flask, MongoDB",
+      "keywords": "BERT Fine-Tuning, PyTorch, Tesseract OCR, Python/Flask, React/Redux, MongoDB",
       "dateCreated": "2024-02",
       "applicationSubCategory": "NLP · OCR"
     },
@@ -267,12 +267,48 @@
       "@id": "https://makiz-code.github.io/MKirell/#project-slythera",
       "name": "Slythera",
       "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
-      "description": "A 2D Python game powered by a Deep Q-Learning agent that learns to navigate and survive in a dynamic environment. Deployed via Docker.",
+      "description": "Developed a 2D grid-based game in Pygame featuring an AI agent trained from scratch with Deep Q-Learning to autonomously navigate obstacles and maximise its score across a dynamic, progressively challenging environment.",
       "applicationCategory": "Artificial Intelligence",
       "operatingSystem": "Linux",
-      "keywords": "TensorFlow, Keras, DQN, OpenAI Gym, Pygame, Docker",
+      "keywords": "Reinforcement Learning, TensorFlow/Keras, Gymnasium, NumPy, Pandas, Python/Pygame",
       "dateCreated": "2023-06",
       "applicationSubCategory": "Deep RL"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://makiz-code.github.io/MKirell/#project-aerovi",
+      "name": "AeroVI",
+      "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
+      "description": "Designing a multimodal travel guide that generates personalised travel itineraries, curated destination recommendations, and immersive visual content — covering the full journey from planning to discovery.",
+      "applicationCategory": "Artificial Intelligence",
+      "operatingSystem": "Linux",
+      "keywords": "Curation, Advanced RAG, Multimodal LLM, Visual Generation, Knowledge Graph",
+      "dateCreated": "2026",
+      "applicationSubCategory": "Multimodal AI"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://makiz-code.github.io/MKirell/#project-planyu",
+      "name": "PlanYU",
+      "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
+      "description": "Designing a generative project management platform that produces complete project structures — tasks, schedules, and assignments — pairing team members to each task based on their skills and availability.",
+      "applicationCategory": "Artificial Intelligence",
+      "operatingSystem": "Linux",
+      "keywords": "Delegation, LLM Planning, Skill Matching, Agentic Workflows, Task Decomposition",
+      "dateCreated": "2026",
+      "applicationSubCategory": "Agentic · PM"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://makiz-code.github.io/MKirell/#project-twixel",
+      "name": "TwiXel",
+      "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
+      "description": "Designing an intelligent multi-agent system for automated social listening on Twitter (now X), aimed at identifying emerging trends in real time and generating actionable marketing campaign ideas at scale.",
+      "applicationCategory": "Artificial Intelligence",
+      "operatingSystem": "Linux",
+      "keywords": "Multi-Agent Systems, LangGraph, MCP/A2A, GPT-OSS, Milvus, Python/FastAPI, Vue.js",
+      "dateCreated": "2027",
+      "applicationSubCategory": "Multi-Agent"
     },
     {
       "@type": "Organization",
@@ -312,12 +348,24 @@
     {
       "@type": "CollegeOrUniversity",
       "@id": "https://makiz-code.github.io/MKirell/#org-supgalilee",
-      "name": "Université Sorbonne Paris Nord, Sup Galilée"
+      "name": "Université Sorbonne Paris Nord, Sup Galilée",
+      "sameAs": "https://www.linkedin.com/school/université-sorbonne-paris-nord/"
     },
     {
       "@type": "CollegeOrUniversity",
       "@id": "https://makiz-code.github.io/MKirell/#org-isi",
-      "name": "Université de Tunis El Manar, ISI Ariana"
+      "name": "Université de Tunis El Manar, ISI Ariana",
+      "sameAs": "https://www.linkedin.com/school/university-of-tunis-el-manar/"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://makiz-code.github.io/MKirell/#org-ibnrachik",
+      "name": "Ibn Rachik High School",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ezzahra",
+        "addressCountry": "TN"
+      }
     }
   ]
 }

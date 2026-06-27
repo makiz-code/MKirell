@@ -20,7 +20,7 @@
           <span class="contact-item__icon" aria-hidden="true">📞</span>
           <span>
             <span class="contact-item__label">{{ t.contact.phone_label }}</span>
-            <span class="contact-item__value">{{ person.phone }}</span>
+            <span class="contact-item__value">{{ person.phoneDisplay || person.phone }}</span>
           </span>
         </a>
         <a :href="person.linkedin" target="_blank" rel="noopener noreferrer" class="contact-item"

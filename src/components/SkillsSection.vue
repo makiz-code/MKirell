@@ -12,18 +12,22 @@
           <div class="skill-category__icon" aria-hidden="true">{{ cat.icon }}</div>
           <h3>{{ cat.title }}</h3>
           <ul class="tags" aria-label="Technologies">
-            <li v-for="tag in cat.tags" :key="tag" :class="['tag', { 'tag--accent': cat.accent || (cat.accentTags && cat.accentTags.includes(tag)) }]">{{ tag }}</li>
+            <li v-for="tag in cat.tags" :key="tag"
+              :class="['tag', { 'tag--accent': cat.accent || (cat.accentTags && cat.accentTags.includes(tag)) }]">{{ tag
+              }}</li>
           </ul>
         </li>
       </ul>
 
       <p class="languages__title">{{ t.skills.lang_title }}</p>
       <ul class="languages__list" v-reveal aria-label="Language proficiency">
-        <li v-for="lang in t.skills.languages" :key="lang.name" class="lang-item">
+        <li v-for="(lang, i) in t.skills.languages" :key="lang.name" class="lang-item">
           <div class="lang-item__top">
             <span :class="['fi', `fi-${lang.flagCode}`]" class="lang-flag-icon" aria-hidden="true"></span>
             <span class="lang-name">{{ lang.name }}</span>
             <span class="lang-level">{{ lang.level }}</span>
+            <a v-if="langDocs[i]" :href="docUrl(langDocs[i])" target="_blank" rel="noopener noreferrer" class="doc-link"
+              title="View certificate">📎</a>
           </div>
           <div class="lang-bar" role="progressbar" :aria-valuenow="lang.pct" aria-valuemin="0" aria-valuemax="100"
             :aria-label="lang.name + ' proficiency'">
@@ -37,7 +41,11 @@
 
 <script setup>
 import { useLanguage } from '@/composables/useLanguage.js'
+import { docUrl } from '@/utils/docs.js'
+import portfolioData from '@/data/portfolio.json'
+
 const { t } = useLanguage()
+const langDocs = portfolioData.docs.languages
 </script>
 
 <style scoped>
@@ -138,6 +146,22 @@ const { t } = useLanguage()
   color: var(--ink-soft);
   font-size: 0.72rem;
   margin-inline-start: auto;
+  line-height: 1;
+}
+
+.doc-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity var(--transition);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.doc-link:hover {
+  opacity: 1;
 }
 
 @media (max-width: 700px) {

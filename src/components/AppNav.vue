@@ -1,5 +1,6 @@
 <template>
-  <nav id="navbar" :class="['nav', { 'nav--scrolled': scrolled }]" aria-label="Main navigation">
+  <nav id="navbar" :class="['nav', { 'nav--scrolled': scrolled, 'nav--menu-open': menuOpen }]"
+    aria-label="Main navigation">
     <a href="#main-content" class="nav-logo" aria-label="MKirell – go to top">MKirell<span class="logo-dot">.</span></a>
 
     <ul id="navLinks" :class="['nav__links', { open: menuOpen }]" role="list">
@@ -231,6 +232,15 @@ onUnmounted(() => {
 }
 
 @media (max-width: 860px) {
+
+  /* backdrop-filter on the scrolled nav would otherwise become the containing
+     block for the fixed menu panel, collapsing it to the nav's height. Drop it
+     while the menu is open so the panel spans the full viewport. */
+  .nav--menu-open {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
   .nav__links {
     position: fixed;
     top: 0;
@@ -254,10 +264,14 @@ onUnmounted(() => {
     display: block;
   }
 
-  :global(html[dir="rtl"]) .nav__links {
+  :global(html[dir="rtl"] .nav__links) {
     right: auto;
     left: 0;
     transform: translateX(-100%);
+  }
+
+  :global(html[dir="rtl"] .nav__links.open) {
+    transform: translateX(0);
   }
 
   .nav__links.open {

@@ -7,12 +7,22 @@
       </header>
       <h2 id="projects-heading" class="section-h2" v-reveal>{{ t.projects.heading }}</h2>
       <ul class="projects__grid" aria-label="Project list">
-        <li v-for="project in t.projects.items" :key="project.title" class="project-card" v-reveal>
+        <li v-for="(project, i) in t.projects.items" :key="project.title" class="project-card" v-reveal>
           <div class="project-card__header">
-            <time class="project-card__period">{{ project.period }}</time>
+            <time class="project-card__period">{{ project.period }}{{ project.duration ? ` (${project.duration})` : ''
+              }}</time>
             <span class="project-badge">{{ project.badge }}</span>
           </div>
-          <h3 class="project-card__title">{{ project.title }}</h3>
+          <div class="project-card__title-row">
+            <h3 class="project-card__title">{{ project.title }}</h3>
+            <a v-if="projectLinks[i]" :href="projectLinks[i]" target="_blank" rel="noopener noreferrer"
+              class="project-link" title="View on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" width="14" height="14" aria-hidden="true">
+                <path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
           <p class="project-card__desc" v-html="boldify(project.desc)"></p>
           <ul class="tags tags-sm" aria-label="Technologies used">
             <li v-for="tag in project.tags" :key="tag" class="tag">{{ tag }}</li>
@@ -26,7 +36,10 @@
 <script setup>
 import { useLanguage } from '@/composables/useLanguage.js'
 import { boldify } from '@/utils/text.js'
+import portfolioData from '@/data/portfolio.json'
+
 const { t } = useLanguage()
+const projectLinks = portfolioData.docs.projectLinks
 </script>
 
 <style scoped>
@@ -91,12 +104,33 @@ const { t } = useLanguage()
   font-family: 'JetBrains Mono', monospace;
 }
 
+.project-card__title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
 .project-card__title {
   font-family: 'Fraunces', serif;
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--ink);
-  margin-bottom: 14px;
+  margin-bottom: 0;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--ink-soft);
+  opacity: 0.6;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: opacity var(--transition);
+}
+
+.project-link:hover {
+  opacity: 1;
 }
 
 .project-card__desc {

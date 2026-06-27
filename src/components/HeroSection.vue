@@ -2,11 +2,6 @@
   <div class="hero-bg-grid" aria-hidden="true"></div>
   <section class="hero" id="hero" aria-labelledby="hero-heading">
     <div class="hero__content">
-      <div class="hero__badge">
-        <span class="status-dot"></span>
-        {{ t.hero.badge }}
-      </div>
-
       <h1 id="hero-heading" class="hero__name">{{ t.hero.title }}</h1>
 
       <div class="hero__title">
@@ -33,7 +28,7 @@
         <div class="terminal__body">
           <div class="terminal__line">
             <span class="cmd">{{ t.hero.card.jobTitle }}</span>
-            <span class="out">{{ t.experience.jobs[0].role }}</span>
+            <span class="out">{{ t.hero.cardRole }}</span>
           </div>
           <div class="terminal__line">
             <span class="cmd">{{ t.hero.card.worksFor }}</span>
@@ -66,6 +61,15 @@
               <path d="m2 7 10 7 10-7" />
             </svg>
           </a>
+          <a v-if="resumeUrl" :href="resumeUrl" target="_blank" rel="noopener noreferrer" :download="person.resume"
+            class="social-link cv-link" aria-label="Download Resume / CV" title="Download CV">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="12" y1="18" x2="12" y2="12" />
+              <polyline points="9 15 12 18 15 15" />
+            </svg>
+          </a>
         </footer>
       </div><!-- /.terminal -->
     </div><!-- /.hero__visual -->
@@ -83,12 +87,14 @@ import { computed } from 'vue'
 import { useLanguage } from '@/composables/useLanguage.js'
 import { useTypewriter } from '@/composables/useTypewriter.js'
 import portfolioData from '@/data/portfolio.json'
-const { person } = portfolioData
+import { docUrl } from '@/utils/docs.js'
 import { boldify } from '@/utils/text.js'
 
+const { person } = portfolioData
 const { t } = useLanguage()
 const phrases = computed(() => t.value.hero.subtitles)
 const { display } = useTypewriter(phrases)
+const resumeUrl = docUrl(person.resume)
 </script>
 
 <style scoped>
@@ -109,28 +115,6 @@ const { display } = useTypewriter(phrases)
   min-width: 0;
 }
 
-.hero__badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 100px;
-  padding: 7px 16px;
-  font-size: 0.78rem;
-  color: var(--ink-soft);
-  margin-bottom: 30px;
-}
-
-.status-dot {
-  width: 7px;
-  height: 7px;
-  background: var(--sage);
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-  flex-shrink: 0;
-}
-
 .hero__name {
   font-family: 'Fraunces', serif;
   font-size: clamp(2.9rem, 6.2vw, 5.1rem);
@@ -141,12 +125,14 @@ const { display } = useTypewriter(phrases)
   margin-bottom: 20px;
 }
 
+
 .hero__title {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
   color: var(--accent-deep);
   min-height: 26px;
+  margin-top: 28px;
   margin-bottom: 26px;
 }
 
@@ -219,7 +205,7 @@ const { display } = useTypewriter(phrases)
 }
 
 .terminal__body {
-  padding: 6px 22px 22px;
+  padding: 6px 22px 10px;
   display: flex;
   flex-direction: column;
 }
@@ -261,6 +247,11 @@ const { display } = useTypewriter(phrases)
   align-items: center;
 }
 
+.blink__line .cursor {
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
 .terminal__footer {
   display: flex;
   align-items: center;
@@ -294,6 +285,13 @@ const { display } = useTypewriter(phrases)
   background: var(--accent);
   border-radius: 2px;
   animation: scroll-wheel 2s ease infinite;
+}
+
+.cv-link {
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  margin-left: auto;
 }
 
 @media (max-width: 900px) {

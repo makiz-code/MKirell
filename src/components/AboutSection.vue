@@ -11,12 +11,13 @@
           <p v-for="(para, i) in t.about.paragraphs" :key="i" v-html="boldify(para)"></p>
         </div>
         <div class="about__cards" v-reveal>
-          <div v-for="(stat, i) in t.about.stats" :key="i" class="stat-card">
+          <component v-for="(stat, i) in t.about.stats" :key="i" :is="stat.anchor ? 'a' : 'div'"
+            :href="stat.anchor || undefined" class="stat-card">
             <span class="stat-card__num" :style="{ color: statColors[i] }">
               {{ statNums[i] }}
             </span>
             <span class="stat-card__label">{{ statLabels[i] }}</span>
-          </div>
+          </component>
         </div>
       </div>
     </div>
@@ -31,8 +32,8 @@ import { boldify } from '@/utils/text.js'
 const { t } = useLanguage()
 
 const statColors = ['var(--accent-deep)', 'var(--sage)', 'var(--gold)', 'var(--accent-deep)']
-const statNums = ['2+', '4', '4', '3']
-const statLabels = computed(() => t.value.about.stats)
+const statNums = computed(() => t.value.about.stats.map(s => s.num))
+const statLabels = computed(() => t.value.about.stats.map(s => s.label))
 </script>
 
 <style scoped>
@@ -54,6 +55,11 @@ const statLabels = computed(() => t.value.about.stats)
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+}
+
+a.stat-card {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .stat-card {

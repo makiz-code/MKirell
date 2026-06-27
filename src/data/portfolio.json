@@ -5,6 +5,7 @@
     "familyName": "Zrelly",
     "email": "mohamed.khalil.zrelly@gmail.com",
     "phone": "+33758215856",
+    "phoneDisplay": "+33 7 58 21 58 56",
     "linkedin": "https://www.linkedin.com/in/mohamed-khalil-zrelly/",
     "url": "https://makiz-code.github.io/MKirell",
     "jobTitle": "Generative AI Engineer Apprentice",
@@ -13,7 +14,46 @@
     "alumniOf": "Sorbonne Paris North University",
     "addressLocality": "Le Bourget",
     "addressRegion": "Île-de-France",
-    "addressCountry": "FR"
+    "addressCountry": "FR",
+    "resume": "portfolio-cv-mkzrelly.pdf"
+  },
+  "docs": {
+    "experience": [
+      null,
+      "internship-cert-vermeg.pdf",
+      "internship-cert-sofiatech.pdf"
+    ],
+    "experienceLinks": [
+      "https://www.linkedin.com/company/credit-agricole-personal-finance-mobility/",
+      "https://www.linkedin.com/company/vermeg/",
+      "https://www.linkedin.com/company/sofiatech-tn/"
+    ],
+    "degrees": [
+      null,
+      "degree-bachelor-2024.pdf",
+      "degree-baccalaureate-2021.pdf"
+    ],
+    "certs": [
+      "certificate-pyspark-udemy.pdf",
+      "certificate-nlp-python.pdf",
+      "certificate-azure-ai900.pdf",
+      "certificate-azure-dp900.pdf"
+    ],
+    "vols": [null, null],
+    "volLinks": [
+      "https://www.linkedin.com/company/enactus/",
+      "https://www.linkedin.com/company/aiesec/"
+    ],
+    "projectLinks": [
+      "https://github.com/makiz-code/CVision",
+      "https://github.com/makiz-code/VERMail",
+      "https://github.com/makiz-code/Slythera",
+      null,
+      null,
+      null
+    ],
+    "awards": [null, null, null, null],
+    "languages": [null, "certificate-french-tcf.pdf", null]
   },
   "metaLocales": [
     {
@@ -52,15 +92,15 @@
         "contact": "Contact"
       },
       "hero": {
-        "badge": "Generative AI Engineer Apprentice · Computer Science Engineering Student",
         "title": "Mohamed Khalil Zrelly",
         "subtitles": [
-          "Gen AI Engineer Apprentice",
+          "Agentic Systems & RAG Pipelines",
           "Machine Learning & Deep Learning",
           "Multi-Agent Systems Builder",
           "NLP / LLM Enthusiast"
         ],
-        "desc": "A **Generative AI engineer** specialising in **LLM architectures**, **RAG pipelines**, and **agentic systems** — building intelligent solutions that bridge research and real-world impact.",
+        "cardRole": "Generative AI Engineer",
+        "desc": "Passionate about **Generative AI** and **Agentic Systems**, with a strong foundation in algorithms and problem solving — driven to build innovative AI solutions and grow through every project.",
         "cta_projects": "View my projects",
         "cta_contact": "Get in touch",
         "card": {
@@ -73,15 +113,23 @@
       "about": {
         "heading": "About Me",
         "paragraphs": [
-          "I'm a Computer Science Engineering student at **Sup Galilée — Sorbonne Paris North University**, working as a **Generative AI Engineer Apprentice at Crédit Agricole**. I'm passionate about building intelligent systems — from RAG pipelines to multi-agent architectures — that turn cutting-edge AI into real, usable solutions.",
-          "My background spans **machine learning**, **deep learning**, and **natural language processing**, with hands-on experience across internships and personal projects. I enjoy the full journey: experimenting with models, engineering robust pipelines, and shipping things that work.",
-          "Beyond AI, I believe in real-world impact — through **Enactus** and **AIESEC**, I contribute to social entrepreneurship and international exchange initiatives, bringing the same curiosity and drive I apply to technical challenges."
+          "I'm a Computer Science Engineering student at **Sup Galilée — Sorbonne Paris North University**, working as a **Generative AI Engineer Apprentice at Crédit Agricole**. I'm passionate about **Generative AI** and **Agentic Systems**, and my goal is to keep strengthening my skills while contributing to innovative AI projects.",
+          "My background spans **machine learning**, **deep learning**, and **natural language processing**, built through internships and personal projects. I enjoy the full cycle — from experimenting with models to shipping things that actually work.",
+          "Outside of work and studies, I was involved in **Enactus** and **AIESEC**, where I contributed to social entrepreneurship and international exchange — driven by the same curiosity and commitment I bring to every technical challenge."
         ],
         "stats": [
-          "2+ years in ML / AI",
-          "4 major AI projects",
-          "4 cloud & ML certifications",
-          "3 languages spoken"
+          {
+            "num": "1.5+",
+            "label": "years of experience",
+            "anchor": "#experience"
+          },
+          { "num": "6", "label": "personal projects", "anchor": "#projects" },
+          {
+            "num": "4",
+            "label": "professional certifications",
+            "anchor": "#education"
+          },
+          { "num": "3", "label": "languages spoken", "anchor": "#skills" }
         ]
       },
       "skills": {
@@ -103,7 +151,7 @@
           },
           {
             "icon": "🧠",
-            "title": "Machine Learning & Deep Learning",
+            "title": "Data Science, ML & DL",
             "accent": false,
             "accentTags": ["PyTorch", "TensorFlow", "Scikit-Learn"],
             "tags": [
@@ -116,7 +164,7 @@
           },
           {
             "icon": "💬",
-            "title": "Natural Language Processing & LLMs",
+            "title": "NLP & LLM Architectures",
             "accent": false,
             "accentTags": [
               "Hugging Face Transformers",
@@ -130,7 +178,7 @@
           },
           {
             "icon": "🤖",
-            "title": "Generative AI & Multi-Agent Systems",
+            "title": "Generative AI & Agentic Systems",
             "accent": false,
             "accentTags": ["LangGraph", "AWS SageMaker", "AWS Bedrock"],
             "tags": ["LangChain", "LangGraph", "AWS SageMaker", "AWS Bedrock"]
@@ -163,7 +211,7 @@
           },
           {
             "icon": "🌐",
-            "title": "Web Full Stack Frameworks & REST APIs",
+            "title": "Web Full Stack & REST APIs",
             "accent": false,
             "accentTags": ["React", "Vue.js", "FastAPI"],
             "tags": [
@@ -177,7 +225,7 @@
           },
           {
             "icon": "☁️",
-            "title": "DevOps & Cloud",
+            "title": "DevOps & Cloud Infrastructure",
             "accent": false,
             "accentTags": ["AWS", "Docker"],
             "tags": [
@@ -216,6 +264,7 @@
       },
       "experience": {
         "heading": "Work Experience",
+        "current_label": "Ongoing",
         "jobs": [
           {
             "current": true,
@@ -223,8 +272,8 @@
             "period": "09/2025 — Present · 10 months · France",
             "role": "Generative AI Engineer Apprentice",
             "bullets": [
-              "Migrated AI Workflow Orchestration and Execution modules from a modular n-tier monolith to a hexagonal microservice, improving scalability and maintainability.",
-              "Built an automated Red Teaming system for chatbots to test security layers, including guardrails and LLM-as-a-judge rules, improving behaviour analysis and model resilience."
+              "Developed a declarative, config-driven **graph workflow orchestration** microservice, enabling dynamic workflow composition across a scalable and maintainable AI ecosystem.",
+              "Built an automated **Red Teaming** framework for AI workflows, probing **LLM behaviour** across guardrails and targeted adversarial scenarios to strengthen model resilience."
             ],
             "tags": [
               "Agentic Workflows",
@@ -286,6 +335,7 @@
         "items": [
           {
             "period": "06/2025 — 08/2025",
+            "duration": "3 months",
             "badge": "RAG",
             "title": "CVision",
             "desc": "Created an intelligent **CV recommendation system** based on job description using **Retrieval-Augmented Generation (RAG)**, to optimise the selection and automatic ranking of the most relevant profiles.",
@@ -300,6 +350,7 @@
           },
           {
             "period": "02/2024 — 06/2024",
+            "duration": "5 months",
             "badge": "NLP · OCR",
             "title": "VERMail",
             "desc": "Developed an end-to-end **email intelligence platform** combining fine-tuned **BERT** for multi-class classification and **Tesseract OCR** for attachment parsing, with a **React** dashboard for real-time monitoring and model management.",
@@ -314,6 +365,7 @@
           },
           {
             "period": "06/2023 — 08/2023",
+            "duration": "3 months",
             "badge": "Deep RL",
             "title": "Slythera",
             "desc": "Developed a **2D grid-based game** in **Pygame** featuring an AI agent trained from scratch with **Deep Q-Learning** to autonomously navigate obstacles and maximise its score across a dynamic, progressively challenging environment.",
@@ -328,6 +380,32 @@
           },
           {
             "period": "~ 2026",
+            "badge": "Multimodal AI",
+            "title": "AeroVI",
+            "desc": "Designing a **multimodal travel guide** that generates personalised travel itineraries, curated destination recommendations, and immersive visual content — covering the full journey from planning to discovery.",
+            "tags": [
+              "Curation",
+              "Advanced RAG",
+              "Multimodal LLM",
+              "Visual Generation",
+              "Knowledge Graph"
+            ]
+          },
+          {
+            "period": "~ 2026",
+            "badge": "Agentic · PM",
+            "title": "PlanYU",
+            "desc": "Designing a **generative project management platform** that produces complete project structures — tasks, schedules, and assignments — pairing team members to each task based on their skills and availability.",
+            "tags": [
+              "Delegation",
+              "LLM Planning",
+              "Skill Matching",
+              "Agentic Workflows",
+              "Task Decomposition"
+            ]
+          },
+          {
+            "period": "~ 2027",
             "badge": "Multi-Agent",
             "title": "TwiXel",
             "desc": "Designing an intelligent **multi-agent system** for automated social listening on Twitter (now X), aimed at identifying emerging trends in real time and generating actionable marketing campaign ideas at scale.",
@@ -340,30 +418,6 @@
               "Python/FastAPI",
               "Vue.js"
             ]
-          },
-          {
-            "period": "~ 2027",
-            "badge": "Multimodal AI",
-            "title": "AeroVI",
-            "desc": "Designing a **multimodal travel guide** that generates personalised travel itineraries, curated destination recommendations, and immersive visual content — covering the full journey from planning to discovery.",
-            "tags": [
-              "Advanced RAG",
-              "Multimodal LLM",
-              "Visual Generation",
-              "Semantic Search"
-            ]
-          },
-          {
-            "period": "~ 2028",
-            "badge": "Agentic · PM",
-            "title": "PlanYU",
-            "desc": "Designing a **generative project management platform** that produces complete project structures — tasks, schedules, and assignments — pairing team members to each task based on their skills and availability.",
-            "tags": [
-              "Agentic Workflows",
-              "LLM Planning",
-              "Task Decomposition",
-              "Resource Allocation"
-            ]
           }
         ]
       },
@@ -375,6 +429,7 @@
             "years": "2024 — 2027",
             "title": "Engineering Degree in Computer Science",
             "school": "Sorbonne Paris North University – Sup Galilée",
+            "link": "https://www.linkedin.com/school/université-sorbonne-paris-nord/",
             "location": "Villetaneuse, France",
             "mention": null
           },
@@ -382,15 +437,16 @@
             "years": "2021 — 2024",
             "title": "Bachelor of Science in Computer Science",
             "school": "University of Tunis El Manar – ISI Ariana",
+            "link": "https://www.linkedin.com/school/university-of-tunis-el-manar/",
             "location": "Ariana, Tunisia",
             "mention": "High Distinction ✦"
           },
           {
             "years": "2021",
             "title": "Tunisian Baccalaureate in Mathematics",
-            "school": null,
-            "location": null,
-            "mention": "High Distinction ✦"
+            "school": "Ibn Rachik High School",
+            "location": "Ezzahra, Tunisia",
+            "mention": null
           }
         ],
         "certs_title": "Certifications",
@@ -426,13 +482,13 @@
             "org": "Enactus",
             "role": "Project Manager",
             "period": "09/2021 — 08/2024 · 3 years",
-            "desc": "As Project Manager in Enactus's R&D unit, led my team to the finals of the Ichmilni Race competition by presenting **AGRIVEST** — an innovative platform promoting digital inclusion in rural Tunisia through peer-to-peer lending for smallholder farmers."
+            "desc": "Led my team to the Ichmilni Race finals as PM in Enactus R&D, pitching **AGRIVEST** — a peer-to-peer lending platform for smallholder farmers in rural Tunisia."
           },
           {
             "org": "AIESEC",
             "role": "Team Member",
             "period": "02/2024 — 07/2024 · 6 months",
-            "desc": "As Team Member in AIESEC's Incoming Global Talent/Teaching unit, negotiated partnerships with companies and educational institutions in Tunisia to secure professional internship opportunities for international exchange participants."
+            "desc": "Negotiated partnerships with educational institutions in Tunisia to secure internships for international exchange participants via AIESEC's Incoming Global Talent unit."
           }
         ],
         "awards_title": "Awards",
@@ -441,13 +497,15 @@
             "icon": "🏆",
             "title": "Enactus World Cup Vice Champions",
             "place": "Puerto Rico",
-            "flagCode": "pr"
+            "flagCode": "pr",
+            "link": "https://www.youtube.com/watch?v=9TI9ox2F4_I"
           },
           {
             "icon": "🏆",
             "title": "Action With Africa Vice Champions",
             "place": "Netherlands",
-            "flagCode": "nl"
+            "flagCode": "nl",
+            "link": "https://www.youtube.com/watch?v=KH4X_hWQqNA&t=15s"
           },
           {
             "icon": "🏅",
@@ -486,15 +544,15 @@
         "contact": "Contact"
       },
       "hero": {
-        "badge": "Apprenti Ingénieur IA Générative · Étudiant Ingénieur Informatique",
         "title": "Mohamed Khalil Zrelly",
         "subtitles": [
-          "Ingénieur IA Générative",
+          "Systèmes Agentiques & Pipelines RAG",
           "Machine Learning & Deep Learning",
           "Systèmes Multi-Agents",
           "NLP / LLM"
         ],
-        "desc": "Un **ingénieur en IA Générative** spécialisé dans les **systèmes agentiques**, les **pipelines RAG** et les **architectures LLM** — concevant des solutions intelligentes qui font le pont entre la recherche et l'impact réel.",
+        "cardRole": "Ingénieur IA Générative",
+        "desc": "Passionné par l'**IA Générative** et les **Systèmes Agentiques**, avec de solides bases en algorithmique et en résolution de problèmes — déterminé à construire des solutions IA innovantes et à progresser à travers chaque projet.",
         "cta_projects": "Voir mes projets",
         "cta_contact": "Me contacter",
         "card": {
@@ -507,15 +565,23 @@
       "about": {
         "heading": "À propos de moi",
         "paragraphs": [
-          "Étudiant en ingénierie informatique à **Sup Galilée — Université Sorbonne Paris Nord**, je travaille en alternance comme **Ingénieur IA Générative chez Crédit Agricole**. Je suis passionné par la conception de systèmes intelligents — des pipelines RAG aux architectures multi-agents — qui transforment les dernières avancées de l'IA en solutions concrètes et opérationnelles.",
-          "Mon parcours couvre le **machine learning**, le **deep learning** et le **traitement automatique du langage naturel**, enrichi par une expérience pratique acquise en stages et sur des projets personnels. J'aime m'investir dans l'ensemble du processus : expérimenter avec les modèles, concevoir des pipelines robustes et livrer des solutions qui fonctionnent réellement.",
-          "Au-delà de l'IA, je crois à l'impact concret — à travers **Enactus** et **AIESEC**, j'ai contribué à des initiatives d'entrepreneuriat social et d'échange international, en y apportant la même curiosité et la même détermination que j'investis dans les défis techniques."
+          "Étudiant en ingénierie informatique à **Sup Galilée — Université Sorbonne Paris Nord**, je travaille en alternance comme **Ingénieur IA Générative chez Crédit Agricole**. Passionné par l'**IA Générative** et les **Systèmes Agentiques**, mon objectif est de renforcer mes compétences tout en contribuant à des projets d'IA innovants.",
+          "Mon parcours couvre le **machine learning**, le **deep learning** et le **traitement automatique du langage naturel**, construit à travers des stages et des projets personnels. J'aime travailler sur l'ensemble du cycle — expérimenter avec les modèles, construire des pipelines robustes et livrer des solutions qui fonctionnent vraiment.",
+          "En dehors du travail et des études, je me suis investi dans **Enactus** et **AIESEC**, où j'ai contribué à l'entrepreneuriat social et aux échanges internationaux — animé par la même curiosité et le même engagement que j'apporte à chaque défi technique."
         ],
         "stats": [
-          "2+ ans en ML / IA",
-          "4 projets IA majeurs",
-          "4 certifications cloud & ML",
-          "3 langues parlées"
+          {
+            "num": "1.5+",
+            "label": "années d'expérience",
+            "anchor": "#experience"
+          },
+          { "num": "6", "label": "projets personnels", "anchor": "#projects" },
+          {
+            "num": "4",
+            "label": "certifications professionnelles",
+            "anchor": "#education"
+          },
+          { "num": "3", "label": "langues parlées", "anchor": "#skills" }
         ]
       },
       "skills": {
@@ -537,7 +603,7 @@
           },
           {
             "icon": "🧠",
-            "title": "Machine Learning et Deep Learning",
+            "title": "Data Science, ML & DL",
             "accent": false,
             "accentTags": ["PyTorch", "TensorFlow", "Scikit-Learn"],
             "tags": [
@@ -550,7 +616,7 @@
           },
           {
             "icon": "💬",
-            "title": "Natural Language Processing et LLMs",
+            "title": "NLP & LLM Architectures",
             "accent": false,
             "accentTags": [
               "Hugging Face Transformers",
@@ -564,7 +630,7 @@
           },
           {
             "icon": "🤖",
-            "title": "IA Générative et Systèmes Multi-Agents",
+            "title": "IA Générative & Systèmes Agentiques",
             "accent": false,
             "accentTags": ["LangGraph", "AWS SageMaker", "AWS Bedrock"],
             "tags": ["LangChain", "LangGraph", "AWS SageMaker", "AWS Bedrock"]
@@ -597,7 +663,7 @@
           },
           {
             "icon": "🌐",
-            "title": "Frameworks Web Full Stack et API REST",
+            "title": "Web Full Stack & API REST",
             "accent": false,
             "accentTags": ["React", "Vue.js", "FastAPI"],
             "tags": [
@@ -611,7 +677,7 @@
           },
           {
             "icon": "☁️",
-            "title": "DevOps & Cloud",
+            "title": "DevOps & Cloud Infrastructure",
             "accent": false,
             "accentTags": ["AWS", "Docker"],
             "tags": [
@@ -650,6 +716,7 @@
       },
       "experience": {
         "heading": "Expériences Professionnelles",
+        "current_label": "En poste",
         "jobs": [
           {
             "current": true,
@@ -657,8 +724,8 @@
             "period": "09/2025 — En cours · 10 mois · France",
             "role": "Apprenti Ingénieur IA Générative",
             "bullets": [
-              "Migration des modules d'orchestration et d'exécution de workflows IA d'un monolithe n-tiers modulaire vers un microservice hexagonal, améliorant la scalabilité et la maintenabilité.",
-              "Développement d'un système automatisé de Red Teaming pour les chatbots afin de tester les couches de sécurité, incluant les guardrails et les règles LLM-as-a-judge, améliorant l'analyse comportementale et la résilience des modèles."
+              "Développement d'un microservice déclaratif et piloté par configuration pour l'**orchestration et l'exécution de workflows en graphe**, permettant une composition dynamique au sein d'un écosystème IA scalable et maintenable.",
+              "Développement d'un framework de **Red Teaming** automatisé pour les workflows IA, évaluant le **comportement des LLMs** à travers les guardrails, la sécurité IA et les scénarios adversariaux pour renforcer la résilience des modèles."
             ],
             "tags": [
               "Agentic Workflows",
@@ -720,6 +787,7 @@
         "items": [
           {
             "period": "06/2025 — 08/2025",
+            "duration": "3 mois",
             "badge": "RAG",
             "title": "CVision",
             "desc": "Création d'un **système de recommandation de CV** intelligent basé sur les descriptions de postes en utilisant la **Génération Augmentée par Récupération (RAG)**, pour optimiser la sélection et le classement automatique des profils les plus pertinents.",
@@ -734,6 +802,7 @@
           },
           {
             "period": "02/2024 — 06/2024",
+            "duration": "5 mois",
             "badge": "NLP · OCR",
             "title": "VERMail",
             "desc": "Développement d'une **plateforme d'intelligence e-mail** de bout en bout combinant un **BERT** fine-tuné pour la classification multi-classes et **Tesseract OCR** pour l'analyse des pièces jointes, avec un tableau de bord **React** pour la surveillance en temps réel et la gestion des modèles.",
@@ -748,6 +817,7 @@
           },
           {
             "period": "06/2023 — 08/2023",
+            "duration": "3 mois",
             "badge": "Deep RL",
             "title": "Slythera",
             "desc": "Développement d'un **jeu de grille 2D** en **Pygame** intégrant un agent IA entraîné depuis zéro avec le **Deep Q-Learning** pour naviguer de manière autonome parmi les obstacles et maximiser son score dans un environnement dynamique et progressivement complexe.",
@@ -762,6 +832,32 @@
           },
           {
             "period": "~ 2026",
+            "badge": "IA Multimodale",
+            "title": "AeroVI",
+            "desc": "Conception d'un **guide de voyage multimodal** qui génère des itinéraires personnalisés, des recommandations de destinations soigneusement sélectionnées et un contenu visuel immersif — couvrant l'intégralité du voyage, de la planification à la découverte.",
+            "tags": [
+              "Curation",
+              "Advanced RAG",
+              "Multimodal LLM",
+              "Visual Generation",
+              "Knowledge Graph"
+            ]
+          },
+          {
+            "period": "~ 2026",
+            "badge": "Agentique · PM",
+            "title": "PlanYU",
+            "desc": "Conception d'une **plateforme de gestion de projet générative** qui produit des structures de projet complètes — tâches, plannings et affectations — en associant les membres de l'équipe à chaque tâche selon leurs compétences et disponibilités.",
+            "tags": [
+              "Delegation",
+              "LLM Planning",
+              "Skill Matching",
+              "Agentic Workflows",
+              "Task Decomposition"
+            ]
+          },
+          {
+            "period": "~ 2027",
             "badge": "Multi-Agent",
             "title": "TwiXel",
             "desc": "Conception d'un **système multi-agents** intelligent pour l'écoute sociale automatisée sur Twitter (maintenant X), visant à identifier les tendances émergentes en temps réel et à générer des idées de campagnes marketing à grande échelle.",
@@ -774,30 +870,6 @@
               "Python/FastAPI",
               "Vue.js"
             ]
-          },
-          {
-            "period": "~ 2027",
-            "badge": "IA Multimodale",
-            "title": "AeroVI",
-            "desc": "Conception d'un **guide de voyage multimodal** qui génère des itinéraires personnalisés, des recommandations de destinations soigneusement sélectionnées et un contenu visuel immersif — couvrant l'intégralité du voyage, de la planification à la découverte.",
-            "tags": [
-              "Advanced RAG",
-              "Multimodal LLM",
-              "Visual Generation",
-              "Semantic Search"
-            ]
-          },
-          {
-            "period": "~ 2028",
-            "badge": "Agentique · PM",
-            "title": "PlanYU",
-            "desc": "Conception d'une **plateforme de gestion de projet générative** qui produit des structures de projet complètes — tâches, plannings et affectations — en associant les membres de l'équipe à chaque tâche selon leurs compétences et disponibilités.",
-            "tags": [
-              "Agentic Workflows",
-              "LLM Planning",
-              "Task Decomposition",
-              "Resource Allocation"
-            ]
           }
         ]
       },
@@ -809,6 +881,7 @@
             "years": "2024 — 2027",
             "title": "Diplôme d'Ingénieur en Informatique",
             "school": "Université Sorbonne Paris Nord – Sup Galilée",
+            "link": "https://www.linkedin.com/school/université-sorbonne-paris-nord/",
             "location": "Villetaneuse, France",
             "mention": null
           },
@@ -816,15 +889,16 @@
             "years": "2021 — 2024",
             "title": "Licence en Informatique",
             "school": "Université de Tunis El Manar – ISI Ariana",
+            "link": "https://www.linkedin.com/school/university-of-tunis-el-manar/",
             "location": "Ariana, Tunisie",
             "mention": "Mention Très Bien ✦"
           },
           {
             "years": "2021",
             "title": "Baccalauréat Tunisien en Mathématiques",
-            "school": null,
-            "location": null,
-            "mention": "Mention Très Bien ✦"
+            "school": "Lycée Ibn Rachik",
+            "location": "Ezzahra, Tunisie",
+            "mention": null
           }
         ],
         "certs_title": "Certifications",
@@ -860,13 +934,13 @@
             "org": "Enactus",
             "role": "Chef de Projet",
             "period": "09/2021 — 08/2024 · 3 ans",
-            "desc": "En tant que Chef de Projet au sein de l'unité R&D d'Enactus, j'ai mené mon équipe jusqu'en finale de la compétition Ichmilni Race en présentant **AGRIVEST** — une plateforme innovante promouvant l'inclusion numérique en Tunisie rurale via le prêt entre pairs pour les petits agriculteurs."
+            "desc": "Mené mon équipe en finale de l'Ichmilni Race en tant que Chef de Projet Enactus R&D, en présentant **AGRIVEST** — une plateforme de prêt entre pairs pour les petits agriculteurs en Tunisie rurale."
           },
           {
             "org": "AIESEC",
             "role": "Membre",
             "period": "02/2024 — 07/2024 · 6 mois",
-            "desc": "En tant que Membre de l'unité Incoming Global Talent/Teaching d'AIESEC, j'ai négocié des partenariats avec des entreprises et des institutions éducatives en Tunisie pour sécuriser des opportunités de stage professionnel pour les participants aux échanges internationaux."
+            "desc": "Négocié des partenariats avec des institutions éducatives en Tunisie pour décrocher des stages pour les participants à l'échange international via l'unité Incoming Global Teaching d'AIESEC."
           }
         ],
         "awards_title": "Récompenses",
@@ -875,13 +949,15 @@
             "icon": "🏆",
             "title": "Enactus World Cup Vice-champions",
             "place": "Porto Rico",
-            "flagCode": "pr"
+            "flagCode": "pr",
+            "link": "https://www.youtube.com/watch?v=9TI9ox2F4_I"
           },
           {
             "icon": "🏆",
             "title": "Action With Africa Vice-champions",
             "place": "Pays-Bas",
-            "flagCode": "nl"
+            "flagCode": "nl",
+            "link": "https://www.youtube.com/watch?v=KH4X_hWQqNA&t=15s"
           },
           {
             "icon": "🏅",
@@ -920,15 +996,15 @@
         "contact": "التواصل"
       },
       "hero": {
-        "badge": "متدرب مهندس ذكاء اصطناعي توليدي · طالب هندسة علوم الحاسوب",
         "title": "محمد خليل زرلي",
         "subtitles": [
-          "مهندس ذكاء اصطناعي توليدي",
+          "الأنظمة الوكيلة وخطوط RAG",
           "تعلم الآلة والتعلم العميق",
           "بناء أنظمة متعددة العملاء",
           "معالجة اللغات الطبيعية"
         ],
-        "desc": "مهندس **ذكاء اصطناعي توليدي** متخصص في **الأنظمة الوكيلة** وخطوط أنابيب **RAG** ومعماريات **LLM** — يبني حلولاً ذكية تجسر الفجوة بين البحث والأثر الواقعي.",
+        "cardRole": "مهندس ذكاء اصطناعي توليدي",
+        "desc": "شغوف بـ**الذكاء الاصطناعي التوليدي** و**الأنظمة الوكيلة**، مع أسس متينة في الخوارزميات وحل المشكلات — أسعى لبناء حلول ذكاء اصطناعي مبتكرة والنمو من خلال كل مشروع.",
         "cta_projects": "مشاريعي",
         "cta_contact": "تواصل معي",
         "card": {
@@ -941,15 +1017,19 @@
       "about": {
         "heading": "من أنا",
         "paragraphs": [
-          "أنا طالب هندسة حاسوب في **Sup Galilée — جامعة سوربون باريس الشمالية**، وأعمل متدربًا مهندس ذكاء اصطناعي توليدي في **Crédit Agricole**. أنا شغوف بتصميم أنظمة ذكية — من خطوط أنابيب RAG إلى المعماريات متعددة الوكلاء — تُحوِّل أحدث ما توصّل إليه الذكاء الاصطناعي إلى حلول حقيقية وقابلة للاستخدام الفعلي.",
-          "تمتد خلفيتي عبر **تعلّم الآلة** و**التعلّم العميق** و**معالجة اللغات الطبيعية**، مدعومةً بخبرة ميدانية اكتسبتها خلال فترات التدريب والمشاريع الشخصية. أستمتع بالمسار بأكمله: التجريب مع النماذج، وبناء خطوط أنابيب متينة، وتسليم حلول تعمل على أرض الواقع.",
-          "خارج الذكاء الاصطناعي، أؤمن بالأثر الواقعي — من خلال **Enactus** و**AIESEC**، ساهمت في مبادرات ريادة الأعمال الاجتماعية والتبادل الدولي، حاملاً معي الفضول والعزيمة ذاتهما اللذين أوظّفهما في التحديات التقنية."
+          "أنا طالب هندسة حاسوب في **Sup Galilée — جامعة سوربون باريس الشمالية**، أعمل متدربًا كـ**مهندس ذكاء اصطناعي توليدي في Crédit Agricole**. أنا شغوف بـ**الذكاء الاصطناعي التوليدي** و**الأنظمة الوكيلة**، وهدفي تعزيز مهاراتي والمساهمة في مشاريع ذكاء اصطناعي مبتكرة.",
+          "خلفيتي تشمل **تعلّم الآلة** و**التعلّم العميق** و**معالجة اللغات الطبيعية**، بُنيت من خلال فترات تدريب ومشاريع شخصية. أستمتع بالعمل على كامل الدورة — من التجريب مع النماذج إلى بناء خطوط أنابيب متينة وتسليم حلول تعمل فعلًا.",
+          "خارج العمل والدراسة، كنت نشطًا في **Enactus** و**AIESEC**، حيث أسهمت في ريادة الأعمال الاجتماعية والتبادل الدولي — مدفوعًا بنفس الفضول والالتزام اللذين أحملهما في كل تحدٍّ تقني."
         ],
         "stats": [
-          "أكثر من سنتين في تعلم الآلة",
-          "4 مشاريع ذكاء اصطناعي كبرى",
-          "4 شهادات سحابية",
-          "3 لغات"
+          {
+            "num": "1.5+",
+            "label": "سنوات من الخبرة",
+            "anchor": "#experience"
+          },
+          { "num": "6", "label": "مشاريع شخصية", "anchor": "#projects" },
+          { "num": "4", "label": "شهادات احترافية", "anchor": "#education" },
+          { "num": "3", "label": "لغات", "anchor": "#skills" }
         ]
       },
       "skills": {
@@ -971,7 +1051,7 @@
           },
           {
             "icon": "🧠",
-            "title": "تعلم الآلة والتعلم العميق",
+            "title": "علم البيانات, ML, DL & RL",
             "accent": false,
             "accentTags": ["PyTorch", "TensorFlow", "Scikit-Learn"],
             "tags": [
@@ -984,7 +1064,7 @@
           },
           {
             "icon": "💬",
-            "title": "معالجة اللغات الطبيعية والنماذج الكبيرة",
+            "title": "NLP والنماذج الكبيرة",
             "accent": false,
             "accentTags": [
               "Hugging Face Transformers",
@@ -998,7 +1078,7 @@
           },
           {
             "icon": "🤖",
-            "title": "الذكاء الاصطناعي التوليدي والأنظمة متعددة العملاء",
+            "title": "الذكاء التوليدي & الأنظمة الوكيلة",
             "accent": false,
             "accentTags": ["LangGraph", "AWS SageMaker", "AWS Bedrock"],
             "tags": ["LangChain", "LangGraph", "AWS SageMaker", "AWS Bedrock"]
@@ -1031,7 +1111,7 @@
           },
           {
             "icon": "🌐",
-            "title": "أطر الويب الكاملة وواجهات REST",
+            "title": "Web Full Stack & REST APIs",
             "accent": false,
             "accentTags": ["React", "Vue.js", "FastAPI"],
             "tags": [
@@ -1045,7 +1125,7 @@
           },
           {
             "icon": "☁️",
-            "title": "DevOps & Cloud",
+            "title": "DevOps & Cloud Infrastructure",
             "accent": false,
             "accentTags": ["AWS", "Docker"],
             "tags": [
@@ -1084,6 +1164,7 @@
       },
       "experience": {
         "heading": "الخبرة المهنية",
+        "current_label": "حالياً",
         "jobs": [
           {
             "current": true,
@@ -1091,8 +1172,8 @@
             "period": "09/2025 — الآن · 10 أشهر · فرنسا",
             "role": "متدرب مهندس ذكاء اصطناعي توليدي",
             "bullets": [
-              "ترحيل وحدات تنسيق وتنفيذ سير عمل الذكاء الاصطناعي من معمارية n-tier أحادية متعددة الطبقات إلى خدمة مصغرة سداسية، مما حسّن قابلية التوسع والصيانة.",
-              "بناء نظام Red Teaming آلي للروبوتات المحادثة لاختبار طبقات الأمان، بما يشمل guardrails وقواعد LLM-as-a-judge، مما حسّن تحليل السلوك ومرونة النماذج."
+              "تطوير خدمة مصغرة تصريحية مدفوعة بالإعدادات لـ**تنسيق وتنفيذ سير العمل البياني**، بما يتيح تركيبًا ديناميكيًا ضمن منظومة ذكاء اصطناعي قابلة للتوسع والصيانة.",
+              "بناء إطار عمل **Red Teaming** آلي لسير عمل الذكاء الاصطناعي، يستكشف **سلوك النماذج اللغوية** عبر الضمانات وطبقات الأمان والسيناريوهات الخصومية لتعزيز مرونة النماذج."
             ],
             "tags": [
               "Agentic Workflows",
@@ -1154,6 +1235,7 @@
         "items": [
           {
             "period": "06/2025 — 08/2025",
+            "duration": "3 أشهر",
             "badge": "RAG",
             "title": "CVision",
             "desc": "إنشاء **نظام توصية ذكي بالسيرة الذاتية** بناءً على وصف الوظيفة باستخدام **الجيل المعزز بالاسترجاع (RAG)**، لتحسين اختيار الملفات الشخصية الأكثر ملاءمةً وترتيبها تلقائيًا.",
@@ -1168,6 +1250,7 @@
           },
           {
             "period": "02/2024 — 06/2024",
+            "duration": "5 أشهر",
             "badge": "NLP · OCR",
             "title": "VERMail",
             "desc": "تطوير **منصة ذكاء بريد إلكتروني** متكاملة من البداية إلى النهاية تجمع **BERT** المضبوط للتصنيف متعدد الفئات و**Tesseract OCR** لتحليل المرفقات، مع لوحة تحكم **React** لمراقبة الأداء في الوقت الفعلي وإدارة النماذج.",
@@ -1182,6 +1265,7 @@
           },
           {
             "period": "06/2023 — 08/2023",
+            "duration": "3 أشهر",
             "badge": "Deep RL",
             "title": "Slythera",
             "desc": "تطوير **لعبة شبكية ثنائية الأبعاد** بـ**Pygame** تضم عميل ذكاء اصطناعي مدرَّبًا من الصفر بـ**Deep Q-Learning** للتنقل بشكل مستقل بين العقبات وتعظيم نقاطه في بيئة ديناميكية متصاعدة الصعوبة.",
@@ -1196,6 +1280,32 @@
           },
           {
             "period": "~ 2026",
+            "badge": "ذكاء اصطناعي متعدد الوسائط",
+            "title": "AeroVI",
+            "desc": "تصميم **دليل سفر متعدد الوسائط** يُولّد خططاً سياحية مخصصة وتوصيات منتقاة للوجهات ومحتوى مرئياً غامراً — يُغطي رحلتك بالكامل من التخطيط حتى الاستكشاف.",
+            "tags": [
+              "Curation",
+              "Advanced RAG",
+              "Multimodal LLM",
+              "Visual Generation",
+              "Knowledge Graph"
+            ]
+          },
+          {
+            "period": "~ 2026",
+            "badge": "أنظمة وكيلة · PM",
+            "title": "PlanYU",
+            "desc": "تصميم **منصة إدارة مشاريع توليدية** تُنتج هياكل مشاريع متكاملة — مهام وجداول زمنية وتكليفات — من خلال ربط أعضاء الفريق بكل مهمة وفق مهاراتهم وتوافرهم.",
+            "tags": [
+              "Delegation",
+              "LLM Planning",
+              "Skill Matching",
+              "Agentic Workflows",
+              "Task Decomposition"
+            ]
+          },
+          {
+            "period": "~ 2027",
             "badge": "متعدد العملاء",
             "title": "TwiXel",
             "desc": "تصميم **نظام متعدد العملاء** ذكي للاستماع الاجتماعي الآلي على تويتر (X الآن)، يهدف إلى تحديد الاتجاهات الناشئة في الوقت الفعلي وتوليد أفكار حملات تسويقية قابلة للتنفيذ على نطاق واسع.",
@@ -1208,30 +1318,6 @@
               "Python/FastAPI",
               "Vue.js"
             ]
-          },
-          {
-            "period": "~ 2027",
-            "badge": "ذكاء اصطناعي متعدد الوسائط",
-            "title": "AeroVI",
-            "desc": "تصميم **دليل سفر متعدد الوسائط** يُولّد خططاً سياحية مخصصة وتوصيات منتقاة للوجهات ومحتوى مرئياً غامراً — يُغطي رحلتك بالكامل من التخطيط حتى الاستكشاف.",
-            "tags": [
-              "Advanced RAG",
-              "Multimodal LLM",
-              "Visual Generation",
-              "Semantic Search"
-            ]
-          },
-          {
-            "period": "~ 2028",
-            "badge": "أنظمة وكيلة · PM",
-            "title": "PlanYU",
-            "desc": "تصميم **منصة إدارة مشاريع توليدية** تُنتج هياكل مشاريع متكاملة — مهام وجداول زمنية وتكليفات — من خلال ربط أعضاء الفريق بكل مهمة وفق مهاراتهم وتوافرهم.",
-            "tags": [
-              "Agentic Workflows",
-              "LLM Planning",
-              "Task Decomposition",
-              "Resource Allocation"
-            ]
           }
         ]
       },
@@ -1243,6 +1329,7 @@
             "years": "2024 — 2027",
             "title": "شهادة مهندس في علوم الحاسوب",
             "school": "جامعة سوربون باريس الشمالية – Sup Galilée",
+            "link": "https://www.linkedin.com/school/université-sorbonne-paris-nord/",
             "location": "Villetaneuse، فرنسا",
             "mention": null
           },
@@ -1250,15 +1337,16 @@
             "years": "2021 — 2024",
             "title": "بكالوريوس في علوم الحاسوب",
             "school": "جامعة تونس المنار – ISI أريانة",
+            "link": "https://www.linkedin.com/school/university-of-tunis-el-manar/",
             "location": "أريانة، تونس",
             "mention": "Mention Très Bien ✦"
           },
           {
             "years": "2021",
             "title": "بكالوريا تونسية في الرياضيات",
-            "school": null,
-            "location": null,
-            "mention": "Mention Très Bien ✦"
+            "school": "ثانوية ابن رشيق",
+            "location": "الزهراء، تونس",
+            "mention": null
           }
         ],
         "certs_title": "الشهادات الاحترافية",
@@ -1294,13 +1382,13 @@
             "org": "Enactus",
             "role": "مدير مشروع",
             "period": "09/2021 — 08/2024 · 3 سنوات",
-            "desc": "بصفتي مدير مشروع في وحدة البحث والتطوير في Enactus، قدت فريقي إلى نهائي مسابقة Ichmilni Race بتقديم **AGRIVEST** — منصة مبتكرة تعزز الإدماج الرقمي في تونس الريفية من خلال الإقراض بين الأفراد لصغار المزارعين."
+            "desc": "قدت فريقي إلى نهائي Ichmilni Race بصفتي مدير مشروع في Enactus R&D، بتقديم **AGRIVEST** — منصة إقراض بين الأفراد لصغار المزارعين في تونس الريفية."
           },
           {
             "org": "AIESEC",
             "role": "عضو",
             "period": "02/2024 — 07/2024 · 6 أشهر",
-            "desc": "بصفتي عضوًا في وحدة Incoming Global Talent/Teaching في AIESEC، تفاوضت على شراكات مع شركات ومؤسسات تعليمية في تونس لتأمين فرص تدريب مهني لمشاركي التبادل الدولي."
+            "desc": "تفاوضت على شراكات مع مؤسسات تعليمية في تونس لتأمين فرص تدريب لمشاركي التبادل الدولي عبر وحدة Incoming Global Teaching في AIESEC."
           }
         ],
         "awards_title": "الجوائز",
@@ -1309,13 +1397,15 @@
             "icon": "🏆",
             "title": "Enactus World Cup المركز الثاني",
             "place": "بورتوريكو",
-            "flagCode": "pr"
+            "flagCode": "pr",
+            "link": "https://www.youtube.com/watch?v=9TI9ox2F4_I"
           },
           {
             "icon": "🏆",
             "title": "Action With Africa المركز الثاني",
             "place": "هولندا",
-            "flagCode": "nl"
+            "flagCode": "nl",
+            "link": "https://www.youtube.com/watch?v=KH4X_hWQqNA&t=15s"
           },
           {
             "icon": "🏅",

@@ -7,16 +7,29 @@
       </header>
       <h2 id="experience-heading" class="section-h2" v-reveal>{{ t.experience.heading }}</h2>
       <ol class="timeline">
-        <li v-for="job in t.experience.jobs" :key="job.company + job.period" class="timeline__item" v-reveal>
+        <li v-for="(job, i) in t.experience.jobs" :key="job.company + job.period" class="timeline__item" v-reveal>
           <div class="timeline__dot" aria-hidden="true"></div>
           <article class="timeline__card">
             <header class="timeline__meta">
-              <span class="timeline__company">{{ job.company }}</span>
-              <time class="timeline__period">{{ job.period }}</time>
+              <span class="timeline__company">
+                {{ job.company }}
+                <a v-if="expLinks[i]" :href="expLinks[i]" target="_blank" rel="noopener noreferrer" class="company-link"
+                  title="View on LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" width="13" height="13" aria-hidden="true">
+                    <path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </span>
+              <div class="timeline__meta-right">
+                <time class="timeline__period">{{ job.period }}</time>
+                <a v-if="expDocs[i]" :href="docUrl(expDocs[i])" target="_blank" rel="noopener noreferrer"
+                  class="doc-link" title="View attestation">📎</a>
+              </div>
             </header>
             <p class="timeline__role">
               {{ job.role }}
-              <span v-if="job.current" class="timeline__current">Ongoing</span>
+              <span v-if="job.current" class="timeline__current">{{ t.experience.current_label }}</span>
             </p>
             <ul class="timeline__bullets">
               <li v-for="(bullet, i) in job.bullets" :key="i" v-html="boldify(bullet)"></li>
@@ -34,7 +47,12 @@
 <script setup>
 import { useLanguage } from '@/composables/useLanguage.js'
 import { boldify } from '@/utils/text.js'
+import { docUrl } from '@/utils/docs.js'
+import portfolioData from '@/data/portfolio.json'
+
 const { t } = useLanguage()
+const expDocs = portfolioData.docs.experience
+const expLinks = portfolioData.docs.experienceLinks
 </script>
 
 <style scoped>
@@ -92,6 +110,24 @@ const { t } = useLanguage()
   margin-bottom: 10px;
 }
 
+.timeline__meta-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.doc-link {
+  font-size: 1rem;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity var(--transition);
+  line-height: 1;
+}
+
+.doc-link:hover {
+  opacity: 1;
+}
+
 .timeline__company {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.78rem;
@@ -99,6 +135,24 @@ const { t } = useLanguage()
   color: var(--accent-deep);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.company-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent-deep);
+  margin-top: -1px;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: opacity var(--transition);
+  flex-shrink: 0;
+}
+
+.company-link:hover {
+  opacity: 1;
 }
 
 .timeline__period {
