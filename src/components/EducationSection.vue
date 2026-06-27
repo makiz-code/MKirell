@@ -16,8 +16,8 @@
               <time class="edu-card__year">{{ deg.years }}</time>
               <div class="edu-card__body">
                 <h3>{{ deg.title }}</h3>
-                <span class="edu-card__school">{{ deg.school }}</span>
-                <span class="edu-card__location">{{ deg.location }}</span>
+                <span v-if="deg.school" class="edu-card__school">{{ deg.school }}</span>
+                <span v-if="deg.location" class="edu-card__location">{{ deg.location }}</span>
                 <span v-if="deg.mention" class="edu-card__mention">{{ deg.mention }}</span>
               </div>
             </li>
@@ -56,9 +56,12 @@
           <ul>
             <li class="award-card" v-for="award in t.education.awards" :key="award.title">
               <div class="award-card__icon" aria-hidden="true">{{ award.icon }}</div>
-              <div>
+              <div class="award-card__body">
                 <p class="award-card__title">{{ award.title }}</p>
-                <time v-if="award.date" class="award-card__date">{{ award.date }}</time>
+                <span v-if="award.place" class="award-card__place">
+                  {{ award.place }}
+                  <span v-if="award.flagCode" :class="['fi', `fi-${award.flagCode}`]" class="award-flag" aria-hidden="true"></span>
+                </span>
               </div>
             </li>
           </ul>
@@ -298,19 +301,37 @@ const { t } = useLanguage()
   background: var(--gold-soft);
 }
 
+.award-card__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  gap: 12px;
+}
+
 .award-card__title {
   font-family: 'Fraunces', serif;
   font-size: 0.98rem;
   font-weight: 600;
   color: var(--ink);
-  margin-bottom: 2px;
 }
 
-.award-card__date {
-  display: block;
+.award-card__place {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.7rem;
+  line-height: 1;
   color: var(--ink-soft);
+}
+
+.award-flag {
+  display: block;
+  width: 16px;
+  height: 11px;
+  border-radius: 2px;
+  flex-shrink: 0;
 }
 
 @media (max-width: 900px) {

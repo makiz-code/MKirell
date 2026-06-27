@@ -310,6 +310,12 @@ ul {
 .fi-tn {
   background-image: url("./assets/flags/tn.svg");
 }
+.fi-nl {
+  background-image: url("./assets/flags/nl.svg");
+}
+.fi-pr {
+  background-image: url("./assets/flags/pr.svg");
+}
 
 /* ─── Background grid (fixed) ──────────────────────────────────── */
 .hero-bg-grid {
