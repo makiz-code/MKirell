@@ -348,13 +348,13 @@
     {
       "@type": "CollegeOrUniversity",
       "@id": "https://makiz-code.github.io/MKirell/#org-supgalilee",
-      "name": "Université Sorbonne Paris Nord, Sup Galilée",
+      "name": "Sup Galilée, Université Sorbonne Paris Nord",
       "sameAs": "https://www.linkedin.com/school/université-sorbonne-paris-nord/"
     },
     {
       "@type": "CollegeOrUniversity",
       "@id": "https://makiz-code.github.io/MKirell/#org-isi",
-      "name": "Université de Tunis El Manar, ISI Ariana",
+      "name": "ISI Ariana, Université de Tunis El Manar",
       "sameAs": "https://www.linkedin.com/school/university-of-tunis-el-manar/"
     },
     {
