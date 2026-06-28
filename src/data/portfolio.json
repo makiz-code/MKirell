@@ -1,4 +1,4 @@
-{
+﻿{
   "person": {
     "name": "Mohamed Khalil Zrelly",
     "givenName": "Mohamed Khalil",
@@ -15,7 +15,8 @@
     "addressLocality": "Le Bourget",
     "addressRegion": "Île-de-France",
     "addressCountry": "FR",
-    "resume": "portfolio-cv-mkzrelly.pdf"
+    "resumeEn": "resume_en_mkzrelly.pdf",
+    "resumeFr": "resume_fr_mkzrelly.pdf"
   },
   "docs": {
     "experience": [
@@ -71,14 +72,6 @@
       "flag": "🇫🇷",
       "flagCode": "fr",
       "hreflang": "fr"
-    },
-    {
-      "lang": "ar",
-      "dir": "rtl",
-      "label": "AR",
-      "flag": "🇹🇳",
-      "flagCode": "tn",
-      "hreflang": "ar"
     }
   ],
   "locales": {
@@ -123,13 +116,21 @@
             "label": "years of experience",
             "anchor": "#experience"
           },
-          { "num": "6", "label": "personal projects", "anchor": "#projects" },
+          {
+            "num": "6",
+            "label": "personal projects",
+            "anchor": "#projects"
+          },
           {
             "num": "4",
             "label": "professional certifications",
             "anchor": "#education"
           },
-          { "num": "3", "label": "languages spoken", "anchor": "#skills" }
+          {
+            "num": "3",
+            "label": "languages spoken",
+            "anchor": "#skills"
+          }
         ]
       },
       "skills": {
@@ -575,13 +576,21 @@
             "label": "années d'expérience",
             "anchor": "#experience"
           },
-          { "num": "6", "label": "projets personnels", "anchor": "#projects" },
+          {
+            "num": "6",
+            "label": "projets personnels",
+            "anchor": "#projects"
+          },
           {
             "num": "4",
             "label": "certifications professionnelles",
             "anchor": "#education"
           },
-          { "num": "3", "label": "langues parlées", "anchor": "#skills" }
+          {
+            "num": "3",
+            "label": "langues parlées",
+            "anchor": "#skills"
+          }
         ]
       },
       "skills": {
@@ -984,454 +993,6 @@
       },
       "footer": {
         "copy": "© 2026 Mohamed Khalil Zrelly · Construit avec passion"
-      }
-    },
-    "ar": {
-      "nav": {
-        "about": "عني",
-        "skills": "المهارات",
-        "experience": "الخبرة",
-        "projects": "المشاريع",
-        "education": "التعليم",
-        "contact": "التواصل"
-      },
-      "hero": {
-        "title": "محمد خليل زرلي",
-        "subtitles": [
-          "الأنظمة الوكيلة وخطوط RAG",
-          "تعلم الآلة والتعلم العميق",
-          "بناء أنظمة متعددة العملاء",
-          "معالجة اللغات الطبيعية"
-        ],
-        "cardRole": "مهندس ذكاء اصطناعي توليدي",
-        "desc": "شغوف بـ**الذكاء الاصطناعي التوليدي** و**الأنظمة الوكيلة**، مع أسس متينة في الخوارزميات وحل المشكلات — أسعى لبناء حلول ذكاء اصطناعي مبتكرة والنمو من خلال كل مشروع.",
-        "cta_projects": "مشاريعي",
-        "cta_contact": "تواصل معي",
-        "card": {
-          "jobTitle": "المسمى",
-          "worksFor": "جهة العمل",
-          "location": "الموقع",
-          "languages": "اللغات"
-        }
-      },
-      "about": {
-        "heading": "من أنا",
-        "paragraphs": [
-          "أنا طالب هندسة حاسوب في **Sup Galilée — جامعة سوربون باريس الشمالية**، أعمل متدربًا كـ**مهندس ذكاء اصطناعي توليدي في Crédit Agricole**. أنا شغوف بـ**الذكاء الاصطناعي التوليدي** و**الأنظمة الوكيلة**، وهدفي تعزيز مهاراتي والمساهمة في مشاريع ذكاء اصطناعي مبتكرة.",
-          "خلفيتي تشمل **تعلّم الآلة** و**التعلّم العميق** و**معالجة اللغات الطبيعية**، بُنيت من خلال فترات تدريب ومشاريع شخصية. أستمتع بالعمل على كامل الدورة — من التجريب مع النماذج إلى بناء خطوط أنابيب متينة وتسليم حلول تعمل فعلًا.",
-          "خارج العمل والدراسة، كنت نشطًا في **Enactus** و**AIESEC**، حيث أسهمت في ريادة الأعمال الاجتماعية والتبادل الدولي — مدفوعًا بنفس الفضول والالتزام اللذين أحملهما في كل تحدٍّ تقني."
-        ],
-        "stats": [
-          {
-            "num": "1.5+",
-            "label": "سنوات من الخبرة",
-            "anchor": "#experience"
-          },
-          { "num": "6", "label": "مشاريع شخصية", "anchor": "#projects" },
-          { "num": "4", "label": "شهادات احترافية", "anchor": "#education" },
-          { "num": "3", "label": "لغات", "anchor": "#skills" }
-        ]
-      },
-      "skills": {
-        "heading": "المهارات التقنية",
-        "categories": [
-          {
-            "icon": "💻",
-            "title": "لغات البرمجة (PL)",
-            "accent": false,
-            "accentTags": ["Python", "JavaScript/TS"],
-            "tags": [
-              "Python",
-              "JavaScript/TS",
-              "PHP",
-              "Java",
-              "C/C++",
-              "PL/SQL"
-            ]
-          },
-          {
-            "icon": "🧠",
-            "title": "علم البيانات, ML, DL & RL",
-            "accent": false,
-            "accentTags": ["PyTorch", "TensorFlow", "Scikit-Learn"],
-            "tags": [
-              "PyTorch",
-              "TensorFlow",
-              "Keras",
-              "Scikit-Learn",
-              "Gymnasium"
-            ]
-          },
-          {
-            "icon": "💬",
-            "title": "NLP والنماذج الكبيرة",
-            "accent": false,
-            "accentTags": [
-              "Hugging Face Transformers",
-              "Sentence-Transformers"
-            ],
-            "tags": [
-              "Hugging Face Transformers",
-              "Sentence-Transformers",
-              "spaCy"
-            ]
-          },
-          {
-            "icon": "🤖",
-            "title": "الذكاء التوليدي & الأنظمة الوكيلة",
-            "accent": false,
-            "accentTags": ["LangGraph", "AWS SageMaker", "AWS Bedrock"],
-            "tags": ["LangChain", "LangGraph", "AWS SageMaker", "AWS Bedrock"]
-          },
-          {
-            "icon": "📊",
-            "title": "تحليل البيانات والبيانات الضخمة",
-            "accent": false,
-            "accentTags": ["Pandas", "NumPy", "PySpark"],
-            "tags": [
-              "Pandas",
-              "NumPy",
-              "Matplotlib",
-              "Apache Airflow",
-              "PySpark"
-            ]
-          },
-          {
-            "icon": "🗄️",
-            "title": "قواعد البيانات SQL وNoSQL",
-            "accent": false,
-            "accentTags": ["PostgreSQL", "MongoDB", "Amazon DynamoDB"],
-            "tags": [
-              "MySQL",
-              "PostgreSQL",
-              "MongoDB",
-              "Amazon DynamoDB",
-              "Oracle"
-            ]
-          },
-          {
-            "icon": "🌐",
-            "title": "Web Full Stack & REST APIs",
-            "accent": false,
-            "accentTags": ["React", "Vue.js", "FastAPI"],
-            "tags": [
-              "React",
-              "Express.js",
-              "Flask",
-              "Vue.js",
-              "FastAPI",
-              "Laravel"
-            ]
-          },
-          {
-            "icon": "☁️",
-            "title": "DevOps & Cloud Infrastructure",
-            "accent": false,
-            "accentTags": ["AWS", "Docker"],
-            "tags": [
-              "AWS",
-              "Docker",
-              "Kubernetes",
-              "Terraform",
-              "GitHub Actions"
-            ]
-          }
-        ],
-        "lang_title": "اللغات",
-        "languages": [
-          {
-            "flag": "🇬🇧",
-            "flagCode": "gb",
-            "name": "الإنجليزية",
-            "pct": 80,
-            "level": "B2 · TOEIC"
-          },
-          {
-            "flag": "🇫🇷",
-            "flagCode": "fr",
-            "name": "الفرنسية",
-            "pct": 80,
-            "level": "B2 · TCF"
-          },
-          {
-            "flag": "🇹🇳",
-            "flagCode": "tn",
-            "name": "العربية",
-            "pct": 100,
-            "level": "لغة أم"
-          }
-        ]
-      },
-      "experience": {
-        "heading": "الخبرة المهنية",
-        "current_label": "حالياً",
-        "jobs": [
-          {
-            "current": true,
-            "company": "Crédit Agricole Personal Finance & Mobility",
-            "period": "09/2025 — الآن · 10 أشهر · فرنسا",
-            "role": "متدرب مهندس ذكاء اصطناعي توليدي",
-            "bullets": [
-              "تطوير خدمة مصغرة تصريحية مدفوعة بالإعدادات لـ**تنسيق وتنفيذ سير العمل البياني**، بما يتيح تركيبًا ديناميكيًا ضمن منظومة ذكاء اصطناعي قابلة للتوسع والصيانة.",
-              "بناء إطار عمل **Red Teaming** آلي لسير عمل الذكاء الاصطناعي، يستكشف **سلوك النماذج اللغوية** عبر الضمانات وطبقات الأمان والسيناريوهات الخصومية لتعزيز مرونة النماذج."
-            ],
-            "tags": [
-              "Agentic Workflows",
-              "Advanced RAG",
-              "AWS Bedrock",
-              "AI Guardrails",
-              "LLM Observability",
-              "System Architecture",
-              "Python/FastAPI",
-              "Amazon DynamoDB"
-            ]
-          },
-          {
-            "current": false,
-            "company": "VERMEG for Banking & Insurance Software",
-            "period": "02/2024 — 06/2024 · 5 أشهر · تونس",
-            "role": "متدرب معالجة اللغات الطبيعية",
-            "bullets": [
-              "تنفيذ نظام يؤتمت تصنيف البريد الإلكتروني واستخراج المعلومات من المرفقات، باستخدام **BERT** و**OCR** لتحسين الكفاءة ووقت المعالجة.",
-              "تطوير تطبيق ويب للضبط الدقيق لـ **BERT**، وإدارة البريد الإلكتروني، وتحليل البيانات والتصور في الوقت الفعلي، لتعزيز تفاعل المستخدم ومراقبة الأداء."
-            ],
-            "tags": [
-              "Hugging Face Transformers",
-              "Fine-Tuning",
-              "Named Entity Recognition",
-              "PyTorch",
-              "Tesseract OCR",
-              "Python/Flask",
-              "React/Redux",
-              "Bootstrap",
-              "MongoDB"
-            ]
-          },
-          {
-            "current": false,
-            "company": "Sofiatech",
-            "period": "06/2023 — 08/2023 · 3 أشهر · تونس",
-            "role": "متدرب تعلم الآلة",
-            "bullets": [
-              "تقييم خوارزميات **التعلم العميق المعزز** المتعددة من **Stable Baselines 3** عبر بيئات **Gymnasium** مختلفة لقياس أداء العملاء وكفاءة التدريب.",
-              "تطوير **لعبة شبكية ثنائية الأبعاد** في **Pygame** يتعلم فيها عميل **Deep Q-Learning** التنقل في بيئة ديناميكية، مطبقًا أفضل خوارزمية من مرحلة المقارنة."
-            ],
-            "tags": [
-              "Reinforcement Learning",
-              "Deep Q-Learning",
-              "stable-baselines3",
-              "TensorFlow/Keras",
-              "Gymnasium",
-              "NumPy",
-              "Pandas",
-              "Matplotlib",
-              "Python/Pygame"
-            ]
-          }
-        ]
-      },
-      "projects": {
-        "heading": "المشاريع المميزة",
-        "items": [
-          {
-            "period": "06/2025 — 08/2025",
-            "duration": "3 أشهر",
-            "badge": "RAG",
-            "title": "CVision",
-            "desc": "إنشاء **نظام توصية ذكي بالسيرة الذاتية** بناءً على وصف الوظيفة باستخدام **الجيل المعزز بالاسترجاع (RAG)**، لتحسين اختيار الملفات الشخصية الأكثر ملاءمةً وترتيبها تلقائيًا.",
-            "tags": [
-              "Advanced RAG",
-              "Re-Ranking",
-              "LangChain",
-              "Qwen3-VL",
-              "Weaviate",
-              "Python/Streamlit"
-            ]
-          },
-          {
-            "period": "02/2024 — 06/2024",
-            "duration": "5 أشهر",
-            "badge": "NLP · OCR",
-            "title": "VERMail",
-            "desc": "تطوير **منصة ذكاء بريد إلكتروني** متكاملة من البداية إلى النهاية تجمع **BERT** المضبوط للتصنيف متعدد الفئات و**Tesseract OCR** لتحليل المرفقات، مع لوحة تحكم **React** لمراقبة الأداء في الوقت الفعلي وإدارة النماذج.",
-            "tags": [
-              "BERT Fine-Tuning",
-              "PyTorch",
-              "Tesseract OCR",
-              "Python/Flask",
-              "React/Redux",
-              "MongoDB"
-            ]
-          },
-          {
-            "period": "06/2023 — 08/2023",
-            "duration": "3 أشهر",
-            "badge": "Deep RL",
-            "title": "Slythera",
-            "desc": "تطوير **لعبة شبكية ثنائية الأبعاد** بـ**Pygame** تضم عميل ذكاء اصطناعي مدرَّبًا من الصفر بـ**Deep Q-Learning** للتنقل بشكل مستقل بين العقبات وتعظيم نقاطه في بيئة ديناميكية متصاعدة الصعوبة.",
-            "tags": [
-              "Reinforcement Learning",
-              "TensorFlow/Keras",
-              "Gymnasium",
-              "NumPy",
-              "Pandas",
-              "Python/Pygame"
-            ]
-          },
-          {
-            "period": "~ 2026",
-            "badge": "ذكاء اصطناعي متعدد الوسائط",
-            "title": "AeroVI",
-            "desc": "تصميم **دليل سفر متعدد الوسائط** يُولّد خططاً سياحية مخصصة وتوصيات منتقاة للوجهات ومحتوى مرئياً غامراً — يُغطي رحلتك بالكامل من التخطيط حتى الاستكشاف.",
-            "tags": [
-              "Curation",
-              "Advanced RAG",
-              "Multimodal LLM",
-              "Visual Generation",
-              "Knowledge Graph"
-            ]
-          },
-          {
-            "period": "~ 2026",
-            "badge": "أنظمة وكيلة · PM",
-            "title": "PlanYU",
-            "desc": "تصميم **منصة إدارة مشاريع توليدية** تُنتج هياكل مشاريع متكاملة — مهام وجداول زمنية وتكليفات — من خلال ربط أعضاء الفريق بكل مهمة وفق مهاراتهم وتوافرهم.",
-            "tags": [
-              "Delegation",
-              "LLM Planning",
-              "Skill Matching",
-              "Agentic Workflows",
-              "Task Decomposition"
-            ]
-          },
-          {
-            "period": "~ 2027",
-            "badge": "متعدد العملاء",
-            "title": "TwiXel",
-            "desc": "تصميم **نظام متعدد العملاء** ذكي للاستماع الاجتماعي الآلي على تويتر (X الآن)، يهدف إلى تحديد الاتجاهات الناشئة في الوقت الفعلي وتوليد أفكار حملات تسويقية قابلة للتنفيذ على نطاق واسع.",
-            "tags": [
-              "Multi-Agent Systems",
-              "LangGraph",
-              "MCP/A2A",
-              "GPT-OSS",
-              "Milvus",
-              "Python/FastAPI",
-              "Vue.js"
-            ]
-          }
-        ]
-      },
-      "education": {
-        "heading": "التعليم والشهادات",
-        "degrees_title": "الشهادات الأكاديمية",
-        "degrees": [
-          {
-            "years": "2024 — 2027",
-            "title": "شهادة مهندس في علوم الحاسوب",
-            "school": "Sup Galilée – جامعة سوربون باريس الشمالية",
-            "link": "https://www.linkedin.com/school/université-sorbonne-paris-nord/",
-            "location": "Villetaneuse، فرنسا",
-            "mention": null
-          },
-          {
-            "years": "2021 — 2024",
-            "title": "بكالوريوس في علوم الحاسوب",
-            "school": "ISI أريانة – جامعة تونس المنار",
-            "link": "https://www.linkedin.com/school/university-of-tunis-el-manar/",
-            "location": "أريانة، تونس",
-            "mention": "Mention Très Bien ✦"
-          },
-          {
-            "years": "2021",
-            "title": "بكالوريا تونسية في الرياضيات",
-            "school": "ثانوية ابن رشيق",
-            "location": "الزهراء، تونس",
-            "mention": null
-          }
-        ],
-        "certs_title": "الشهادات الاحترافية",
-        "certs": [
-          {
-            "icon": "⚡",
-            "title": "Spark and Python for Big Data with PySpark",
-            "issuer": "Udemy",
-            "date": "مارس 2024"
-          },
-          {
-            "icon": "💬",
-            "title": "Natural Language Processing with Python",
-            "issuer": "Udemy",
-            "date": "فبراير 2024"
-          },
-          {
-            "icon": "☁️",
-            "title": "Azure AI Fundamentals (AI-900)",
-            "issuer": "Microsoft Azure",
-            "date": "يناير 2024"
-          },
-          {
-            "icon": "📊",
-            "title": "Azure Data Fundamentals (DP-900)",
-            "issuer": "Microsoft Azure",
-            "date": "يناير 2024"
-          }
-        ],
-        "vol_title": "التطوع",
-        "vols": [
-          {
-            "org": "Enactus",
-            "role": "مدير مشروع",
-            "period": "09/2021 — 08/2024 · 3 سنوات",
-            "desc": "قدت فريقي إلى نهائي Ichmilni Race بصفتي مدير مشروع في Enactus R&D، بتقديم **AGRIVEST** — منصة إقراض بين الأفراد لصغار المزارعين في تونس الريفية."
-          },
-          {
-            "org": "AIESEC",
-            "role": "عضو",
-            "period": "02/2024 — 07/2024 · 6 أشهر",
-            "desc": "تفاوضت على شراكات مع مؤسسات تعليمية في تونس لتأمين فرص تدريب لمشاركي التبادل الدولي عبر وحدة Incoming Global Teaching في AIESEC."
-          }
-        ],
-        "awards_title": "الجوائز",
-        "awards": [
-          {
-            "icon": "🏆",
-            "title": "Enactus World Cup المركز الثاني",
-            "place": "بورتوريكو",
-            "flagCode": "pr",
-            "link": "https://www.youtube.com/watch?v=9TI9ox2F4_I"
-          },
-          {
-            "icon": "🏆",
-            "title": "Action With Africa المركز الثاني",
-            "place": "هولندا",
-            "flagCode": "nl",
-            "link": "https://www.youtube.com/watch?v=KH4X_hWQqNA&t=15s"
-          },
-          {
-            "icon": "🏅",
-            "title": "Ichmilni Race متأهلون للنهائي - تونس",
-            "place": "تونس",
-            "flagCode": "tn"
-          },
-          {
-            "icon": "🥈",
-            "title": "Hult Prize ISI Ariana المركز الثاني",
-            "place": "تونس",
-            "flagCode": "tn"
-          }
-        ]
-      },
-      "contact": {
-        "heading": "لنعمل معاً",
-        "desc": "أعمل حاليًا كمتدرب **مهندس ذكاء اصطناعي توليدي في Crédit Agricole**. تواصل معي لمناقشة مشاريع الذكاء الاصطناعي أو التعاون أو ببساطة للتعارف.",
-        "email_label": "البريد الإلكتروني",
-        "phone_label": "الهاتف",
-        "linkedin_label": "لينكدإن",
-        "location_label": "الموقع",
-        "cta": "أرسل لي رسالة →"
-      },
-      "footer": {
-        "copy": "© 2026 محمد خليل زرلي · مبني بشغف"
       }
     }
   }

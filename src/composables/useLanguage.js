@@ -2,7 +2,7 @@ import { ref, computed, watch } from "vue";
 import portfolioData from "@/data/portfolio.json";
 const { locales, metaLocales } = portfolioData;
 
-const SUPPORTED = ["en", "fr", "ar"];
+const SUPPORTED = ["en", "fr"];
 const SESSION_KEY = "portfolio_lang";
 
 function getQueryLang() {
@@ -45,7 +45,7 @@ watch(
       localStorage.setItem(SESSION_KEY, val);
     } catch {}
     document.documentElement.lang = val;
-    document.documentElement.dir = val === "ar" ? "rtl" : "ltr";
+    document.documentElement.dir = "ltr";
   },
   { immediate: true },
 );

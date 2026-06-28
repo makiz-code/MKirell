@@ -31,13 +31,14 @@
             <span class="contact-item__value">linkedin.com/in/mohamed-khalil-zrelly</span>
           </span>
         </a>
-        <span class="contact-item">
+        <a href="https://www.google.com/maps/place/Le+Bourget,+France" target="_blank" rel="noopener noreferrer"
+          class="contact-item" :aria-label="t.contact.location_label + ' - Le Bourget, Île-de-France, France'">
           <span class="contact-item__icon" aria-hidden="true">📍</span>
           <span>
             <span class="contact-item__label">{{ t.contact.location_label }}</span>
             <span class="contact-item__value">{{ person.addressLocality }}, {{ person.addressRegion }}, France</span>
           </span>
-        </span>
+        </a>
       </address>
 
       <a :href="`mailto:${person.email}`" class="btn btn--primary btn--lg" v-reveal>

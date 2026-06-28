@@ -61,7 +61,7 @@
               <path d="m2 7 10 7 10-7" />
             </svg>
           </a>
-          <a v-if="resumeUrl" :href="resumeUrl" target="_blank" rel="noopener noreferrer" :download="person.resume"
+          <a v-if="resumeUrl" :href="resumeUrl" target="_blank" rel="noopener noreferrer" :download="resumeFile"
             class="social-link cv-link" aria-label="Download Resume / CV" title="Download CV">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -91,10 +91,11 @@ import { docUrl } from '@/utils/docs.js'
 import { boldify } from '@/utils/text.js'
 
 const { person } = portfolioData
-const { t } = useLanguage()
+const { t, lang } = useLanguage()
 const phrases = computed(() => t.value.hero.subtitles)
 const { display } = useTypewriter(phrases)
-const resumeUrl = docUrl(person.resume)
+const resumeFile = computed(() => lang.value === 'fr' ? person.resumeFr : person.resumeEn)
+const resumeUrl = computed(() => docUrl(resumeFile.value))
 </script>
 
 <style scoped>

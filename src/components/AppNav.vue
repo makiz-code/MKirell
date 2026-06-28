@@ -264,16 +264,6 @@ onUnmounted(() => {
     display: block;
   }
 
-  :global(html[dir="rtl"] .nav__links) {
-    right: auto;
-    left: 0;
-    transform: translateX(-100%);
-  }
-
-  :global(html[dir="rtl"] .nav__links.open) {
-    transform: translateX(0);
-  }
-
   .nav__links.open {
     transform: translateX(0);
   }

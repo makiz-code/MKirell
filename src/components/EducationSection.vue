@@ -426,10 +426,6 @@ const { degrees: degDocs, certs: certDocs, vols: volDocs, awards: awardDocs, vol
   transform: translateX(4px);
 }
 
-:global(html[dir="rtl"] .award-card:hover) {
-  transform: translateX(-4px);
-}
-
 .award-card__icon {
   flex-shrink: 0;
   width: 40px;
