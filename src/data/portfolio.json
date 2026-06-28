@@ -87,10 +87,10 @@
       "hero": {
         "title": "Mohamed Khalil Zrelly",
         "subtitles": [
-          "Agentic Systems & RAG Pipelines",
-          "Machine Learning & Deep Learning",
-          "Multi-Agent Systems Builder",
-          "NLP / LLM Enthusiast"
+          "Generative AI Engineer Apprentice",
+          "Agentic Systems Architect",
+          "RAG & LLM Specialist",
+          "Multi-Agent Systems Builder"
         ],
         "cardRole": "Generative AI Engineer",
         "desc": "Passionate about **Generative AI** and **Agentic Systems**, with a strong foundation in algorithms and problem solving — driven to build innovative AI solutions and grow through every project.",
@@ -152,7 +152,7 @@
           },
           {
             "icon": "🧠",
-            "title": "Data Science, ML & DL",
+            "title": "ML, DL & Data Science",
             "accent": false,
             "accentTags": ["PyTorch", "TensorFlow", "Scikit-Learn"],
             "tags": [
@@ -354,7 +354,7 @@
             "duration": "5 months",
             "badge": "NLP · OCR",
             "title": "VERMail",
-            "desc": "Developed an end-to-end **email intelligence platform** combining fine-tuned **BERT** for multi-class classification and **Tesseract OCR** for attachment parsing, with a **React** dashboard for real-time monitoring and model management.",
+            "desc": "Developed an end-to-end **email intelligence platform** combining fine-tuned **BERT** for multi-class classification and **Tesseract OCR** for attachment parsing, with a **React** dashboard for real-time monitoring.",
             "tags": [
               "BERT Fine-Tuning",
               "PyTorch",
@@ -369,7 +369,7 @@
             "duration": "3 months",
             "badge": "Deep RL",
             "title": "Slythera",
-            "desc": "Developed a **2D grid-based game** in **Pygame** featuring an AI agent trained from scratch with **Deep Q-Learning** to autonomously navigate obstacles and maximise its score across a dynamic, progressively challenging environment.",
+            "desc": "Developed a **2D grid game** in **Pygame** featuring an AI agent trained from scratch with **Deep Q-Learning** to autonomously navigate obstacles and maximise its score in a dynamic, progressively challenging environment.",
             "tags": [
               "Reinforcement Learning",
               "TensorFlow/Keras",
@@ -380,7 +380,22 @@
             ]
           },
           {
-            "period": "~ 2026",
+            "period": "In Development ~ 2026",
+            "badge": "Multi-Agent",
+            "title": "TwiXel",
+            "desc": "Designing an intelligent **multi-agent system** for automated social listening on Twitter (now X), aimed at identifying emerging trends in real time and generating actionable marketing campaign ideas at scale.",
+            "tags": [
+              "Multi-Agent Systems",
+              "LangGraph",
+              "MCP/A2A",
+              "GPT-OSS",
+              "Milvus",
+              "Python/FastAPI",
+              "Vue.js"
+            ]
+          },
+          {
+            "period": "In Ideation ~ 2026",
             "badge": "Multimodal AI",
             "title": "AeroVI",
             "desc": "Designing a **multimodal travel guide** that generates personalised travel itineraries, curated destination recommendations, and immersive visual content — covering the full journey from planning to discovery.",
@@ -393,7 +408,7 @@
             ]
           },
           {
-            "period": "~ 2026",
+            "period": "In Ideation ~ 2026",
             "badge": "Agentic · PM",
             "title": "PlanYU",
             "desc": "Designing a **generative project management platform** that produces complete project structures — tasks, schedules, and assignments — pairing team members to each task based on their skills and availability.",
@@ -403,21 +418,6 @@
               "Skill Matching",
               "Agentic Workflows",
               "Task Decomposition"
-            ]
-          },
-          {
-            "period": "~ 2027",
-            "badge": "Multi-Agent",
-            "title": "TwiXel",
-            "desc": "Designing an intelligent **multi-agent system** for automated social listening on Twitter (now X), aimed at identifying emerging trends in real time and generating actionable marketing campaign ideas at scale.",
-            "tags": [
-              "Multi-Agent Systems",
-              "LangGraph",
-              "MCP/A2A",
-              "GPT-OSS",
-              "Milvus",
-              "Python/FastAPI",
-              "Vue.js"
             ]
           }
         ]
@@ -445,7 +445,7 @@
           {
             "years": "2021",
             "title": "Tunisian Baccalaureate in Mathematics",
-            "school": "Ibn Rachik High School",
+            "school": "Ibn Rachik Ezzahra High School",
             "location": "Ezzahra, Tunisia",
             "mention": null
           }
@@ -483,13 +483,13 @@
             "org": "Enactus",
             "role": "Project Manager",
             "period": "09/2021 — 08/2024 · 3 years",
-            "desc": "Led my team to the Ichmilni Race finals as PM in Enactus R&D, pitching **AGRIVEST** — a peer-to-peer lending platform for smallholder farmers in rural Tunisia."
+            "desc": "As Project Manager in Enactus's R&D unit, I led my team to the Ichmilni Race finals, presenting **AGRIVEST** — a peer-to-peer lending platform promoting digital inclusion for smallholder farmers in rural Tunisia."
           },
           {
             "org": "AIESEC",
             "role": "Team Member",
             "period": "02/2024 — 07/2024 · 6 months",
-            "desc": "Negotiated partnerships with educational institutions in Tunisia to secure internships for international exchange participants via AIESEC's Incoming Global Talent unit."
+            "desc": "As a Team Member in AIESEC's Incoming Global Talent unit, I negotiated partnerships with companies and educational institutions in Tunisia to secure internship opportunities for international exchange participants."
           }
         ],
         "awards_title": "Awards",
@@ -547,10 +547,10 @@
       "hero": {
         "title": "Mohamed Khalil Zrelly",
         "subtitles": [
-          "Systèmes Agentiques & Pipelines RAG",
-          "Machine Learning & Deep Learning",
-          "Systèmes Multi-Agents",
-          "NLP / LLM"
+          "Apprenti Ingénieur en IA Générative",
+          "Architecte de Systèmes Agentiques",
+          "Spécialiste RAG & LLM",
+          "Concepteur de Systèmes Multi-Agents"
         ],
         "cardRole": "Ingénieur IA Générative",
         "desc": "Passionné par l'**IA Générative** et les **Systèmes Agentiques**, avec de solides bases en algorithmique et en résolution de problèmes — déterminé à construire des solutions IA innovantes et à progresser à travers chaque projet.",
@@ -566,8 +566,8 @@
       "about": {
         "heading": "À propos de moi",
         "paragraphs": [
-          "Étudiant en ingénierie informatique à **Sup Galilée — Université Sorbonne Paris Nord**, je travaille en alternance comme **Ingénieur IA Générative chez Crédit Agricole**. Passionné par l'**IA Générative** et les **Systèmes Agentiques**, mon objectif est de renforcer mes compétences tout en contribuant à des projets d'IA innovants.",
-          "Mon parcours couvre le **machine learning**, le **deep learning** et le **traitement automatique du langage naturel**, construit à travers des stages et des projets personnels. J'aime travailler sur l'ensemble du cycle — expérimenter avec les modèles, construire des pipelines robustes et livrer des solutions qui fonctionnent vraiment.",
+          "Étudiant en ingénierie informatique à **Sup Galilée — Université Sorbonne Paris Nord**, je travaille en alternance comme **Apprenti Ingénieur IA Générative chez Crédit Agricole**. Passionné par l'**IA Générative** et les **Systèmes Agentiques**, mon objectif est d'approfondir mes compétences tout en contribuant à des projets IA innovants.",
+          "Mon parcours couvre le **machine learning**, le **deep learning** et le **traitement automatique du langage naturel**, forgé au fil de stages et de projets personnels. J'apprécie tout le cycle — de l'expérimentation avec les modèles jusqu'à livrer des solutions qui fonctionnent réellement.",
           "En dehors du travail et des études, je me suis investi dans **Enactus** et **AIESEC**, où j'ai contribué à l'entrepreneuriat social et aux échanges internationaux — animé par la même curiosité et le même engagement que j'apporte à chaque défi technique."
         ],
         "stats": [
@@ -598,7 +598,7 @@
         "categories": [
           {
             "icon": "💻",
-            "title": "Langages de Programmation (PL)",
+            "title": "Langages de Programmation",
             "accent": false,
             "accentTags": ["Python", "JavaScript/TS"],
             "tags": [
@@ -612,7 +612,7 @@
           },
           {
             "icon": "🧠",
-            "title": "Data Science, ML & DL",
+            "title": "ML, DL & Science des Données",
             "accent": false,
             "accentTags": ["PyTorch", "TensorFlow", "Scikit-Learn"],
             "tags": [
@@ -625,7 +625,7 @@
           },
           {
             "icon": "💬",
-            "title": "NLP & LLM Architectures",
+            "title": "NLP & Architectures des LLM",
             "accent": false,
             "accentTags": [
               "Hugging Face Transformers",
@@ -639,7 +639,7 @@
           },
           {
             "icon": "🤖",
-            "title": "IA Générative & Systèmes Agentiques",
+            "title": "IA Générative & Agentique",
             "accent": false,
             "accentTags": ["LangGraph", "AWS SageMaker", "AWS Bedrock"],
             "tags": ["LangChain", "LangGraph", "AWS SageMaker", "AWS Bedrock"]
@@ -686,7 +686,7 @@
           },
           {
             "icon": "☁️",
-            "title": "DevOps & Cloud Infrastructure",
+            "title": "DevOps & Infrastructure Cloud",
             "accent": false,
             "accentTags": ["AWS", "Docker"],
             "tags": [
@@ -734,7 +734,7 @@
             "role": "Apprenti Ingénieur IA Générative",
             "bullets": [
               "Développement d'un microservice déclaratif et piloté par configuration pour l'**orchestration et l'exécution de workflows en graphe**, permettant une composition dynamique au sein d'un écosystème IA scalable et maintenable.",
-              "Développement d'un framework de **Red Teaming** automatisé pour les workflows IA, évaluant le **comportement des LLMs** à travers les guardrails, la sécurité IA et les scénarios adversariaux pour renforcer la résilience des modèles."
+              "Développement d'un framework de **Red Teaming** automatisé pour les workflows IA, sondant le **comportement des LLMs** à travers les guardrails et des scénarios adversariaux ciblés pour renforcer la résilience des modèles."
             ],
             "tags": [
               "Agentic Workflows",
@@ -774,7 +774,7 @@
             "period": "06/2023 — 08/2023 · 3 mois · Tunisie",
             "role": "Stagiaire en Machine Learning",
             "bullets": [
-              "Évaluation de plusieurs algorithmes d'**apprentissage profond par renforcement** issus de **Stable Baselines 3** dans différents environnements **Gymnasium** afin d'évaluer les performances des agents et l'efficacité de l'entraînement.",
+              "Évaluation de plusieurs algorithmes d'**apprentissage par renforcement profond** issus de **Stable Baselines 3** dans différents environnements **Gymnasium** pour évaluer les performances des agents et l'efficacité de l'entraînement.",
               "Développement d'un **jeu de grille 2D** en **Pygame** où un agent **Deep Q-Learning** apprend à naviguer dans un environnement dynamique, en appliquant l'algorithme le plus performant issu de la phase de benchmarking."
             ],
             "tags": [
@@ -799,7 +799,7 @@
             "duration": "3 mois",
             "badge": "RAG",
             "title": "CVision",
-            "desc": "Création d'un **système de recommandation de CV** intelligent basé sur les descriptions de postes en utilisant la **Génération Augmentée par Récupération (RAG)**, pour optimiser la sélection et le classement automatique des profils les plus pertinents.",
+            "desc": "Création d'un **système de recommandation de CV** basé sur les descriptions de postes, via la **Génération Augmentée par Récupération (RAG)**, pour optimiser la sélection et le classement automatique des profils pertinents.",
             "tags": [
               "Advanced RAG",
               "Re-Ranking",
@@ -814,7 +814,7 @@
             "duration": "5 mois",
             "badge": "NLP · OCR",
             "title": "VERMail",
-            "desc": "Développement d'une **plateforme d'intelligence e-mail** de bout en bout combinant un **BERT** fine-tuné pour la classification multi-classes et **Tesseract OCR** pour l'analyse des pièces jointes, avec un tableau de bord **React** pour la surveillance en temps réel et la gestion des modèles.",
+            "desc": "Développement d'une **plateforme e-mail intelligente** combinant **BERT** fine-tuné pour la classification multi-classes et **Tesseract OCR** pour l'analyse des pièces jointes, avec un tableau de bord **React** pour la surveillance en temps réel.",
             "tags": [
               "BERT Fine-Tuning",
               "PyTorch",
@@ -829,7 +829,7 @@
             "duration": "3 mois",
             "badge": "Deep RL",
             "title": "Slythera",
-            "desc": "Développement d'un **jeu de grille 2D** en **Pygame** intégrant un agent IA entraîné depuis zéro avec le **Deep Q-Learning** pour naviguer de manière autonome parmi les obstacles et maximiser son score dans un environnement dynamique et progressivement complexe.",
+            "desc": "Développement d'un **jeu de grille 2D** en **Pygame** où un agent **Deep Q-Learning** navigue parmi les obstacles et maximise son score dans un environnement dynamique et progressivement exigeant.",
             "tags": [
               "Reinforcement Learning",
               "TensorFlow/Keras",
@@ -840,10 +840,25 @@
             ]
           },
           {
-            "period": "~ 2026",
+            "period": "En développement ~ 2026",
+            "badge": "Multi-Agent",
+            "title": "TwiXel",
+            "desc": "Conception d'un **système multi-agents** pour l'écoute sociale automatisée sur Twitter (X), visant à identifier les tendances émergentes en temps réel et à générer des idées de campagnes marketing exploitables à grande échelle.",
+            "tags": [
+              "Multi-Agent Systems",
+              "LangGraph",
+              "MCP/A2A",
+              "GPT-OSS",
+              "Milvus",
+              "Python/FastAPI",
+              "Vue.js"
+            ]
+          },
+          {
+            "period": "En idéation ~ 2026",
             "badge": "IA Multimodale",
             "title": "AeroVI",
-            "desc": "Conception d'un **guide de voyage multimodal** qui génère des itinéraires personnalisés, des recommandations de destinations soigneusement sélectionnées et un contenu visuel immersif — couvrant l'intégralité du voyage, de la planification à la découverte.",
+            "desc": "Conception d'un **guide de voyage multimodal** générant des itinéraires personnalisés, des recommandations de destinations sélectionnées et un contenu visuel immersif — couvrant l'intégralité du voyage, de la planification à la découverte.",
             "tags": [
               "Curation",
               "Advanced RAG",
@@ -853,31 +868,16 @@
             ]
           },
           {
-            "period": "~ 2026",
+            "period": "En idéation ~ 2026",
             "badge": "Agentique · PM",
             "title": "PlanYU",
-            "desc": "Conception d'une **plateforme de gestion de projet générative** qui produit des structures de projet complètes — tâches, plannings et affectations — en associant les membres de l'équipe à chaque tâche selon leurs compétences et disponibilités.",
+            "desc": "Conception d'une **plateforme de gestion de projet générative** produisant des structures complètes — tâches, plannings et affectations — en associant les membres de l'équipe selon leurs compétences et disponibilités.",
             "tags": [
               "Delegation",
               "LLM Planning",
               "Skill Matching",
               "Agentic Workflows",
               "Task Decomposition"
-            ]
-          },
-          {
-            "period": "~ 2027",
-            "badge": "Multi-Agent",
-            "title": "TwiXel",
-            "desc": "Conception d'un **système multi-agents** intelligent pour l'écoute sociale automatisée sur Twitter (maintenant X), visant à identifier les tendances émergentes en temps réel et à générer des idées de campagnes marketing à grande échelle.",
-            "tags": [
-              "Multi-Agent Systems",
-              "LangGraph",
-              "MCP/A2A",
-              "GPT-OSS",
-              "Milvus",
-              "Python/FastAPI",
-              "Vue.js"
             ]
           }
         ]
@@ -905,7 +905,7 @@
           {
             "years": "2021",
             "title": "Baccalauréat Tunisien en Mathématiques",
-            "school": "Lycée Ibn Rachik",
+            "school": "Lycée Ibn Rachik Ezzahra",
             "location": "Ezzahra, Tunisie",
             "mention": null
           }
@@ -943,13 +943,13 @@
             "org": "Enactus",
             "role": "Chef de Projet",
             "period": "09/2021 — 08/2024 · 3 ans",
-            "desc": "Mené mon équipe en finale de l'Ichmilni Race en tant que Chef de Projet Enactus R&D, en présentant **AGRIVEST** — une plateforme de prêt entre pairs pour les petits agriculteurs en Tunisie rurale."
+            "desc": "Chef de Projet dans l'unité R&D d'Enactus, j'ai mené mon équipe en finale de l'Ichmilni Race en présentant **AGRIVEST** — une plateforme de prêt entre pairs pour l'inclusion numérique des petits agriculteurs en Tunisie rurale."
           },
           {
             "org": "AIESEC",
             "role": "Membre",
             "period": "02/2024 — 07/2024 · 6 mois",
-            "desc": "Négocié des partenariats avec des institutions éducatives en Tunisie pour décrocher des stages pour les participants à l'échange international via l'unité Incoming Global Teaching d'AIESEC."
+            "desc": "Au sein de l'unité Incoming Global Talent d'AIESEC, j'ai négocié des partenariats avec des entreprises et institutions éducatives en Tunisie pour obtenir des stages pour les participants aux échanges internationaux."
           }
         ],
         "awards_title": "Récompenses",

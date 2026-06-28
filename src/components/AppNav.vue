@@ -1,6 +1,5 @@
 <template>
-  <nav id="navbar" :class="['nav', { 'nav--scrolled': scrolled, 'nav--menu-open': menuOpen }]"
-    aria-label="Main navigation">
+  <nav id="navbar" :class="['nav', { 'nav--scrolled': scrolled }]" aria-label="Main navigation">
     <a href="#main-content" class="nav-logo" aria-label="MKirell – go to top">MKirell<span class="logo-dot">.</span></a>
 
     <ul id="navLinks" :class="['nav__links', { open: menuOpen }]" role="list">
@@ -80,16 +79,32 @@ onUnmounted(() => {
   justify-content: space-between;
   gap: 24px;
   padding: 24px var(--pad);
-  transition: background var(--transition), backdrop-filter var(--transition),
-    padding var(--transition), border-color var(--transition);
+  transition: padding var(--transition);
+}
+
+/* Background + blur live on a pseudo-element rather than on .nav itself.
+   A backdrop-filter on .nav would make it the containing block for the
+   fixed mobile menu panel, collapsing it to the nav's height. */
+.nav::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: transparent;
   border-bottom: 1px solid transparent;
+  transition: background var(--transition), backdrop-filter var(--transition),
+    border-color var(--transition);
 }
 
 .nav--scrolled {
+  padding: 16px var(--pad);
+}
+
+.nav--scrolled::before {
   background: rgba(20, 22, 27, 0.82);
   backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--line);
-  padding: 16px var(--pad);
 }
 
 .nav-logo {
@@ -232,15 +247,6 @@ onUnmounted(() => {
 }
 
 @media (max-width: 860px) {
-
-  /* backdrop-filter on the scrolled nav would otherwise become the containing
-     block for the fixed menu panel, collapsing it to the nav's height. Drop it
-     while the menu is open so the panel spans the full viewport. */
-  .nav--menu-open {
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-  }
-
   .nav__links {
     position: fixed;
     top: 0;

@@ -9,8 +9,10 @@
       <ul class="projects__grid" aria-label="Project list">
         <li v-for="(project, i) in t.projects.items" :key="project.title" class="project-card" v-reveal>
           <div class="project-card__header">
-            <time class="project-card__period">{{ project.period }}{{ project.duration ? ` (${project.duration})` : ''
-              }}</time>
+            <div class="project-card__left">
+              <time class="project-card__period">{{ project.period }}{{ project.duration ? ` (${project.duration})` : ''
+                }}</time>
+            </div>
             <span class="project-badge">{{ project.badge }}</span>
           </div>
           <div class="project-card__title-row">
@@ -88,11 +90,18 @@ const projectLinks = portfolioData.docs.projectLinks
   margin-bottom: 16px;
 }
 
+.project-card__left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .project-card__period {
   font-size: 0.72rem;
   color: var(--ink-soft);
   font-family: 'JetBrains Mono', monospace;
 }
+
 
 .project-badge {
   background: var(--gold-soft);
