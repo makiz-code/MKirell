@@ -18,7 +18,9 @@
                 <div class="edu-card__title-row">
                   <h3>{{ deg.title }}</h3>
                   <a v-if="degDocs[i]" :href="docUrl(degDocs[i])" target="_blank" rel="noopener noreferrer"
-                    class="doc-link" title="View diploma">📎</a>
+                    class="doc-link" title="View diploma">
+                    <Paperclip :size="14" />
+                  </a>
                 </div>
                 <span v-if="deg.school" class="edu-card__school-row">
                   <span class="edu-card__school">{{ deg.school }}</span>
@@ -40,14 +42,18 @@
           <p class="edu__sub">{{ t.education.certs_title }}</p>
           <ul class="cert-list">
             <li class="cert-item" v-for="(cert, i) in t.education.certs" :key="cert.title">
-              <div class="cert-item__icon" aria-hidden="true">{{ cert.icon }}</div>
+              <div class="cert-item__icon" aria-hidden="true">
+                <component :is="icons[cert.icon]" :size="17" :stroke-width="1.8" />
+              </div>
               <div class="cert-item__body">
                 <p class="cert-item__title">{{ cert.title }}</p>
                 <p class="cert-item__issuer">{{ cert.issuer }}</p>
               </div>
               <time v-if="cert.date" class="cert-item__date">{{ cert.date }}</time>
               <a v-if="certDocs[i]" :href="docUrl(certDocs[i])" target="_blank" rel="noopener noreferrer"
-                class="doc-link" title="View certificate">📎</a>
+                class="doc-link" title="View certificate">
+                <Paperclip :size="14" />
+              </a>
             </li>
           </ul>
         </div>
@@ -71,7 +77,9 @@
                   </a>
                 </span>
                 <a v-if="volDocs[i]" :href="docUrl(volDocs[i])" target="_blank" rel="noopener noreferrer"
-                  class="doc-link" title="View attestation">📎</a>
+                  class="doc-link" title="View attestation">
+                  <Paperclip :size="14" />
+                </a>
               </div>
               <p class="extra-card__role">{{ vol.role }}</p>
               <time class="extra-card__period">{{ vol.period }}</time>
@@ -83,7 +91,9 @@
           <h3>{{ t.education.awards_title }}</h3>
           <ul>
             <li class="award-card" v-for="(award, i) in t.education.awards" :key="award.title">
-              <div class="award-card__icon" aria-hidden="true">{{ award.icon }}</div>
+              <div class="award-card__icon" aria-hidden="true">
+                <component :is="icons[award.icon]" :size="19" :stroke-width="1.8" />
+              </div>
               <div class="award-card__body">
                 <div class="award-card__title-row">
                   <p class="award-card__title">{{ award.title }}</p>
@@ -104,7 +114,9 @@
                 </span>
               </div>
               <a v-if="awardDocs[i]" :href="docUrl(awardDocs[i])" target="_blank" rel="noopener noreferrer"
-                class="doc-link" title="View document">📎</a>
+                class="doc-link" title="View document">
+                <Paperclip :size="14" />
+              </a>
             </li>
           </ul>
         </div>
@@ -113,12 +125,18 @@
 
     <Teleport to="body">
       <div v-if="lightbox.open" class="lightbox" @click.self="closeLightbox">
-        <button class="lightbox__close" type="button" @click="closeLightbox" aria-label="Close">✕</button>
+        <button class="lightbox__close" type="button" @click="closeLightbox" aria-label="Close">
+          <X :size="22" />
+        </button>
         <button v-if="lightbox.images.length > 1" class="lightbox__nav lightbox__nav--prev" type="button"
-          @click="prevImage" aria-label="Previous image">‹</button>
+          @click="prevImage" aria-label="Previous image">
+          <ChevronLeft :size="26" />
+        </button>
         <img class="lightbox__img" :src="imgUrl(lightbox.images[lightbox.index])" alt="" />
         <button v-if="lightbox.images.length > 1" class="lightbox__nav lightbox__nav--next" type="button"
-          @click="nextImage" aria-label="Next image">›</button>
+          @click="nextImage" aria-label="Next image">
+          <ChevronRight :size="26" />
+        </button>
         <span v-if="lightbox.images.length > 1" class="lightbox__count">{{ lightbox.index + 1 }} /
           {{ lightbox.images.length }}</span>
       </div>
@@ -131,7 +149,10 @@ import { ref, onUnmounted } from 'vue'
 import { useLanguage } from '@/composables/useLanguage.js'
 import { boldify } from '@/utils/text.js'
 import { docUrl, imgUrl } from '@/utils/docs.js'
+import { Paperclip, X, ChevronLeft, ChevronRight, Zap, MessageSquare, Cloud, BarChart3, Trophy, Medal, Award } from '@lucide/vue'
 import portfolioData from '@/data/portfolio.json'
+
+const icons = { Zap, MessageSquare, Cloud, BarChart3, Trophy, Medal, Award }
 
 const { t } = useLanguage()
 const { degrees: degDocs, certs: certDocs, vols: volDocs, awards: awardDocs, volLinks } = portfolioData.docs
@@ -162,7 +183,8 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
 
 <style scoped>
 .doc-link {
-  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   opacity: 0.6;
   transition: opacity var(--transition);
@@ -215,10 +237,10 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
   position: absolute;
   top: 20px;
   right: 24px;
+  display: flex;
   background: none;
   border: none;
   color: #fff;
-  font-size: 1.4rem;
   line-height: 1;
   cursor: pointer;
   opacity: 0.75;
@@ -236,7 +258,6 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
   background: rgba(255, 255, 255, 0.1);
   border: none;
   color: #fff;
-  font-size: 2rem;
   line-height: 1;
   width: 44px;
   height: 44px;
@@ -428,7 +449,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.05rem;
+  color: var(--accent-deep);
   border-radius: 9px;
   background: var(--accent-soft);
 }
@@ -556,7 +577,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  color: var(--gold);
   border-radius: 10px;
   background: var(--gold-soft);
 }

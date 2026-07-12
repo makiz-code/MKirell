@@ -24,7 +24,9 @@
               <div class="timeline__meta-right">
                 <time class="timeline__period">{{ job.period }}</time>
                 <a v-if="expDocs[i]" :href="docUrl(expDocs[i])" target="_blank" rel="noopener noreferrer"
-                  class="doc-link" title="View attestation">📎</a>
+                  class="doc-link" title="View attestation">
+                  <Paperclip :size="14" />
+                </a>
               </div>
             </header>
             <p class="timeline__role">
@@ -48,6 +50,7 @@
 import { useLanguage } from '@/composables/useLanguage.js'
 import { boldify } from '@/utils/text.js'
 import { docUrl } from '@/utils/docs.js'
+import { Paperclip } from '@lucide/vue'
 import portfolioData from '@/data/portfolio.json'
 
 const { t } = useLanguage()
@@ -117,7 +120,8 @@ const expLinks = portfolioData.docs.experienceLinks
 }
 
 .doc-link {
-  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   opacity: 0.6;
   transition: opacity var(--transition);

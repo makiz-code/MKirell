@@ -29,7 +29,7 @@
         "addressRegion": "Île-de-France",
         "addressCountry": "FR"
       },
-      "description": "Passionate about Generative AI and Agentic Systems, with a strong foundation in algorithms and problem solving — driven to build innovative AI solutions and grow through every project.",
+      "description": "Passionate about Generative AI and Agentic Systems, with a strong foundation in algorithms and problem solving, driven to build innovative AI solutions and grow through every project.",
       "knowsAbout": [
         "PyTorch",
         "TensorFlow",
@@ -100,7 +100,7 @@
         {
           "@type": "EmployeeRole",
           "roleName": "Generative AI Engineer Apprentice",
-          "description": "Developed a declarative, config-driven graph workflow orchestration microservice, enabling dynamic workflow composition across a scalable and maintainable AI ecosystem. Built an automated Red Teaming framework for AI workflows, probing LLM behaviour across guardrails and targeted adversarial scenarios to strengthen model resilience.",
+          "description": "Developed a declarative, config-driven microservice for workflow management and orchestration, making it easy to build, manage, and execute complex AI workflows at scale. Built an automated workflow evaluation engine leveraging LLM-as-a-judge to assess outputs against custom metrics, with a dashboard to analyse workflow behaviour across different scenarios.",
           "worksFor": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-ca"
@@ -226,7 +226,7 @@
         {
           "@type": "OrganizationRole",
           "roleName": "Project Manager",
-          "description": "As Project Manager in Enactus's R&D unit, led my team to the Ichmilni Race finals, presenting AGRIVEST — a peer-to-peer lending platform promoting digital inclusion for smallholder farmers in rural Tunisia.",
+          "description": "As Project Manager in Enactus's R&D unit, led my team to the Ichmilni Race finals, presenting AGRIVEST, a peer-to-peer lending platform promoting digital inclusion for smallholder farmers in rural Tunisia.",
           "memberOf": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-enactus"
@@ -255,7 +255,7 @@
       "description": "Created an intelligent CV recommendation system based on job description using Retrieval-Augmented Generation (RAG), to optimise the selection and automatic ranking of the most relevant profiles.",
       "applicationCategory": "Artificial Intelligence",
       "operatingSystem": "Linux",
-      "keywords": "Advanced RAG, Re-Ranking, LangChain, Qwen3-VL, Qdrant, Python/Streamlit",
+      "keywords": "Advanced RAG, Re-Ranking, LangChain, Qwen3-VL, Qdrant, Streamlit",
       "dateCreated": "2025-06",
       "applicationSubCategory": "RAG"
     },
@@ -300,7 +300,7 @@
       "@id": "https://makiz-code.github.io/MKirell/#project-aerovi",
       "name": "AeroVI",
       "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
-      "description": "Designing a multimodal travel guide that generates personalised travel itineraries, curated destination recommendations, and immersive visual content — covering the full journey from planning to discovery.",
+      "description": "Designing a multimodal travel guide that generates personalised travel itineraries, curated destination recommendations, and immersive visual content, covering the full journey from planning to discovery.",
       "applicationCategory": "Artificial Intelligence",
       "operatingSystem": "Linux",
       "keywords": "Curation, Advanced RAG, Multimodal LLM, Visual Generation, Knowledge Graph",
@@ -312,7 +312,7 @@
       "@id": "https://makiz-code.github.io/MKirell/#project-planyu",
       "name": "PlanYU",
       "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
-      "description": "Designing a generative project management platform that produces complete project structures — tasks, schedules, and assignments — pairing team members to each task based on their skills and availability.",
+      "description": "Designing a generative project management platform that produces complete project structures, tasks, schedules, and assignments, pairing team members to each task based on their skills and availability.",
       "applicationCategory": "Artificial Intelligence",
       "operatingSystem": "Linux",
       "keywords": "Delegation, LLM Planning, Skill Matching, Agentic Workflows, Task Decomposition",
@@ -369,7 +369,7 @@
     {
       "@type": "Organization",
       "@id": "https://makiz-code.github.io/MKirell/#org-ibnrachik",
-      "name": "Ibn Rachik High School",
+      "name": "Ibn Rachik Ezzahra High School",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ezzahra",

@@ -9,7 +9,9 @@
 
       <ul class="skills__grid" aria-label="Skill categories">
         <li v-for="cat in t.skills.categories" :key="cat.title" class="skill-category" v-reveal>
-          <div class="skill-category__icon" aria-hidden="true">{{ cat.icon }}</div>
+          <div class="skill-category__icon" aria-hidden="true">
+            <component :is="icons[cat.icon]" :size="19" :stroke-width="1.8" />
+          </div>
           <h3>{{ cat.title }}</h3>
           <ul class="tags" aria-label="Technologies">
             <li v-for="tag in cat.tags" :key="tag"
@@ -27,7 +29,9 @@
             <span class="lang-name">{{ lang.name }}</span>
             <span class="lang-level">{{ lang.level }}</span>
             <a v-if="langDocs[i]" :href="docUrl(langDocs[i])" target="_blank" rel="noopener noreferrer" class="doc-link"
-              title="View certificate">📎</a>
+              title="View certificate">
+              <Paperclip :size="14" />
+            </a>
           </div>
           <div class="lang-bar" role="progressbar" :aria-valuenow="lang.pct" aria-valuemin="0" aria-valuemax="100"
             :aria-label="lang.name + ' proficiency'">
@@ -42,7 +46,10 @@
 <script setup>
 import { useLanguage } from '@/composables/useLanguage.js'
 import { docUrl } from '@/utils/docs.js'
+import { Paperclip, Brain, Bot, BarChart3, Database, Globe, FlaskConical, Cloud, Code2 } from '@lucide/vue'
 import portfolioData from '@/data/portfolio.json'
+
+const icons = { Brain, Bot, BarChart3, Database, Globe, FlaskConical, Cloud, Code2 }
 
 const { t } = useLanguage()
 const langDocs = portfolioData.docs.languages
@@ -75,7 +82,7 @@ const langDocs = portfolioData.docs.languages
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.15rem;
+  color: var(--accent-deep);
   border-radius: 10px;
   background: var(--accent-soft);
   margin-bottom: 16px;

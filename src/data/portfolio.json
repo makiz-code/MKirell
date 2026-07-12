@@ -10,7 +10,7 @@
     "url": "https://makiz-code.github.io/MKirell",
     "jobTitle": "Generative AI Engineer Apprentice",
     "worksFor": "Crédit Agricole",
-    "description": "Generative AI Engineer Apprentice at Crédit Agricole, specializing in agentic systems, RAG pipelines, and LLM architectures. Computer Science Engineering student at Sup Galilée — Sorbonne Paris North University.",
+    "description": "Generative AI Engineer Apprentice at Crédit Agricole, specializing in agentic systems, RAG pipelines, and LLM architectures. Computer Science Engineering student at Sup Galilée, Sorbonne Paris North University.",
     "alumniOf": "Sorbonne Paris North University",
     "addressLocality": "Le Bourget",
     "addressRegion": "Île-de-France",
@@ -93,7 +93,7 @@
           "Multi-Agent Systems Builder"
         ],
         "cardRole": "Generative AI Engineer",
-        "desc": "Passionate about **Generative AI** and **Agentic Systems**, with a strong foundation in algorithms and problem solving — driven to build innovative AI solutions and grow through every project.",
+        "desc": "Passionate about **Generative AI** and **Agentic Systems**, with a strong foundation in algorithms and problem solving, driven to build innovative AI solutions and grow through every project.",
         "cta_projects": "View my projects",
         "cta_contact": "Get in touch",
         "card": {
@@ -106,9 +106,9 @@
       "about": {
         "heading": "About Me",
         "paragraphs": [
-          "I'm a Computer Science Engineering student at **Sup Galilée — Sorbonne Paris North University**, working as a **Generative AI Engineer Apprentice at Crédit Agricole**. I'm passionate about **Generative AI** and **Agentic Systems**, and my goal is to keep strengthening my skills while contributing to innovative AI projects.",
-          "My background spans **machine learning**, **deep learning**, and **natural language processing**, built through internships and personal projects. I enjoy the full cycle — from experimenting with models to shipping things that actually work.",
-          "Outside of work and studies, I was involved in **Enactus** and **AIESEC**, where I contributed to social entrepreneurship and international exchange — driven by the same curiosity and commitment I bring to every technical challenge."
+          "I'm a Computer Science Engineering student at **Sup Galilée, Sorbonne Paris North University**, working as a **Generative AI Engineer Apprentice at Crédit Agricole**. I'm passionate about **Generative AI** and **Agentic Systems**, and my goal is to keep strengthening my skills while contributing to innovative AI projects.",
+          "My background spans **machine learning**, **deep learning**, and **natural language processing**, built through internships and personal projects. I enjoy the full cycle, from experimenting with models to shipping things that actually work.",
+          "Outside of work and studies, I was involved in **Enactus** and **AIESEC**, where I contributed to social entrepreneurship and international exchange, driven by the same curiosity and commitment I bring to every technical challenge."
         ],
         "stats": [
           {
@@ -137,7 +137,7 @@
         "heading": "Technical Skills",
         "categories": [
           {
-            "icon": "🧠",
+            "icon": "Brain",
             "title": "Machine Learning, DL & MLOps",
             "accent": false,
             "accentTags": ["PyTorch", "TensorFlow", "Amazon SageMaker"],
@@ -150,7 +150,7 @@
             ]
           },
           {
-            "icon": "🤖",
+            "icon": "Bot",
             "title": "Generative AI & Agentic Systems",
             "accent": false,
             "accentTags": ["LangGraph", "Qdrant", "Amazon Bedrock"],
@@ -163,7 +163,7 @@
             ]
           },
           {
-            "icon": "📊",
+            "icon": "BarChart3",
             "title": "Data Analysis & Engineering",
             "accent": false,
             "accentTags": ["Pandas", "Matplotlib", "PySpark", "Amazon S3"],
@@ -176,7 +176,7 @@
             ]
           },
           {
-            "icon": "🗄️",
+            "icon": "Database",
             "title": "SQL & NoSQL Databases",
             "accent": false,
             "accentTags": ["PostgreSQL", "MongoDB", "Amazon DynamoDB"],
@@ -189,7 +189,7 @@
             ]
           },
           {
-            "icon": "🌐",
+            "icon": "Globe",
             "title": "Full-Stack Web Development",
             "accent": false,
             "accentTags": ["React", "Vue.js", "FastAPI", "Flask"],
@@ -203,7 +203,7 @@
             ]
           },
           {
-            "icon": "🧪",
+            "icon": "FlaskConical",
             "title": "Version Control, Testing & QA",
             "accent": false,
             "accentTags": ["Git", "GitHub", "Postman"],
@@ -218,7 +218,7 @@
             ]
           },
           {
-            "icon": "☁️",
+            "icon": "Cloud",
             "title": "Cloud Infrastructure & DevOps",
             "accent": false,
             "accentTags": ["AWS", "Docker", "GitHub Actions"],
@@ -231,7 +231,7 @@
             ]
           },
           {
-            "icon": "💻",
+            "icon": "Code2",
             "title": "Programming Languages (PL)",
             "accent": false,
             "accentTags": ["Python", "JavaScript/TS"],
@@ -280,18 +280,18 @@
             "period": "09/2025 — Present · 10 months · France",
             "role": "Generative AI Engineer Apprentice",
             "bullets": [
-              "Developed a declarative, config-driven **graph workflow orchestration** microservice, enabling dynamic workflow composition across a scalable and maintainable AI ecosystem.",
-              "Built an automated **Red Teaming** framework for AI workflows, probing **LLM behaviour** across guardrails and targeted adversarial scenarios to strengthen model resilience."
+              "Developed a declarative, config-driven microservice for **workflow management and orchestration**, making it easy to build, manage, and execute complex AI workflows at scale.",
+              "Built an automated **workflow evaluation engine** leveraging **LLM-as-a-judge** to assess outputs against custom metrics, with a **dashboard** to analyse workflow behaviour across different scenarios."
             ],
             "tags": [
               "Agentic Workflows",
               "Advanced RAG",
               "Amazon Bedrock",
-              "AI Guardrails",
               "LLM Observability",
               "System Architecture",
               "Python/FastAPI",
-              "Amazon DynamoDB"
+              "Amazon DynamoDB",
+              "Streamlit"
             ]
           },
           {
@@ -310,9 +310,9 @@
               "PyTorch",
               "Tesseract OCR",
               "Python/Flask",
+              "MongoDB",
               "React/Redux",
-              "Bootstrap",
-              "MongoDB"
+              "Bootstrap"
             ]
           },
           {
@@ -353,7 +353,7 @@
               "LangChain",
               "Qwen3-VL",
               "Qdrant",
-              "Python/Streamlit"
+              "Streamlit"
             ]
           },
           {
@@ -405,7 +405,7 @@
             "period": "In Ideation ~ 2026",
             "badge": "Multimodal AI",
             "title": "AeroVI",
-            "desc": "Designing a **multimodal travel guide** that generates personalised travel itineraries, curated destination recommendations, and immersive visual content — covering the full journey from planning to discovery.",
+            "desc": "Designing a **multimodal travel guide** that generates personalised travel itineraries, curated destination recommendations, and immersive visual content, covering the full journey from planning to discovery.",
             "tags": [
               "Curation",
               "Advanced RAG",
@@ -418,7 +418,7 @@
             "period": "In Ideation ~ 2026",
             "badge": "Agentic · PM",
             "title": "PlanYU",
-            "desc": "Designing a **generative project management platform** that produces complete project structures — tasks, schedules, and assignments — pairing team members to each task based on their skills and availability.",
+            "desc": "Designing a **generative project management platform** that produces complete project structures, tasks, schedules, and assignments, pairing team members to each task based on their skills and availability.",
             "tags": [
               "Delegation",
               "LLM Planning",
@@ -460,25 +460,25 @@
         "certs_title": "Certifications",
         "certs": [
           {
-            "icon": "⚡",
+            "icon": "Zap",
             "title": "Spark and Python for Big Data with PySpark",
             "issuer": "Udemy",
             "date": "Mar 2024"
           },
           {
-            "icon": "💬",
+            "icon": "MessageSquare",
             "title": "Natural Language Processing with Python",
             "issuer": "Udemy",
             "date": "Feb 2024"
           },
           {
-            "icon": "☁️",
+            "icon": "Cloud",
             "title": "Azure AI Fundamentals (AI-900)",
             "issuer": "Microsoft Azure",
             "date": "Jan 2024"
           },
           {
-            "icon": "📊",
+            "icon": "BarChart3",
             "title": "Azure Data Fundamentals (DP-900)",
             "issuer": "Microsoft Azure",
             "date": "Jan 2024"
@@ -490,7 +490,7 @@
             "org": "Enactus",
             "role": "Project Manager",
             "period": "09/2021 — 08/2024 · 3 years",
-            "desc": "As Project Manager in Enactus's R&D unit, I led my team to the Ichmilni Race finals, presenting **AGRIVEST** — a peer-to-peer lending platform promoting digital inclusion for smallholder farmers in rural Tunisia."
+            "desc": "As Project Manager in Enactus's R&D unit, I led my team to the Ichmilni Race finals, presenting **AGRIVEST**, a peer-to-peer lending platform promoting digital inclusion for smallholder farmers in rural Tunisia."
           },
           {
             "org": "AIESEC",
@@ -502,7 +502,7 @@
         "awards_title": "Awards",
         "awards": [
           {
-            "icon": "🏆",
+            "icon": "Trophy",
             "title": "Enactus World Cup Vice Champions",
             "place": "Puerto Rico",
             "flagCode": "pr",
@@ -514,7 +514,7 @@
             ]
           },
           {
-            "icon": "🏆",
+            "icon": "Trophy",
             "title": "Action With Africa Vice Champions",
             "place": "Netherlands",
             "flagCode": "nl",
@@ -526,13 +526,13 @@
             ]
           },
           {
-            "icon": "🏅",
+            "icon": "Medal",
             "title": "Ichmilni Race Tunisia Finalists",
             "place": "Tunisia",
             "flagCode": "tn"
           },
           {
-            "icon": "🥈",
+            "icon": "Award",
             "title": "Hult Prize ISI Ariana Runner-up",
             "place": "Tunisia",
             "flagCode": "tn"
@@ -570,7 +570,7 @@
           "Concepteur de Systèmes Multi-Agents"
         ],
         "cardRole": "Ingénieur IA Générative",
-        "desc": "Passionné par l'**IA Générative** et les **Systèmes Agentiques**, avec de solides bases en algorithmique et en résolution de problèmes — déterminé à construire des solutions IA innovantes et à progresser à travers chaque projet.",
+        "desc": "Passionné par l'**IA Générative** et les **Systèmes Agentiques**, avec de solides bases en algorithmique et en résolution de problèmes, déterminé à construire des solutions IA innovantes et à progresser à travers chaque projet.",
         "cta_projects": "Voir mes projets",
         "cta_contact": "Me contacter",
         "card": {
@@ -583,9 +583,9 @@
       "about": {
         "heading": "À propos de moi",
         "paragraphs": [
-          "Étudiant en ingénierie informatique à **Sup Galilée — Université Sorbonne Paris Nord**, je travaille en alternance comme **Apprenti Ingénieur IA Générative chez Crédit Agricole**. Passionné par l'**IA Générative** et les **Systèmes Agentiques**, mon objectif est d'approfondir mes compétences tout en contribuant à des projets IA innovants.",
-          "Mon parcours couvre le **machine learning**, le **deep learning** et le **traitement automatique du langage naturel**, forgé au fil de stages et de projets personnels. J'apprécie tout le cycle — de l'expérimentation avec les modèles jusqu'à livrer des solutions qui fonctionnent réellement.",
-          "En dehors du travail et des études, je me suis investi dans **Enactus** et **AIESEC**, où j'ai contribué à l'entrepreneuriat social et aux échanges internationaux — animé par la même curiosité et le même engagement que j'apporte à chaque défi technique."
+          "Étudiant en ingénierie informatique à **Sup Galilée, Université Sorbonne Paris Nord**, je travaille en alternance comme **Apprenti Ingénieur IA Générative chez Crédit Agricole**. Passionné par l'**IA Générative** et les **Systèmes Agentiques**, mon objectif est d'approfondir mes compétences tout en contribuant à des projets IA innovants.",
+          "Mon parcours couvre le **machine learning**, le **deep learning** et le **traitement automatique du langage naturel**, forgé au fil de stages et de projets personnels. J'apprécie tout le cycle, de l'expérimentation avec les modèles jusqu'à livrer des solutions qui fonctionnent réellement.",
+          "En dehors du travail et des études, je me suis investi dans **Enactus** et **AIESEC**, où j'ai contribué à l'entrepreneuriat social et aux échanges internationaux, animé par la même curiosité et le même engagement que j'apporte à chaque défi technique."
         ],
         "stats": [
           {
@@ -614,7 +614,7 @@
         "heading": "Compétences Techniques",
         "categories": [
           {
-            "icon": "🧠",
+            "icon": "Brain",
             "title": "Machine Learning, DL & MLOps",
             "accent": false,
             "accentTags": ["PyTorch", "TensorFlow", "Amazon SageMaker"],
@@ -627,7 +627,7 @@
             ]
           },
           {
-            "icon": "🤖",
+            "icon": "Bot",
             "title": "IA Générative & Agentiques",
             "accent": false,
             "accentTags": ["LangGraph", "Qdrant", "Amazon Bedrock"],
@@ -640,7 +640,7 @@
             ]
           },
           {
-            "icon": "📊",
+            "icon": "BarChart3",
             "title": "Analyse & Ingénierie Data",
             "accent": false,
             "accentTags": ["Pandas", "Matplotlib", "PySpark", "Amazon S3"],
@@ -653,7 +653,7 @@
             ]
           },
           {
-            "icon": "🗄️",
+            "icon": "Database",
             "title": "Bases de données SQL et NoSQL",
             "accent": false,
             "accentTags": ["PostgreSQL", "MongoDB", "Amazon DynamoDB"],
@@ -666,7 +666,7 @@
             ]
           },
           {
-            "icon": "🌐",
+            "icon": "Globe",
             "title": "Développement Web Full-Stack",
             "accent": false,
             "accentTags": ["React", "Vue.js", "FastAPI", "Flask"],
@@ -680,7 +680,7 @@
             ]
           },
           {
-            "icon": "🧪",
+            "icon": "FlaskConical",
             "title": "Contrôle de Version, Tests & QA",
             "accent": false,
             "accentTags": ["Git", "GitHub", "Postman"],
@@ -695,7 +695,7 @@
             ]
           },
           {
-            "icon": "☁️",
+            "icon": "Cloud",
             "title": "Cloud Infrastructure & DevOps",
             "accent": false,
             "accentTags": ["AWS", "Docker", "GitHub Actions"],
@@ -708,7 +708,7 @@
             ]
           },
           {
-            "icon": "💻",
+            "icon": "Code2",
             "title": "Langages de Programmation",
             "accent": false,
             "accentTags": ["Python", "JavaScript/TS"],
@@ -757,18 +757,18 @@
             "period": "09/2025 — En cours · 10 mois · France",
             "role": "Apprenti Ingénieur IA Générative",
             "bullets": [
-              "Développement d'un microservice déclaratif et piloté par configuration pour l'**orchestration et l'exécution de workflows en graphe**, permettant une composition dynamique au sein d'un écosystème IA scalable et maintenable.",
-              "Développement d'un framework de **Red Teaming** automatisé pour les workflows IA, sondant le **comportement des LLMs** à travers les guardrails et des scénarios adversariaux ciblés pour renforcer la résilience des modèles."
+              "Développement d'un microservice déclaratif et piloté par configuration pour la **gestion et l'orchestration de workflows**, facilitant la construction, la gestion et l'exécution de workflows IA complexes à grande échelle.",
+              "Création d'un **moteur d'évaluation de workflows** basé sur un **LLM-as-a-judge**, évaluant les sorties selon des métriques personnalisées, avec un **dashboard** d'analyse du comportement selon différents scénarios."
             ],
             "tags": [
               "Agentic Workflows",
               "Advanced RAG",
               "Amazon Bedrock",
-              "AI Guardrails",
               "LLM Observability",
               "System Architecture",
               "Python/FastAPI",
-              "Amazon DynamoDB"
+              "Amazon DynamoDB",
+              "Streamlit"
             ]
           },
           {
@@ -787,9 +787,9 @@
               "PyTorch",
               "Tesseract OCR",
               "Python/Flask",
+              "MongoDB",
               "React/Redux",
-              "Bootstrap",
-              "MongoDB"
+              "Bootstrap"
             ]
           },
           {
@@ -830,7 +830,7 @@
               "LangChain",
               "Qwen3-VL",
               "Qdrant",
-              "Python/Streamlit"
+              "Streamlit"
             ]
           },
           {
@@ -838,7 +838,7 @@
             "duration": "5 mois",
             "badge": "NLP · OCR",
             "title": "VERMail",
-            "desc": "Développement d'une **plateforme e-mail intelligente** combinant **BERT** fine-tuné pour la classification multi-classes et **Tesseract OCR** pour l'analyse des pièces jointes, avec un tableau de bord **React** pour la surveillance en temps réel.",
+            "desc": "Développement d'une **plateforme e-mail intelligente** combinant **BERT** fine-tuné pour la classification multi-classes et **Tesseract OCR** pour l'analyse des pièces jointes, avec un dashboard **React** pour la surveillance en temps réel.",
             "tags": [
               "BERT Fine-Tuning",
               "PyTorch",
@@ -882,7 +882,7 @@
             "period": "En idéation ~ 2026",
             "badge": "IA Multimodale",
             "title": "AeroVI",
-            "desc": "Conception d'un **guide de voyage multimodal** générant des itinéraires personnalisés, des recommandations de destinations sélectionnées et un contenu visuel immersif — couvrant l'intégralité du voyage, de la planification à la découverte.",
+            "desc": "Conception d'un **guide de voyage multimodal** générant des itinéraires personnalisés, des recommandations de destinations sélectionnées et un contenu visuel immersif, couvrant l'intégralité du voyage, de la planification à la découverte.",
             "tags": [
               "Curation",
               "Advanced RAG",
@@ -895,7 +895,7 @@
             "period": "En idéation ~ 2026",
             "badge": "Agentique · PM",
             "title": "PlanYU",
-            "desc": "Conception d'une **plateforme de gestion de projet générative** produisant des structures complètes — tâches, plannings et affectations — en associant les membres de l'équipe selon leurs compétences et disponibilités.",
+            "desc": "Conception d'une **plateforme de gestion de projet générative** produisant des structures complètes, tâches, plannings et affectations, en associant les membres de l'équipe selon leurs compétences et disponibilités.",
             "tags": [
               "Delegation",
               "LLM Planning",
@@ -937,25 +937,25 @@
         "certs_title": "Certifications",
         "certs": [
           {
-            "icon": "⚡",
+            "icon": "Zap",
             "title": "Spark and Python for Big Data with PySpark",
             "issuer": "Udemy",
             "date": "Mar 2024"
           },
           {
-            "icon": "💬",
+            "icon": "MessageSquare",
             "title": "Natural Language Processing with Python",
             "issuer": "Udemy",
             "date": "Fév 2024"
           },
           {
-            "icon": "☁️",
+            "icon": "Cloud",
             "title": "Azure AI Fundamentals (AI-900)",
             "issuer": "Microsoft Azure",
             "date": "Jan 2024"
           },
           {
-            "icon": "📊",
+            "icon": "BarChart3",
             "title": "Azure Data Fundamentals (DP-900)",
             "issuer": "Microsoft Azure",
             "date": "Jan 2024"
@@ -967,7 +967,7 @@
             "org": "Enactus",
             "role": "Chef de Projet",
             "period": "09/2021 — 08/2024 · 3 ans",
-            "desc": "Chef de Projet dans l'unité R&D d'Enactus, j'ai mené mon équipe en finale de l'Ichmilni Race en présentant **AGRIVEST** — une plateforme de prêt entre pairs pour l'inclusion numérique des petits agriculteurs en Tunisie rurale."
+            "desc": "Chef de Projet dans l'unité R&D d'Enactus, j'ai mené mon équipe en finale de l'Ichmilni Race en présentant **AGRIVEST**, une plateforme de prêt entre pairs pour l'inclusion numérique des petits agriculteurs en Tunisie rurale."
           },
           {
             "org": "AIESEC",
@@ -979,7 +979,7 @@
         "awards_title": "Récompenses",
         "awards": [
           {
-            "icon": "🏆",
+            "icon": "Trophy",
             "title": "Enactus World Cup Vice-champions",
             "place": "Porto Rico",
             "flagCode": "pr",
@@ -991,7 +991,7 @@
             ]
           },
           {
-            "icon": "🏆",
+            "icon": "Trophy",
             "title": "Action With Africa Vice-champions",
             "place": "Pays-Bas",
             "flagCode": "nl",
@@ -1003,13 +1003,13 @@
             ]
           },
           {
-            "icon": "🏅",
+            "icon": "Medal",
             "title": "Ichmilni Race Finalistes Tunisie",
             "place": "Tunisie",
             "flagCode": "tn"
           },
           {
-            "icon": "🥈",
+            "icon": "Award",
             "title": "Hult Prize ISI Ariana Vice-champion",
             "place": "Tunisie",
             "flagCode": "tn"
