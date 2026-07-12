@@ -100,7 +100,7 @@
         {
           "@type": "EmployeeRole",
           "roleName": "Generative AI Engineer Apprentice",
-          "description": "Developed a declarative, config-driven microservice for workflow management and orchestration, making it easy to build, manage, and execute complex AI workflows at scale. Built an automated workflow evaluation engine leveraging LLM-as-a-judge to assess outputs against custom metrics, with a dashboard to analyse workflow behaviour across different scenarios.",
+          "description": "Developed a declarative, config-driven microservice for workflow management and orchestration, making it easy to manage and execute complex AI workflows at scale. Built an automated workflow evaluation engine leveraging LLM-as-a-judge to assess outputs against custom metrics, with a dashboard to analyse workflow behaviour.",
           "worksFor": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-ca"
@@ -110,7 +110,7 @@
         {
           "@type": "EmployeeRole",
           "roleName": "Natural Language Processing Intern",
-          "description": "Implemented a system that automates email classification and information extraction from attachments, using BERT and OCR to optimise efficiency and processing time. Developed a web application for BERT Fine-Tuning, email management, and real-time data analysis and visualisation, to enhance user interaction and performance monitoring.",
+          "description": "Implemented a system that automates email classification and information extraction from attachments, using fine-tuned BERT and OCR to improve accuracy and optimise processing. Developed a web application for BERT Fine-Tuning, email management, and real-time data analysis and visualisation, enabling model management and performance monitoring.",
           "worksFor": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-vermeg"
@@ -121,7 +121,7 @@
         {
           "@type": "EmployeeRole",
           "roleName": "Machine Learning Intern",
-          "description": "Evaluated multiple deep reinforcement learning algorithms from Stable Baselines 3 across various Gymnasium environments to assess agent performance and training efficiency. Built a 2D grid game in Pygame where a Deep Q-Learning agent learns to navigate a dynamic environment, applying the best-performing algorithm from the benchmarking phase.",
+          "description": "Evaluated multiple reinforcement learning algorithms from Stable Baselines 3 across various Gymnasium environments to assess agent performance and training efficiency. Built a 2D game in Pygame where a Deep Q-Learning agent learns to navigate a dynamic environment, applying the best-performing algorithm from the benchmarking phase.",
           "worksFor": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-sofiatech"
@@ -255,7 +255,7 @@
       "description": "Created an intelligent CV recommendation system based on job description using Retrieval-Augmented Generation (RAG), to optimise the selection and automatic ranking of the most relevant profiles.",
       "applicationCategory": "Artificial Intelligence",
       "operatingSystem": "Linux",
-      "keywords": "Advanced RAG, Re-Ranking, LangChain, Qwen3-VL, Qdrant, Streamlit",
+      "keywords": "Advanced RAG, Re-Ranking, LangChain, Qwen3-VL, Milvus, Python/Streamlit",
       "dateCreated": "2025-06",
       "applicationSubCategory": "RAG"
     },
