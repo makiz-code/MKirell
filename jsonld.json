@@ -31,45 +31,50 @@
       },
       "description": "Passionate about Generative AI and Agentic Systems, with a strong foundation in algorithms and problem solving — driven to build innovative AI solutions and grow through every project.",
       "knowsAbout": [
+        "PyTorch",
+        "TensorFlow",
+        "Sklearn",
+        "XGBoost",
+        "Amazon SageMaker",
+        "LangChain",
+        "LangGraph",
+        "Milvus",
+        "Qdrant",
+        "Amazon Bedrock",
+        "Pandas",
+        "Matplotlib",
+        "PySpark",
+        "Apache Airflow",
+        "Amazon S3",
+        "Oracle",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Amazon DynamoDB",
+        "FastAPI",
+        "Flask",
+        "Express.js",
+        "Laravel",
+        "React",
+        "Vue.js",
+        "Git",
+        "GitHub",
+        "Pytest",
+        "Jest",
+        "Vitest",
+        "Playwright",
+        "Postman",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "GitHub Actions",
         "Python",
         "JavaScript/TS",
         "PHP",
         "Java",
         "C/C++",
-        "PL/SQL",
-        "PyTorch",
-        "TensorFlow",
-        "Keras",
-        "Scikit-Learn",
-        "Gymnasium",
-        "Hugging Face Transformers",
-        "Sentence-Transformers",
-        "spaCy",
-        "LangChain",
-        "LangGraph",
-        "AWS SageMaker",
-        "AWS Bedrock",
-        "Pandas",
-        "NumPy",
-        "Matplotlib",
-        "Apache Airflow",
-        "PySpark",
-        "MySQL",
-        "PostgreSQL",
-        "MongoDB",
-        "Amazon DynamoDB",
-        "Oracle",
-        "React",
-        "Express.js",
-        "Flask",
-        "Vue.js",
-        "FastAPI",
-        "Laravel",
-        "AWS",
-        "Docker",
-        "Kubernetes",
-        "Terraform",
-        "GitHub Actions"
+        "PL/SQL"
       ],
       "knowsLanguage": [
         {
@@ -173,20 +178,12 @@
         {
           "@type": "EducationalOccupationalCredential",
           "credentialCategory": "certification",
-          "name": "Azure AI Fundamentals (AI-900)",
+          "name": "Spark and Python for Big Data with PySpark",
           "recognizedBy": {
             "@type": "Organization",
-            "@id": "https://makiz-code.github.io/MKirell/#org-microsoft"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "certification",
-          "name": "Azure Data Fundamentals (DP-900)",
-          "recognizedBy": {
-            "@type": "Organization",
-            "@id": "https://makiz-code.github.io/MKirell/#org-microsoft"
-          }
+            "@id": "https://makiz-code.github.io/MKirell/#org-udemy"
+          },
+          "dateCreated": "2024-03"
         },
         {
           "@type": "EducationalOccupationalCredential",
@@ -195,16 +192,28 @@
           "recognizedBy": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-udemy"
-          }
+          },
+          "dateCreated": "2024-02"
         },
         {
           "@type": "EducationalOccupationalCredential",
           "credentialCategory": "certification",
-          "name": "Spark and Python for Big Data with PySpark",
+          "name": "Azure AI Fundamentals (AI-900)",
           "recognizedBy": {
             "@type": "Organization",
-            "@id": "https://makiz-code.github.io/MKirell/#org-udemy"
-          }
+            "@id": "https://makiz-code.github.io/MKirell/#org-microsoft"
+          },
+          "dateCreated": "2024-01"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certification",
+          "name": "Azure Data Fundamentals (DP-900)",
+          "recognizedBy": {
+            "@type": "Organization",
+            "@id": "https://makiz-code.github.io/MKirell/#org-microsoft"
+          },
+          "dateCreated": "2024-01"
         }
       ],
       "award": [
@@ -217,7 +226,7 @@
         {
           "@type": "OrganizationRole",
           "roleName": "Project Manager",
-          "description": "Led my team to the Ichmilni Race finals as PM in Enactus R&D, pitching AGRIVEST — a peer-to-peer lending platform for smallholder farmers in rural Tunisia.",
+          "description": "As Project Manager in Enactus's R&D unit, led my team to the Ichmilni Race finals, presenting AGRIVEST — a peer-to-peer lending platform promoting digital inclusion for smallholder farmers in rural Tunisia.",
           "memberOf": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-enactus"
@@ -228,7 +237,7 @@
         {
           "@type": "OrganizationRole",
           "roleName": "Team Member",
-          "description": "Negotiated partnerships with educational institutions in Tunisia to secure internships for international exchange participants via AIESEC's Incoming Global Teaching unit.",
+          "description": "As a Team Member in AIESEC's Incoming Global Talent unit, negotiated partnerships with companies and educational institutions in Tunisia to secure internship opportunities for international exchange participants.",
           "memberOf": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-aiesec"
@@ -246,7 +255,7 @@
       "description": "Created an intelligent CV recommendation system based on job description using Retrieval-Augmented Generation (RAG), to optimise the selection and automatic ranking of the most relevant profiles.",
       "applicationCategory": "Artificial Intelligence",
       "operatingSystem": "Linux",
-      "keywords": "Advanced RAG, Re-Ranking, LangChain, Qwen3-VL, Weaviate, Python/Streamlit",
+      "keywords": "Advanced RAG, Re-Ranking, LangChain, Qwen3-VL, Qdrant, Python/Streamlit",
       "dateCreated": "2025-06",
       "applicationSubCategory": "RAG"
     },
@@ -255,7 +264,7 @@
       "@id": "https://makiz-code.github.io/MKirell/#project-vermail",
       "name": "VERMail",
       "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
-      "description": "Developed an end-to-end email intelligence platform combining fine-tuned BERT for multi-class classification and Tesseract OCR for attachment parsing, with a React dashboard for real-time monitoring and model management.",
+      "description": "Developed an end-to-end email intelligence platform combining fine-tuned BERT for multi-class classification and Tesseract OCR for attachment parsing, with a React dashboard for real-time monitoring.",
       "applicationCategory": "Artificial Intelligence",
       "operatingSystem": "Linux",
       "keywords": "BERT Fine-Tuning, PyTorch, Tesseract OCR, Python/Flask, React/Redux, MongoDB",
@@ -267,12 +276,24 @@
       "@id": "https://makiz-code.github.io/MKirell/#project-slythera",
       "name": "Slythera",
       "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
-      "description": "Developed a 2D grid-based game in Pygame featuring an AI agent trained from scratch with Deep Q-Learning to autonomously navigate obstacles and maximise its score across a dynamic, progressively challenging environment.",
+      "description": "Developed a 2D grid game in Pygame featuring an AI agent trained from scratch with Deep Q-Learning to autonomously navigate obstacles and maximise its score in a dynamic, progressively challenging environment.",
       "applicationCategory": "Artificial Intelligence",
       "operatingSystem": "Linux",
       "keywords": "Reinforcement Learning, TensorFlow/Keras, Gymnasium, NumPy, Pandas, Python/Pygame",
       "dateCreated": "2023-06",
       "applicationSubCategory": "Deep RL"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://makiz-code.github.io/MKirell/#project-twixel",
+      "name": "TwiXel",
+      "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
+      "description": "Designing an intelligent multi-agent system for automated social listening on Twitter (now X), aimed at identifying emerging trends in real time and generating actionable marketing campaign ideas at scale.",
+      "applicationCategory": "Artificial Intelligence",
+      "operatingSystem": "Linux",
+      "keywords": "Multi-Agent Systems, LangGraph, MCP/A2A, GPT-OSS, Qdrant, Python/FastAPI, Vue.js",
+      "dateCreated": "2026",
+      "applicationSubCategory": "Multi-Agent"
     },
     {
       "@type": "SoftwareApplication",
@@ -297,18 +318,6 @@
       "keywords": "Delegation, LLM Planning, Skill Matching, Agentic Workflows, Task Decomposition",
       "dateCreated": "2026",
       "applicationSubCategory": "Agentic · PM"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "@id": "https://makiz-code.github.io/MKirell/#project-twixel",
-      "name": "TwiXel",
-      "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
-      "description": "Designing an intelligent multi-agent system for automated social listening on Twitter (now X), aimed at identifying emerging trends in real time and generating actionable marketing campaign ideas at scale.",
-      "applicationCategory": "Artificial Intelligence",
-      "operatingSystem": "Linux",
-      "keywords": "Multi-Agent Systems, LangGraph, MCP/A2A, GPT-OSS, Milvus, Python/FastAPI, Vue.js",
-      "dateCreated": "2027",
-      "applicationSubCategory": "Multi-Agent"
     },
     {
       "@type": "Organization",
