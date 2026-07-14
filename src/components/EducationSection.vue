@@ -18,16 +18,16 @@
                 <div class="edu-card__title-row">
                   <h3>{{ deg.title }}</h3>
                   <a v-if="degDocs[i]" :href="docUrl(degDocs[i])" target="_blank" rel="noopener noreferrer"
-                    class="doc-link" title="View diploma">
-                    <Paperclip :size="14" />
+                    class="doc-link icon-hint" title="View diploma">
+                    <Paperclip :size="15" />
                   </a>
                 </div>
                 <span v-if="deg.school" class="edu-card__school-row">
                   <span class="edu-card__school">{{ deg.school }}</span>
-                  <a v-if="deg.link" :href="deg.link" target="_blank" rel="noopener noreferrer" class="school-link"
-                    title="View on LinkedIn">
+                  <a v-if="deg.link" :href="deg.link" target="_blank" rel="noopener noreferrer"
+                    class="school-link icon-hint" title="View on LinkedIn">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" width="13" height="13" aria-hidden="true">
+                      stroke-linejoin="round" width="15" height="15" aria-hidden="true">
                       <path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </a>
@@ -51,8 +51,8 @@
               </div>
               <time v-if="cert.date" class="cert-item__date">{{ cert.date }}</time>
               <a v-if="certDocs[i]" :href="docUrl(certDocs[i])" target="_blank" rel="noopener noreferrer"
-                class="doc-link" title="View certificate">
-                <Paperclip :size="14" />
+                class="doc-link icon-hint" title="View certificate">
+                <Paperclip :size="15" />
               </a>
             </li>
           </ul>
@@ -69,16 +69,16 @@
                 <span class="extra-card__org-row">
                   <p class="extra-card__org">{{ vol.org }}</p>
                   <a v-if="volLinks && volLinks[i]" :href="volLinks[i]" target="_blank" rel="noopener noreferrer"
-                    class="vol-link" title="View on LinkedIn">
+                    class="vol-link icon-hint" title="View on LinkedIn">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" width="13" height="13" aria-hidden="true">
+                      stroke-linejoin="round" width="15" height="15" aria-hidden="true">
                       <path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </a>
                 </span>
                 <a v-if="volDocs[i]" :href="docUrl(volDocs[i])" target="_blank" rel="noopener noreferrer"
-                  class="doc-link" title="View attestation">
-                  <Paperclip :size="14" />
+                  class="doc-link icon-hint" title="View attestation">
+                  <Paperclip :size="15" />
                 </a>
               </div>
               <p class="extra-card__role">{{ vol.role }}</p>
@@ -97,10 +97,10 @@
               <div class="award-card__body">
                 <div class="award-card__title-row">
                   <p class="award-card__title">{{ award.title }}</p>
-                  <button v-if="award.images && award.images.length" type="button" class="award-link"
+                  <button v-if="award.images && award.images.length" type="button" class="award-link icon-hint"
                     title="View photos" @click="openLightbox(award.images)">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" width="14" height="14" aria-hidden="true">
+                      stroke-linejoin="round" width="15" height="15" aria-hidden="true">
                       <rect x="3" y="3" width="18" height="18" rx="2" />
                       <circle cx="8.5" cy="8.5" r="1.5" />
                       <path d="M21 15l-5-5L5 21" />
@@ -114,8 +114,8 @@
                 </span>
               </div>
               <a v-if="awardDocs[i]" :href="docUrl(awardDocs[i])" target="_blank" rel="noopener noreferrer"
-                class="doc-link" title="View document">
-                <Paperclip :size="14" />
+                class="doc-link icon-hint" title="View document">
+                <Paperclip :size="15" />
               </a>
             </li>
           </ul>
@@ -185,6 +185,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
 .doc-link {
   display: inline-flex;
   align-items: center;
+  color: var(--gold);
   text-decoration: none;
   opacity: 0.6;
   transition: opacity var(--transition);
@@ -204,7 +205,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #fff;
+  color: var(--gold);
   opacity: 0.7;
   flex-shrink: 0;
   text-decoration: none;
@@ -388,7 +389,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--ink);
+  color: var(--gold);
   opacity: 0.7;
   flex-shrink: 0;
   text-decoration: none;
@@ -520,7 +521,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
 .vol-link {
   display: inline-flex;
   align-items: center;
-  color: var(--accent);
+  color: var(--gold);
   opacity: 0.6;
   text-decoration: none;
   transition: opacity var(--transition);

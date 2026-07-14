@@ -28,9 +28,9 @@
             <span :class="['fi', `fi-${lang.flagCode}`]" class="lang-flag-icon" aria-hidden="true"></span>
             <span class="lang-name">{{ lang.name }}</span>
             <span class="lang-level">{{ lang.level }}</span>
-            <a v-if="langDocs[i]" :href="docUrl(langDocs[i])" target="_blank" rel="noopener noreferrer" class="doc-link"
-              title="View certificate">
-              <Paperclip :size="14" />
+            <a v-if="langDocs[i]" :href="docUrl(langDocs[i])" target="_blank" rel="noopener noreferrer"
+              class="doc-link icon-hint" title="View certificate">
+              <Paperclip :size="15" />
             </a>
           </div>
           <div class="lang-bar" role="progressbar" :aria-valuenow="lang.pct" aria-valuemin="0" aria-valuemax="100"
@@ -159,6 +159,7 @@ const langDocs = portfolioData.docs.languages
 .doc-link {
   display: inline-flex;
   align-items: center;
+  color: var(--gold);
   font-size: 1rem;
   text-decoration: none;
   opacity: 0.6;

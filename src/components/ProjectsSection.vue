@@ -11,16 +11,16 @@
           <div class="project-card__header">
             <div class="project-card__left">
               <time class="project-card__period">{{ project.period }}{{ project.duration ? ` (${project.duration})` : ''
-                }}</time>
+              }}</time>
             </div>
             <span class="project-badge">{{ project.badge }}</span>
           </div>
           <div class="project-card__title-row">
             <h3 class="project-card__title">{{ project.title }}</h3>
             <a v-if="projectLinks[i]" :href="projectLinks[i]" target="_blank" rel="noopener noreferrer"
-              class="project-link" title="View on GitHub">
+              class="project-link icon-hint" title="View on GitHub">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" width="14" height="14" aria-hidden="true">
+                stroke-linejoin="round" width="15" height="15" aria-hidden="true">
                 <path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
             </a>
@@ -131,7 +131,7 @@ const projectLinks = portfolioData.docs.projectLinks
 .project-link {
   display: inline-flex;
   align-items: center;
-  color: var(--ink-soft);
+  color: var(--gold);
   opacity: 0.6;
   text-decoration: none;
   flex-shrink: 0;

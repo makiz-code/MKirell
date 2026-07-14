@@ -13,10 +13,10 @@
             <header class="timeline__meta">
               <span class="timeline__company">
                 {{ job.company }}
-                <a v-if="expLinks[i]" :href="expLinks[i]" target="_blank" rel="noopener noreferrer" class="company-link"
-                  title="View on LinkedIn">
+                <a v-if="expLinks[i]" :href="expLinks[i]" target="_blank" rel="noopener noreferrer"
+                  class="company-link icon-hint" title="View on LinkedIn">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" width="13" height="13" aria-hidden="true">
+                    stroke-linejoin="round" width="15" height="15" aria-hidden="true">
                     <path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
                 </a>
@@ -24,8 +24,8 @@
               <div class="timeline__meta-right">
                 <time class="timeline__period">{{ job.period }}</time>
                 <a v-if="expDocs[i]" :href="docUrl(expDocs[i])" target="_blank" rel="noopener noreferrer"
-                  class="doc-link" title="View attestation">
-                  <Paperclip :size="14" />
+                  class="doc-link icon-hint" title="View attestation">
+                  <Paperclip :size="15" />
                 </a>
               </div>
             </header>
@@ -122,6 +122,7 @@ const expLinks = portfolioData.docs.experienceLinks
 .doc-link {
   display: inline-flex;
   align-items: center;
+  color: var(--gold);
   text-decoration: none;
   opacity: 0.6;
   transition: opacity var(--transition);
@@ -147,7 +148,7 @@ const expLinks = portfolioData.docs.experienceLinks
 .company-link {
   display: inline-flex;
   align-items: center;
-  color: var(--accent-deep);
+  color: var(--gold);
   margin-top: -1px;
   opacity: 0.6;
   text-decoration: none;
