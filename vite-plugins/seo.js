@@ -370,6 +370,8 @@ function renderHeadTags(portfolio, jsonld) {
   const attr = escapeAttr;
 
   return `
+<style>#seo-shell{display:none}</style>
+<noscript><style>#seo-shell{display:block}</style></noscript>
 <title>${escapeHtml(pageTitle)}</title>
 <meta name="description" content="${attr(description)}" />
 <meta name="keywords" content="${attr(keywords)}" />
@@ -413,7 +415,7 @@ export default function seoPrerender() {
 
       let out = html.replace(
         '<div id="app"></div>',
-        `<div id="app">${renderSeoShell(portfolio)}</div>`,
+        `<div id="app"><div id="seo-shell">${renderSeoShell(portfolio)}</div></div>`,
       );
       out = out.replace(
         "</head>",
