@@ -296,7 +296,7 @@ function renderSeoShell(data) {
     .join("");
 
   return `
-<a href="#main-content">Skip to main content</a>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <header>
   <nav aria-label="Main navigation">
     <a href="#about">About</a>
