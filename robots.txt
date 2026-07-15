@@ -37,4 +37,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://makiz-code.github.io/MKirell/sitemap.xml
+Sitemap: https://mkirell.github.io/Portfolio/sitemap.xml
