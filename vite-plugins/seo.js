@@ -190,7 +190,7 @@ function buildJsonLd(portfolio) {
     },
     description: person.description,
     knowsAbout: [...new Set(t.skills.categories.flatMap((c) => c.tags))],
-    knowsLanguage: t.skills.languages.map((l) => ({
+    knowsLanguage: t.education.languages.map((l) => ({
       "@type": "Language",
       name: l.name,
       alternateName: LANG_CODES[l.name],
@@ -268,7 +268,7 @@ function renderSeoShell(data) {
     )
     .join("");
 
-  const languages = t.skills.languages
+  const languages = t.education.languages
     .map((l) => `<li>${escapeHtml(l.name)} — ${escapeHtml(l.level)}</li>`)
     .join("");
 
@@ -328,8 +328,6 @@ function renderSeoShell(data) {
   <section id="skills">
     <h2>${escapeHtml(t.skills.heading)}</h2>
     <ul>${skills}</ul>
-    <h3>${escapeHtml(t.skills.lang_title)}</h3>
-    <ul>${languages}</ul>
   </section>
   <section id="education">
     <h2>${escapeHtml(t.education.heading)}</h2>
@@ -339,6 +337,8 @@ function renderSeoShell(data) {
     <ul>${certs}</ul>
     <h3>${escapeHtml(t.education.awards_title)}</h3>
     <ul>${awards}</ul>
+    <h3>${escapeHtml(t.education.lang_title)}</h3>
+    <ul>${languages}</ul>
   </section>
   <section id="contact">
     <h2>${escapeHtml(t.contact.heading)}</h2>
@@ -366,7 +366,7 @@ function renderHeadTags(portfolio, jsonld) {
     person.worksFor,
     ...new Set(t.skills.categories.flatMap((c) => c.accentTags)),
   ].join(", ");
-  const ogImage = `${person.url.replace(/\/$/, "")}/og-image.png`;
+  const ogImage = `${person.url.replace(/\/$/, "")}/imgs/og-image.png`;
   const attr = escapeAttr;
 
   return `

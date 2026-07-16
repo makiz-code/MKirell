@@ -40,7 +40,7 @@
           </div>
           <div class="terminal__line">
             <span class="cmd">{{ t.hero.card.languages }}</span>
-            <span class="out">{{t.skills.languages.map(l => l.name).join(' · ')}}</span>
+            <span class="out">{{t.education.languages.map(l => l.name).join(' · ')}}</span>
           </div>
           <div class="terminal__line blink__line">
             <span class="cmd" style="color:var(--sage)">$</span>

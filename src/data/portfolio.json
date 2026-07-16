@@ -139,7 +139,7 @@
           {
             "num": "3",
             "label": "languages spoken",
-            "anchor": "#skills"
+            "anchor": "#education"
           }
         ]
       },
@@ -251,30 +251,6 @@
               "C/C++",
               "PL/SQL"
             ]
-          }
-        ],
-        "lang_title": "Languages",
-        "languages": [
-          {
-            "flag": "🇬🇧",
-            "flagCode": "gb",
-            "name": "English",
-            "pct": 80,
-            "level": "B2 · TOEIC"
-          },
-          {
-            "flag": "🇫🇷",
-            "flagCode": "fr",
-            "name": "French",
-            "pct": 80,
-            "level": "B2 · TCF"
-          },
-          {
-            "flag": "🇹🇳",
-            "flagCode": "tn",
-            "name": "Arabic",
-            "pct": 100,
-            "level": "Native"
           }
         ]
       },
@@ -545,6 +521,30 @@
             "place": "Tunisia",
             "flagCode": "tn"
           }
+        ],
+        "lang_title": "Languages",
+        "languages": [
+          {
+            "flag": "🇬🇧",
+            "flagCode": "gb",
+            "name": "English",
+            "pct": 80,
+            "level": "B2 · TOEIC"
+          },
+          {
+            "flag": "🇫🇷",
+            "flagCode": "fr",
+            "name": "French",
+            "pct": 80,
+            "level": "B2 · TCF"
+          },
+          {
+            "flag": "🇹🇳",
+            "flagCode": "tn",
+            "name": "Arabic",
+            "pct": 100,
+            "level": "Native"
+          }
         ]
       },
       "contact": {
@@ -614,7 +614,7 @@
           {
             "num": "3",
             "label": "langues parlées",
-            "anchor": "#skills"
+            "anchor": "#education"
           }
         ]
       },
@@ -726,30 +726,6 @@
               "C/C++",
               "PL/SQL"
             ]
-          }
-        ],
-        "lang_title": "Langues",
-        "languages": [
-          {
-            "flag": "🇬🇧",
-            "flagCode": "gb",
-            "name": "Anglais",
-            "pct": 80,
-            "level": "B2 · TOEIC"
-          },
-          {
-            "flag": "🇫🇷",
-            "flagCode": "fr",
-            "name": "Français",
-            "pct": 80,
-            "level": "B2 · TCF"
-          },
-          {
-            "flag": "🇹🇳",
-            "flagCode": "tn",
-            "name": "Arabe",
-            "pct": 100,
-            "level": "Natif"
           }
         ]
       },
@@ -1019,6 +995,30 @@
             "title": "Hult Prize ISI Ariana Vice-champion",
             "place": "Tunisie",
             "flagCode": "tn"
+          }
+        ],
+        "lang_title": "Langues",
+        "languages": [
+          {
+            "flag": "🇬🇧",
+            "flagCode": "gb",
+            "name": "Anglais",
+            "pct": 80,
+            "level": "B2 · TOEIC"
+          },
+          {
+            "flag": "🇫🇷",
+            "flagCode": "fr",
+            "name": "Français",
+            "pct": 80,
+            "level": "B2 · TCF"
+          },
+          {
+            "flag": "🇹🇳",
+            "flagCode": "tn",
+            "name": "Arabe",
+            "pct": 100,
+            "level": "Natif"
           }
         ]
       },

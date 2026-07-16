@@ -80,6 +80,10 @@ const expLinks = portfolioData.docs.experienceLinks
   position: relative;
 }
 
+.timeline__item:last-child {
+  margin-bottom: 0;
+}
+
 .timeline__dot {
   flex-shrink: 0;
   width: 40px;
