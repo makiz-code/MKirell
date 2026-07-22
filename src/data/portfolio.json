@@ -163,15 +163,15 @@
           },
           {
             "icon": "Activity",
-            "title": "LLM Evaluation & Observability",
+            "title": "LLM Observability & Evaluation",
             "accent": false,
-            "accentTags": ["Prometheus", "DeepEval", "Langfuse"],
+            "accentTags": ["OpenTelemetry", "DeepEval", "Langfuse"],
             "tags": [
-              "DeepEval",
-              "Langfuse",
-              "Grafana",
               "OpenTelemetry",
-              "Prometheus"
+              "Prometheus",
+              "Grafana",
+              "DeepEval",
+              "Langfuse"
             ]
           },
           {
@@ -192,11 +192,11 @@
             "icon": "Brain",
             "title": "Machine Learning, DL & MLOps",
             "accent": false,
-            "accentTags": ["PyTorch", "TensorFlow", "Amazon SageMaker"],
+            "accentTags": ["PyTorch", "MLflow", "Amazon SageMaker"],
             "tags": [
+              "Sklearn",
               "PyTorch",
               "TensorFlow",
-              "Sklearn",
               "MLflow",
               "Amazon SageMaker"
             ]
@@ -673,15 +673,15 @@
           },
           {
             "icon": "Activity",
-            "title": "Évaluation & Observabilité LLM",
+            "title": "Observabilité & Évaluation LLM",
             "accent": false,
-            "accentTags": ["Prometheus", "DeepEval", "Langfuse"],
+            "accentTags": ["OpenTelemetry", "DeepEval", "Langfuse"],
             "tags": [
-              "DeepEval",
-              "Langfuse",
-              "Grafana",
               "OpenTelemetry",
-              "Prometheus"
+              "Prometheus",
+              "Grafana",
+              "DeepEval",
+              "Langfuse"
             ]
           },
           {
@@ -702,11 +702,11 @@
             "icon": "Brain",
             "title": "Machine Learning, DL & MLOps",
             "accent": false,
-            "accentTags": ["PyTorch", "TensorFlow", "Amazon SageMaker"],
+            "accentTags": ["PyTorch", "MLflow", "Amazon SageMaker"],
             "tags": [
+              "Sklearn",
               "PyTorch",
               "TensorFlow",
-              "Sklearn",
               "MLflow",
               "Amazon SageMaker"
             ]
