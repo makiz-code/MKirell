@@ -96,6 +96,7 @@ function buildJsonLd(portfolio) {
   const t = portfolio.locales.en;
   const base = stripTrailingSlash(person.url);
   const id = (frag) => `${base}/${frag}`;
+  const fileUrl = (name) => (name ? `${base}/files/${name}` : undefined);
 
   const orgs = new Map();
   function orgRef(name, { type = "Organization", sameAs } = {}) {
@@ -112,11 +113,11 @@ function buildJsonLd(portfolio) {
     return { "@id": id(`#${slug}`) };
   }
 
-  const worksFor = t.experience.jobs.map((job) => ({
+  const worksFor = t.experience.jobs.map((job, i) => ({
     "@type": "EmployeeRole",
     roleName: job.role,
     description: job.bullets.map(stripMarkdown).join(" "),
-    worksFor: orgRef(job.company),
+    worksFor: orgRef(job.company, { sameAs: docs.experienceLinks?.[i] }),
     ...parseMonthYearRange(job.period),
   }));
 
@@ -139,6 +140,7 @@ function buildJsonLd(portfolio) {
     credentialCategory: "degree",
     name: d.title,
     ...(d.mention ? { description: stripMarkdown(d.mention) } : {}),
+    ...(docs.degrees?.[i] ? { url: fileUrl(docs.degrees[i]) } : {}),
     recognizedBy: orgRef(d.school, {
       type: "EducationalOrganization",
       sameAs: docs.degreeLinks?.[i],
@@ -146,10 +148,11 @@ function buildJsonLd(portfolio) {
     ...parseYearRange(d.years),
   }));
 
-  const certCredentials = t.education.certs.map((c) => ({
+  const certCredentials = t.education.certs.map((c, i) => ({
     "@type": "EducationalOccupationalCredential",
     credentialCategory: "certification",
     name: c.title,
+    ...(docs.certs?.[i] ? { url: fileUrl(docs.certs[i]) } : {}),
     recognizedBy: orgRef(c.issuer),
     dateCreated: parseCertDate(c.date),
   }));
@@ -162,10 +165,11 @@ function buildJsonLd(portfolio) {
     ...parseMonthYearRange(v.period),
   }));
 
-  const projects = t.projects.items.map((p) => ({
+  const projects = t.projects.items.map((p, i) => ({
     "@type": "SoftwareApplication",
     "@id": id(`#project-${slugify(p.title)}`),
     name: p.title,
+    ...(docs.projectLinks?.[i] ? { url: docs.projectLinks[i] } : {}),
     author: { "@id": id("#person") },
     description: stripMarkdown(p.desc),
     applicationCategory: "Artificial Intelligence",
@@ -194,7 +198,7 @@ function buildJsonLd(portfolio) {
     },
     description: person.description,
     knowsAbout: [...new Set(t.skills.categories.flatMap((c) => c.tags))],
-    knowsLanguage: t.achievements.languages.map((l) => ({
+    knowsLanguage: t.education.languages.map((l) => ({
       "@type": "Language",
       name: l.name,
       alternateName: LANG_CODES[l.name],
@@ -220,7 +224,7 @@ function buildJsonLd(portfolio) {
     "@type": "ProfilePage",
     "@id": id("#webpage"),
     url: person.url,
-    name: SITE_NAME,
+    name: person.name,
     description: person.description,
     inLanguage: portfolio.metaLocales.map((l) => l.lang),
     isPartOf: { "@id": id("#website") },
@@ -272,7 +276,7 @@ function renderSeoShell(data) {
     )
     .join("");
 
-  const languages = t.achievements.languages
+  const languages = t.education.languages
     .map((l) => `<li>${escapeHtml(l.name)} — ${escapeHtml(l.level)}</li>`)
     .join("");
 
@@ -351,6 +355,8 @@ function renderSeoShell(data) {
     <ul>${degrees}</ul>
     <h3>${escapeHtml(t.education.certs_title)}</h3>
     <ul>${certs}</ul>
+    <h3>${escapeHtml(t.education.lang_title)}</h3>
+    <ul>${languages}</ul>
   </section>
   <section id="achievements">
     <h2>${escapeHtml(t.achievements.heading)}</h2>
@@ -358,8 +364,6 @@ function renderSeoShell(data) {
     <ul>${vols}</ul>
     <h3>${escapeHtml(t.achievements.awards_title)}</h3>
     <ul>${awards}</ul>
-    <h3>${escapeHtml(t.achievements.lang_title)}</h3>
-    <ul>${languages}</ul>
   </section>
   <section id="contact">
     <h2>${escapeHtml(t.contact.heading)}</h2>

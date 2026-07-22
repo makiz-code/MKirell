@@ -8,11 +8,10 @@
     "phoneDisplay": "+33 7 58 21 58 56",
     "linkedin": "https://www.linkedin.com/in/mohamed-khalil-zrelly/",
     "github": "https://github.com/MKirell",
-    "url": "https://mkirell.github.io/",
+    "url": "https://mkirell.com/",
     "jobTitle": "Generative AI Engineer Apprentice",
     "worksFor": "Crédit Agricole",
     "description": "Generative AI Engineer Apprentice at Crédit Agricole, specializing in agentic workflow orchestration. Computer Science Engineering student at Sup Galilée, Sorbonne Paris North University, with hands-on expertise in RAG, NLP, and reinforcement learning.",
-    "alumniOf": "Sorbonne Paris North University",
     "addressLocality": "Le Bourget",
     "addressRegion": "Île-de-France",
     "addressCountry": "FR",
@@ -41,6 +40,8 @@
       null
     ],
     "certs": [
+      "certificate-ibm-multimodal.pdf",
+      "certificate-ibm-finetuning.pdf",
       "certificate-pyspark-udemy.pdf",
       "certificate-nlp-python.pdf",
       "certificate-azure-ai900.pdf",
@@ -133,7 +134,7 @@
             "anchor": "#projects"
           },
           {
-            "num": "4",
+            "num": "6",
             "label": "professional certifications",
             "anchor": "#education"
           },
@@ -151,7 +152,7 @@
             "icon": "Bot",
             "title": "Generative AI & Agentic Systems",
             "accent": false,
-            "accentTags": ["LangGraph", "Amazon Bedrock"],
+            "accentTags": ["LangGraph", "Qdrant", "Amazon Bedrock"],
             "tags": [
               "LangChain",
               "LangGraph",
@@ -164,7 +165,7 @@
             "icon": "Activity",
             "title": "LLM Evaluation & Observability",
             "accent": false,
-            "accentTags": ["DeepEval", "Langfuse"],
+            "accentTags": ["Prometheus", "DeepEval", "Langfuse"],
             "tags": [
               "DeepEval",
               "Langfuse",
@@ -175,15 +176,15 @@
           },
           {
             "icon": "Languages",
-            "title": "NLP, OCR & LLM Fine-Tuning",
+            "title": "NLP, LLM Fine-Tuning & RLHF",
             "accent": false,
             "accentTags": ["Transformers", "PEFT", "TRL"],
             "tags": [
               "Transformers",
               "Datasets",
               "PEFT",
+              "Accelerate",
               "TRL",
-              "PaddleOCR",
               "Spacy"
             ]
           },
@@ -196,7 +197,7 @@
               "PyTorch",
               "TensorFlow",
               "Sklearn",
-              "XGBoost",
+              "MLflow",
               "Amazon SageMaker"
             ]
           },
@@ -204,21 +205,21 @@
             "icon": "Globe",
             "title": "Full-Stack Web Development",
             "accent": false,
-            "accentTags": ["React", "FastAPI", "Streamlit"],
+            "accentTags": ["React", "Flask", "FastAPI"],
             "tags": [
-              "React",
-              "FastAPI",
-              "Express.js",
               "Vue.js",
+              "FastAPI",
               "Flask",
-              "Streamlit"
+              "React",
+              "Express.js",
+              "NestJS"
             ]
           },
           {
             "icon": "Database",
             "title": "Data Engineering & Databases",
             "accent": false,
-            "accentTags": ["MongoDB", "Amazon DynamoDB"],
+            "accentTags": ["PostgreSQL", "MongoDB", "Amazon DynamoDB"],
             "tags": [
               "PySpark",
               "Airflow",
@@ -244,14 +245,15 @@
             "icon": "Code2",
             "title": "Programming Languages (PL)",
             "accent": false,
-            "accentTags": ["Python", "JavaScript/TS"],
+            "accentTags": ["Python", "JavaScript/TS", "SQL"],
             "tags": [
               "Python",
               "JavaScript/TS",
-              "Java",
+              "SQL",
               "C/C++",
-              "PHP",
-              "PL/SQL"
+              "Rust",
+              "Java",
+              "PHP"
             ]
           }
         ]
@@ -275,7 +277,8 @@
               "Agentic Workflows",
               "Advanced RAG",
               "Amazon Bedrock",
-              "LLM Observability",
+              "LLM Evaluation",
+              "Observability",
               "Python/FastAPI",
               "Amazon DynamoDB",
               "Python/Streamlit"
@@ -329,9 +332,8 @@
         "heading": "Featured Projects",
         "items": [
           {
-            "period": "06/2025 — 08/2025",
-            "duration": "3 months",
-            "badge": "RAG",
+            "period": "In Production — 2025",
+            "badge": "Hybrid RAG",
             "title": "CVision",
             "desc": "Created an intelligent **CV recommendation system** based on job description using **Retrieval-Augmented Generation (RAG)**, to optimise the selection and automatic ranking of the most relevant profiles.",
             "tags": [
@@ -347,8 +349,7 @@
             ]
           },
           {
-            "period": "02/2024 — 06/2024",
-            "duration": "5 months",
+            "period": "In Production — 2024",
             "badge": "NLP · OCR",
             "title": "VERMail",
             "desc": "Developed an end-to-end **email intelligence platform** combining fine-tuned **BERT** for multi-class classification and **PaddleOCR** for accurate attachment parsing, with a **React** dashboard for real-time monitoring.",
@@ -365,8 +366,7 @@
             ]
           },
           {
-            "period": "06/2023 — 08/2023",
-            "duration": "3 months",
+            "period": "In Production — 2023",
             "badge": "Deep RL",
             "title": "Slythera",
             "desc": "Developed a **2D grid game** in **Pygame** featuring an AI agent trained from scratch with **Deep Q-Learning** to autonomously navigate obstacles and maximise its score in a dynamic, progressively challenging environment.",
@@ -384,25 +384,6 @@
           },
           {
             "period": "In Development ~ 2026",
-            "badge": "Multi-Agent",
-            "title": "TwiXel",
-            "desc": "Designing an intelligent **multi-agent system** for automated social listening on Twitter (now X), aimed at identifying emerging trends in real time and generating actionable marketing campaign ideas at scale.",
-            "tags": [
-              "Multi-Agent Systems",
-              "LangGraph",
-              "MCP/A2A",
-              "GPT-OSS",
-              "Qdrant",
-              "Python/FastAPI",
-              "Vue.js",
-              "X API",
-              "Trend Detection",
-              "Docker",
-              "Social Listening"
-            ]
-          },
-          {
-            "period": "In Ideation ~ 2026",
             "badge": "Multimodal AI",
             "title": "AeroVI",
             "desc": "Designing a **multimodal travel guide** that generates personalised travel itineraries, curated destination recommendations, and immersive visual content, covering the full journey from planning to discovery.",
@@ -418,7 +399,7 @@
             ]
           },
           {
-            "period": "In Ideation ~ 2026",
+            "period": "In Development ~ 2026",
             "badge": "Agentic · PM",
             "title": "PlanYU",
             "desc": "Designing a **generative project management platform** that produces complete project structures, tasks, schedules, and assignments, pairing team members to each task based on their skills and availability.",
@@ -430,6 +411,25 @@
               "Delegation",
               "Resource Allocation",
               "Scheduling"
+            ]
+          },
+          {
+            "period": "In Ideation ~ 2026",
+            "badge": "Multi-Agent",
+            "title": "TwiXel",
+            "desc": "Designing an intelligent **multi-agent system** for automated social listening on Twitter (now X), aimed at identifying emerging trends in real time and generating actionable marketing campaign ideas at scale.",
+            "tags": [
+              "Multi-Agent Systems",
+              "LangGraph",
+              "MCP/A2A",
+              "GPT-OSS",
+              "Qdrant",
+              "Python/FastAPI",
+              "Vue.js",
+              "X API",
+              "Trend Detection",
+              "Docker",
+              "Social Listening"
             ]
           }
         ]
@@ -465,6 +465,18 @@
         "certs_title": "Certifications",
         "certs": [
           {
+            "icon": "Layers",
+            "title": "Build Multimodal Generative AI Applications",
+            "issuer": "IBM (Coursera)",
+            "date": "Jul 2026"
+          },
+          {
+            "icon": "SlidersHorizontal",
+            "title": "Generative AI Advanced Fine-Tuning for LLMs",
+            "issuer": "IBM (Coursera)",
+            "date": "Jul 2026"
+          },
+          {
             "icon": "Zap",
             "title": "Spark and Python for Big Data with PySpark",
             "issuer": "Udemy",
@@ -488,10 +500,34 @@
             "issuer": "Microsoft Azure",
             "date": "Jan 2024"
           }
+        ],
+        "lang_title": "Languages",
+        "languages": [
+          {
+            "flag": "🇬🇧",
+            "flagCode": "gb",
+            "name": "English",
+            "pct": 80,
+            "level": "B2 · TOEIC"
+          },
+          {
+            "flag": "🇫🇷",
+            "flagCode": "fr",
+            "name": "French",
+            "pct": 80,
+            "level": "B2 · TCF"
+          },
+          {
+            "flag": "🇹🇳",
+            "flagCode": "tn",
+            "name": "Arabic",
+            "pct": 100,
+            "level": "Native"
+          }
         ]
       },
       "achievements": {
-        "heading": "Achievements & Languages",
+        "heading": "Notable Achievements",
         "vol_title": "Volunteering",
         "vols": [
           {
@@ -544,30 +580,6 @@
             "title": "Hult Prize ISI Ariana Runner-up",
             "place": "Tunisia",
             "flagCode": "tn"
-          }
-        ],
-        "lang_title": "Languages",
-        "languages": [
-          {
-            "flag": "🇬🇧",
-            "flagCode": "gb",
-            "name": "English",
-            "pct": 80,
-            "level": "B2 · TOEIC"
-          },
-          {
-            "flag": "🇫🇷",
-            "flagCode": "fr",
-            "name": "French",
-            "pct": 80,
-            "level": "B2 · TCF"
-          },
-          {
-            "flag": "🇹🇳",
-            "flagCode": "tn",
-            "name": "Arabic",
-            "pct": 100,
-            "level": "Native"
           }
         ]
       },
@@ -632,7 +644,7 @@
             "anchor": "#projects"
           },
           {
-            "num": "4",
+            "num": "6",
             "label": "certifications professionnelles",
             "anchor": "#education"
           },
@@ -663,7 +675,7 @@
             "icon": "Activity",
             "title": "Évaluation & Observabilité LLM",
             "accent": false,
-            "accentTags": ["DeepEval", "Langfuse"],
+            "accentTags": ["Prometheus", "DeepEval", "Langfuse"],
             "tags": [
               "DeepEval",
               "Langfuse",
@@ -674,15 +686,15 @@
           },
           {
             "icon": "Languages",
-            "title": "NLP, OCR & Fine-Tuning LLM",
+            "title": "NLP, Fine-Tuning LLM & RLHF",
             "accent": false,
             "accentTags": ["Transformers", "PEFT", "TRL"],
             "tags": [
               "Transformers",
               "Datasets",
               "PEFT",
+              "Accelerate",
               "TRL",
-              "PaddleOCR",
               "Spacy"
             ]
           },
@@ -695,7 +707,7 @@
               "PyTorch",
               "TensorFlow",
               "Sklearn",
-              "XGBoost",
+              "MLflow",
               "Amazon SageMaker"
             ]
           },
@@ -703,21 +715,21 @@
             "icon": "Globe",
             "title": "Développement Web Full-Stack",
             "accent": false,
-            "accentTags": ["React", "FastAPI", "Streamlit"],
+            "accentTags": ["React", "Flask", "FastAPI"],
             "tags": [
-              "React",
-              "FastAPI",
-              "Express.js",
               "Vue.js",
+              "FastAPI",
               "Flask",
-              "Streamlit"
+              "React",
+              "Express.js",
+              "NestJS"
             ]
           },
           {
             "icon": "Database",
             "title": "Ingénierie & Bases de Données",
             "accent": false,
-            "accentTags": ["MongoDB", "Amazon DynamoDB"],
+            "accentTags": ["PostgreSQL", "MongoDB", "Amazon DynamoDB"],
             "tags": [
               "PySpark",
               "Airflow",
@@ -743,14 +755,15 @@
             "icon": "Code2",
             "title": "Langages de Programmation",
             "accent": false,
-            "accentTags": ["Python", "JavaScript/TS"],
+            "accentTags": ["Python", "JavaScript/TS", "SQL"],
             "tags": [
               "Python",
               "JavaScript/TS",
-              "Java",
+              "SQL",
               "C/C++",
-              "PHP",
-              "PL/SQL"
+              "Rust",
+              "Java",
+              "PHP"
             ]
           }
         ]
@@ -774,7 +787,8 @@
               "Agentic Workflows",
               "Advanced RAG",
               "Amazon Bedrock",
-              "LLM Observability",
+              "LLM Evaluation",
+              "Observability",
               "Python/FastAPI",
               "Amazon DynamoDB",
               "Python/Streamlit"
@@ -828,9 +842,8 @@
         "heading": "Projets Phares",
         "items": [
           {
-            "period": "06/2025 — 08/2025",
-            "duration": "3 mois",
-            "badge": "RAG",
+            "period": "En production — 2025",
+            "badge": "Hybrid RAG",
             "title": "CVision",
             "desc": "Création d'un **système de recommandation de CV** basé sur les descriptions de postes, via la **Génération Augmentée par Récupération (RAG)**, pour optimiser la sélection et le classement automatique des profils pertinents.",
             "tags": [
@@ -846,8 +859,7 @@
             ]
           },
           {
-            "period": "02/2024 — 06/2024",
-            "duration": "5 mois",
+            "period": "En production — 2024",
             "badge": "NLP · OCR",
             "title": "VERMail",
             "desc": "Développement d'une **plateforme e-mail intelligente** combinant **BERT** fine-tuné pour la classification multi-classes et **PaddleOCR** pour l'analyse des pièces jointes, avec un dashboard **React** pour la surveillance en temps réel.",
@@ -864,8 +876,7 @@
             ]
           },
           {
-            "period": "06/2023 — 08/2023",
-            "duration": "3 mois",
+            "period": "En production — 2023",
             "badge": "Deep RL",
             "title": "Slythera",
             "desc": "Développement d'un **jeu de grille 2D** en **Pygame** intégrant un agent **IA** entraîné via **Deep Q-Learning**, assurant une navigation autonome parmi les obstacles et maximisant le score dans un environnement dynamique et exigeant.",
@@ -883,25 +894,6 @@
           },
           {
             "period": "En développement ~ 2026",
-            "badge": "Multi-Agent",
-            "title": "TwiXel",
-            "desc": "Conception d'un **système multi-agents** pour l'écoute sociale automatisée sur Twitter (X), visant à identifier les tendances émergentes en temps réel et à générer des idées de campagnes marketing exploitables à grande échelle.",
-            "tags": [
-              "Multi-Agent Systems",
-              "LangGraph",
-              "MCP/A2A",
-              "GPT-OSS",
-              "Qdrant",
-              "Python/FastAPI",
-              "Vue.js",
-              "X API",
-              "Trend Detection",
-              "Docker",
-              "Social Listening"
-            ]
-          },
-          {
-            "period": "En idéation ~ 2026",
             "badge": "IA Multimodale",
             "title": "AeroVI",
             "desc": "Conception d'un **guide de voyage multimodal** générant des itinéraires personnalisés, des recommandations de destinations sélectionnées et un contenu visuel immersif, couvrant l'intégralité du voyage, de la planification à la découverte.",
@@ -917,7 +909,7 @@
             ]
           },
           {
-            "period": "En idéation ~ 2026",
+            "period": "En développement ~ 2026",
             "badge": "Agentique · PM",
             "title": "PlanYU",
             "desc": "Conception d'une **plateforme de gestion de projet générative** qui produit des structures de projet complètes, tâches, plannings et affectations, associant chaque membre de l'équipe aux tâches selon ses compétences et sa disponibilité.",
@@ -929,6 +921,25 @@
               "Delegation",
               "Resource Allocation",
               "Scheduling"
+            ]
+          },
+          {
+            "period": "En idéation ~ 2026",
+            "badge": "Multi-Agent",
+            "title": "TwiXel",
+            "desc": "Conception d'un **système multi-agents** pour l'écoute sociale automatisée sur Twitter (X), visant à identifier les tendances émergentes en temps réel et à générer des idées de campagnes marketing exploitables à grande échelle.",
+            "tags": [
+              "Multi-Agent Systems",
+              "LangGraph",
+              "MCP/A2A",
+              "GPT-OSS",
+              "Qdrant",
+              "Python/FastAPI",
+              "Vue.js",
+              "X API",
+              "Trend Detection",
+              "Docker",
+              "Social Listening"
             ]
           }
         ]
@@ -964,6 +975,18 @@
         "certs_title": "Certifications",
         "certs": [
           {
+            "icon": "Layers",
+            "title": "Build Multimodal Generative AI Applications",
+            "issuer": "IBM (Coursera)",
+            "date": "Juil 2026"
+          },
+          {
+            "icon": "SlidersHorizontal",
+            "title": "Generative AI Advanced Fine-Tuning for LLMs",
+            "issuer": "IBM (Coursera)",
+            "date": "Juil 2026"
+          },
+          {
             "icon": "Zap",
             "title": "Spark and Python for Big Data with PySpark",
             "issuer": "Udemy",
@@ -987,10 +1010,34 @@
             "issuer": "Microsoft Azure",
             "date": "Jan 2024"
           }
+        ],
+        "lang_title": "Langues",
+        "languages": [
+          {
+            "flag": "🇬🇧",
+            "flagCode": "gb",
+            "name": "Anglais",
+            "pct": 80,
+            "level": "B2 · TOEIC"
+          },
+          {
+            "flag": "🇫🇷",
+            "flagCode": "fr",
+            "name": "Français",
+            "pct": 80,
+            "level": "B2 · TCF"
+          },
+          {
+            "flag": "🇹🇳",
+            "flagCode": "tn",
+            "name": "Arabe",
+            "pct": 100,
+            "level": "Natif"
+          }
         ]
       },
       "achievements": {
-        "heading": "Réalisations & Langues",
+        "heading": "Réalisations Notables",
         "vol_title": "Bénévolat",
         "vols": [
           {
@@ -1043,30 +1090,6 @@
             "title": "Hult Prize ISI Ariana Vice-champion",
             "place": "Tunisie",
             "flagCode": "tn"
-          }
-        ],
-        "lang_title": "Langues",
-        "languages": [
-          {
-            "flag": "🇬🇧",
-            "flagCode": "gb",
-            "name": "Anglais",
-            "pct": 80,
-            "level": "B2 · TOEIC"
-          },
-          {
-            "flag": "🇫🇷",
-            "flagCode": "fr",
-            "name": "Français",
-            "pct": 80,
-            "level": "B2 · TCF"
-          },
-          {
-            "flag": "🇹🇳",
-            "flagCode": "tn",
-            "name": "Arabe",
-            "pct": 100,
-            "level": "Natif"
           }
         ]
       },
