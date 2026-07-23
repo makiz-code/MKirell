@@ -4,6 +4,8 @@
       <img :src="logoUrl" alt="MKirell" class="nav-logo__img">
     </a>
 
+    <div v-if="menuOpen" class="nav__backdrop" @click="menuOpen = false"></div>
+
     <ul id="navLinks" :class="['nav__links', { open: menuOpen }]" role="list">
       <li v-for="(label, key) in t.nav" :key="key">
         <a :href="`#${key}`" :class="{ active: activeSection === key }"
@@ -26,7 +28,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, watch, onMounted, onUnmounted } from 'vue'
 import { useLanguage } from '@/composables/useLanguage.js'
 import logoUrl from '@/assets/imgs/mkirell-logo.png'
 
@@ -35,6 +37,14 @@ const { lang, t, setLang, metaLocales } = useLanguage()
 const scrolled = ref(false)
 const menuOpen = ref(false)
 const activeSection = ref('')
+
+watch(menuOpen, (open) => {
+  document.body.style.overflow = open ? 'hidden' : ''
+})
+
+function onKeydown(e) {
+  if (e.key === 'Escape') menuOpen.value = false
+}
 
 function onScroll() {
   scrolled.value = window.scrollY > 40
@@ -60,13 +70,16 @@ function initSectionObserver() {
 
 onMounted(() => {
   window.addEventListener('scroll', onScroll)
+  window.addEventListener('keydown', onKeydown)
   onScroll()
   setTimeout(initSectionObserver, 100)
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', onScroll)
+  window.removeEventListener('keydown', onKeydown)
   sectionObs?.disconnect()
+  document.body.style.overflow = ''
 })
 </script>
 
@@ -256,6 +269,15 @@ onUnmounted(() => {
 }
 
 @media (max-width: 860px) {
+  .nav__backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 98;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+
   .nav__links {
     position: fixed;
     top: 0;
